@@ -10,10 +10,57 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
-    <h1 style="display: flex; justify-content: center; margin-top: 5%;">Login Form</h1>
+    <div id="form-page">
+        <form id="registerForm"
+            style="width: 638px; height: 630px; margin: auto; margin-top: 2%; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+            <div class="change-form"
+                style="width: 418px; height: 64px; display: flex; justify-content: space-between; align-items: center; background-color: #2B2D42; border-radius: 32px; padding: 0 0px; margin-bottom: 64px;">
+                <button
+                    style="background:#EF233C; border: none; color: white; height: 105%; width: 219px; font-size: 16px; cursor: pointer; padding: 10px 30px; border-radius: 32px; font-size: 32px; ">Login</button>
+                <button
+                    style="background: #2B2D42; border: none; color: white; cursor: pointer; padding: 0px 30px; margin-left: 30px; border-radius: 32px; font-size: 32px;">Registar</button>
+            </div>
+
+            
+            <div class="mb-3" style="padding-bottom: 20px; width: 100%; display: flex; justify-content: center;">
+                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp"
+                    placeholder="Email (atenção às maiúsculas e minúsculas)" required
+                    style="width: 418px; height: 67px; background-color: #8D99AE; color: white; border-radius: 40px;">
+            </div>
+
+            <div class="mb-3" style="padding-bottom: 20px; width: 100%; display: flex; justify-content: center;">
+                <input type="password" class="form-control" id="Password1" placeholder="Palavra-passe"
+                    required
+                    style="width: 418px; height: 67px; background-color: #8D99AE; color: white; border-radius: 40px;">
+            </div>
+
+            <div id="message" class="mt-3" style="text-align: center; width: 100%;"></div>
+            <!-- <p style="text-align: center; width: 100%;">Already have an <a href="./login.html">account</a>!</p> -->
+
+            <button type="submit" id="create" class="btn btn-primary btn-hover-effect"
+                style="border-radius: 40px; width: 200px; height: 60px; background-color: #EF233C; border: none; font-size: 32px; color: white;">Criar</button>
+
+            <p style="color: #D90429; margin-top: 24px; text-align: center;">
+                Ao entrar no Flightionary, você concorda com os nossos Termos e <br> Políticas de Privacidade.
+            </p>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <h1 style="display: flex; justify-content: center; margin-top: 5%;">Login Form</h1>
     <form id="loginForm"
         style="width: 30%; margin: auto; margin-top: 5%; padding: 20px; border: 1px solid black; border-radius: 10px;">
         <div class="mb-3" id="form">
@@ -28,7 +75,7 @@
         <button type="submit" id="login" class="btn btn-primary">Login</button>
 
         <div id="message" class="mt-3"></div>
-    </form>
+    </form> -->
 
 
 

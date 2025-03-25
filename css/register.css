@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#form-page {
+    position: relative;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#registerForm {
+    position: relative;
+    background-color: #EDF2F4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registerForm input::placeholder {
+    color: white;
+}
