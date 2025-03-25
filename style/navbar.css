@@ -1,0 +1,27 @@
+.custom-navbar {
+    background-color: #EDF2F4 !important;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 12px 6px rgba(0, 0, 0, 0.137);
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-icon {
+    font-size: 1.5rem;
+    color: #2B2D42;
+}
+
+.fa-bars:hover {
+    color: #2B2D42 !important;
+    transform: scale(1.2);
+}
+
+.fa-user-circle:hover {
+    color: #2B2D42 !important;
+    transform: scale(1.2);
+}

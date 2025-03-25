@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@700&display=swap');
+
+/* Colors */
+:root {
+    --bg-color: #2B2D42;
+    --secondary-color: #8523E0;
+    --fields-color: #8D99AE;
+    --buttons-color: #D90429;
+    --text-color: #EDF2F4;
+    --labels-color: #EF233C;
+}
+
+/* Fonts */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input, textarea {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--fields-color);
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--labels-color);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--buttons-color);
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--labels-color);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--labels-color);
+}
+
+/*end of main.css*/
