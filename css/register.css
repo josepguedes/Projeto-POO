@@ -106,6 +106,11 @@ body {
     color: white;
 }
 
+#registerForm button:hover {
+    background-color: #D90429;
+    cursor: pointer;
+}
+
 .terms-text {
     color: #D90429;
     margin-top: 24px;
