@@ -20,20 +20,20 @@ body {
 }
 
 #registerForm {
-    position: absolute;
     width: 638px;
     height: 630px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 10px;
-    background-color: #EDF2F4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #EDF2F4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .change-form {
@@ -44,42 +44,37 @@ body {
     align-items: center;
     background-color: #2B2D42;
     border-radius: 32px;
+    margin-bottom: 64px;
     padding: 0;
-    margin-bottom: 34px;
 }
 
-.btn-login {
-    background: #2B2D42;
+.change-btn {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    height: 100%;
-    width: 219px;
-    font-size: 32px;
     padding: 7px 50px;
     border-radius: 32px;
-}
-
-.btn-register {
-    background: #EF233C;
-    text-decoration: none;
-    color: white;
-    height: 105%;
-    width: 219px;
     font-size: 32px;
-    cursor: pointer;
-    padding: 9px 50px;
-    border-radius: 32px;
+    height: 100%;
+    width: 219px;
+    background: #2B2D42;
+    border: none;
 }
 
-.form-input {
+.change-btn.active {
+    background: #EF233C;
+    padding: 7px 70px;
+    height: 105%;
+}
+
+.form-input-container {
     padding-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.input-field {
+.custom-input {
     width: 418px;
     height: 67px;
     background-color: #8D99AE;
@@ -87,16 +82,11 @@ body {
     border-radius: 40px;
 }
 
-.input-field::placeholder {
+.custom-input::placeholder {
     color: white;
 }
 
-#message {
-    text-align: center;
-    width: 100%;
-}
-
-#registerForm button {
+.submit-btn {
     border-radius: 40px;
     width: 200px;
     height: 60px;
@@ -104,10 +94,20 @@ body {
     border: none;
     font-size: 32px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.terms-text {
+.submit-btn:hover {
+    background-color: #D90429;
+    cursor: pointer;
+}
+
+
+.privacy-text {
     color: #D90429;
     margin-top: 24px;
     text-align: center;
 }
+
