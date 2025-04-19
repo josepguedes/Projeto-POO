@@ -3,13 +3,12 @@ let users = []
 
 //Load Users from LocalStorage
 export function loadUsers() {
-    users = [];
     if (localStorage.getItem('users')) {
+        users = []; // Limpar array antes de carregar
         const getUsers = JSON.parse(localStorage.getItem('users'))
         for (let user of getUsers) {
             users.push(new User(user.name, user.email, user.password, user.profImg, user.favourits));
         }
-
     } else {
         users = [];
     }
