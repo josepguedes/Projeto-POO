@@ -1,0 +1,106 @@
+.footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-text {
+    color: var(--fields-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(237, 242, 244, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--buttons-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+.footer-heading {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--fields-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--buttons-color);
+    padding-left: 5px;
+}
+
+.footer-form .form-control {
+    background-color: rgba(237, 242, 244, 0.1);
+    border: none;
+    color: var(--text-color);
+    padding: 0.75rem;
+}
+
+.footer-form .form-control::placeholder {
+    color: var(--fields-color);
+}
+
+.footer-form .btn {
+    padding: 0.75rem 1.5rem;
+}
+
+.footer-divider {
+    margin: 2rem 0;
+    border-color: rgba(237, 242, 244, 0.1);
+}
+
+.footer-bottom {
+    color: var(--fields-color);
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+    color: var(--fields-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--buttons-color);
+}
+
+.copyright {
+    margin: 0;
+}

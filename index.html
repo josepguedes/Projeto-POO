@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <nav class="navbar custom-navbar navbar-expand-lg">
         <div class="container-fluid">
-        <!-- Left Menu Icon -->
-        <div class="d-flex align-items-center">
+            <!-- Left Menu Icon -->
+            <div class="d-flex align-items-center">
                 <a class="nav-link nav-icon" href="#" id="pageSectionsDropdown" role="button" data-bs-toggle="dropdown">
                     <i class="fas fa-bars" style="color: #D90429; transition: all 0.3s ease;">
                     </i>
@@ -28,33 +31,39 @@
 
             <!-- Centered Logo -->
             <a class="navbar-brand mx-auto" href="#"></a>
-                <img src="/img/LogoNavbar.png" alt="Logo" height="40">
+            <img src="/img/LogoNavbar.png" alt="Logo" height="40">
             </a>
 
             <!-- Right User Icon -->
             <div class="d-flex align-items-center">
                 <div id="userMenuContainer">
-            <div id="loggedInMenu" style="display: none;">
-                <div class="dropdown"></div>
-                <a class="nav-link nav-icon" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown">
-                    <i class="fas fa-user-circle" style="color: #D90429; transition: all 0.3s ease;"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
-                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                    <li><a class="dropdown-item" href="#">Reservas</a></li>
-                    <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar Sessão</a></li>
-                </ul>
+                    <div id="loggedInMenu" style="display: none;">
+                        <div class="dropdown">
+                            <a class="nav-link d-flex align-items-center" href="#" role="button" id="userDropdown"
+                                data-bs-toggle="dropdown">
+                                <img id="navProfileImage" src="img/default_Avatar.jpg" alt="Profile"
+                                    class="nav-profile-img me-2">
+                                <span id="navUserName" class="nav-username me-2"></span>
+                                <i class="fas fa-chevron-down" style="color: #D90429; font-size: 0.8rem;"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="html/profile.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                                <li><a class="dropdown-item" href="#">Reservas</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar
+                                        Sessão</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="loggedOutMenu" style="display: none;">
+                        <a class="nav-link nav-icon" href="html/login.html">
+                            <i class="fas fa-user-circle" style="color: #D90429; transition: all 0.3s ease;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div id="loggedOutMenu" style="display: none;">
-                <a class="nav-link nav-icon" href="html/login.html">
-                <i class="fas fa-user-circle" style="color: #D90429; transition: all 0.3s ease;"></i>
-                </a>
-            </div>
-                </div>
-            </div>
+        </div>
         </div>
     </nav>
 
@@ -72,18 +81,19 @@
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="localChegada" placeholder="Para?">
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="mb-3">
                                 <input type="date" class="form-control" id="data">
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <input type="number" class="form-control" id="numeroPessoas" placeholder="Número de pessoas">
+                                    <input type="number" class="form-control" id="numeroPessoas"
+                                        placeholder="Número de pessoas">
                                 </div>
                                 <div class="col-md-6">
                                     <input type="number" class="form-control" id="dias" placeholder="Número de dias">
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="mb-3">
                                 <select class="form-select" id="tipoTurismo">
                                     <option selected>Escolha o tipo de turismo</option>
@@ -103,9 +113,250 @@
         </div>
     </section>
 
+
+    <section class="featured-deals" id="Destaques">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Destinos em Destaque</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <button class="favorite-btn">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <img src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXN8ZW58MHx8MHx8fDA%3D"
+                            class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris, França</h5>
+                            <p class="card-text">Voos diretos a partir de €199</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">€199</span>
+                                <button class="btn btn-primary">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <button class="favorite-btn">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <img src="https://media.istockphoto.com/id/539115110/pt/foto/colosseum-em-roma-e-manh%C3%A3-de-sol-it%C3%A1lia.jpg?s=612x612&w=0&k=20&c=UJgNdZwEeoznZvOusoUoEtG6or5nweBNJxZbPxmi7dM="
+                            class="card-img-top" alt="Roma">
+                        <div class="card-body">
+                            <h5 class="card-title">Roma, Itália</h5>
+                            <p class="card-text">Pacotes com hotel desde €299</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">€299</span>
+                                <button class="btn btn-primary">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <button class="favorite-btn">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <img src="https://mediaim.expedia.com/destination/9/cd8a3f3db7149b0ce36d052aea1182df.jpg"
+                            class="card-img-top" alt="Dubai">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai</h5>
+                            <p class="card-text">Experiência luxuosa desde €599</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">€599</span>
+                                <button class="btn btn-primary">Ver Oferta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us" id="Sobre">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Por que escolher a Flightionary?</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-euro-sign fa-3x mb-3"></i>
+                        <h4>Melhores Preços</h4>
+                        <p>Garantimos as tarifas mais competitivas do mercado</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-headset fa-3x mb-3"></i>
+                        <h4>Suporte 24/7</h4>
+                        <p>Assistência personalizada a qualquer momento</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h4>Viagem Segura</h4>
+                        <p>Parceiros certificados e seguros incluídos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us" id="Contactar">
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Contacte-nos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="feature-box p-4">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Seu nome"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Seu email"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Assunto</label>
+                                        <select class="form-select" id="subject" onchange="toggleOtherSubject()">
+                                            <option value="" selected disabled>Selecione um assunto</option>
+                                            <option value="reserva">Dúvidas sobre Reservas</option>
+                                            <option value="pagamento">Problemas com Pagamento</option>
+                                            <option value="cancelamento">Cancelamentos</option>
+                                            <option value="sugestao">Sugestões</option>
+                                            <option value="reclamacao">Reclamações</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="otherSubjectDiv" style="display: none;">
+                                    <div class="form-group">
+                                        <label for="otherSubject" class="form-label">Especifique o Assunto</label>
+                                        <input type="text" class="form-control" id="otherSubject"
+                                            placeholder="Digite o assunto">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5">Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box h-100">
+                        <h4 class="mb-4">Informações de Contacto</h4>
+                        <div class="align-items-start mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x me-3" style="color: #D90429"></i>
+                            <div>
+                                <h5 class="mb-1">Endereço</h5>
+                                <p>Rua Dr. Roberto Frias, 4200-465 Porto</p>
+                            </div>
+                        </div>
+                        <div class="align-items-start mb-3">
+                            <i class="fas fa-phone fa-2x me-3" style="color: #D90429"></i>
+                            <div>
+                                <h5 class="mb-1">Telefone</h5>
+                                <p>+351 228 340 500</p>
+                            </div>
+                        </div>
+                        <div class="align-items-start">
+                            <i class="fas fa-envelope fa-2x me-3" style="color: #D90429"></i>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p>info@flightionary.pt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="img/LogoNavbar.png" alt="Flightionary Logo" height="40" class="mb-4">
+                    <p class="footer-text">Descubra o mundo com a Flightionary. Oferecemos as melhores experiências de
+                        viagem com conforto e preços imbatíveis.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#Pesquisar">Pesquisar</a></li>
+                        <li><a href="#Destaques">Destinos</a></li>
+                        <li><a href="#Sobre">Sobre Nós</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Destinos Populares</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Paris, França</a></li>
+                        <li><a href="#">Roma, Itália</a></li>
+                        <li><a href="#">Dubai, EAU</a></li>
+                        <li><a href="#">Lisboa, Portugal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="footer-text">Subscreva para receber as melhores ofertas</p>
+                    <form class="footer-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p class="copyright">© 2024 Flightionary. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="js/views/NavbarView.js" type="module"></script>
 </body>
+
 </html>

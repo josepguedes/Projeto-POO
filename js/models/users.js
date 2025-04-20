@@ -1,4 +1,4 @@
-let users = []
+let users = [];
 
 
 //Load Users from LocalStorage
@@ -51,28 +51,31 @@ export function removeUser(id) {
 //Update User
 export function updateUser(name, email, password, profImg, favourits) {
     try {
+        // Get logged user id from session
+        const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+        const id = loggedUser.id;
+
         if (users.find(user => user.id === id)) {
             users = users.map(user => {
                 if (user.id === id) {
-                    user.name = name
-                    user.email = email
-                    user.password = password
-                    user.profImg = profImg
-                    user.favourits = favourits
+                    user.name = name;
+                    user.email = email;
+                    user.password = password;
+                    user.profImg = profImg;
+                    user.favourits = favourits;
                 }
-                return user
-            })
-            localStorage.setItem('users', JSON.stringify(users))
+                return user;
+            });
+            localStorage.setItem('users', JSON.stringify(users));
             console.log('User updated successfully!');
         } else {
-            throw new Error('User not found!')
+            throw new Error('User not found!');
         }
     } catch (error) {
-        console.error(error.message)
-        throw error
+        console.error(error.message);
+        throw error;
     }
 }
-
 
 //Give user ID
 export function getnextId() {
@@ -92,9 +95,9 @@ export function loggedUser(email, password) {
             sessionStorage.setItem('loggedUser', JSON.stringify(user))
             console.log('User logged successfully!');
         } else {
-            
+
             console.log(users);
-            
+
             throw new Error('User not found!')
         }
     } catch (error) {
