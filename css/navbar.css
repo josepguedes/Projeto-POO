@@ -1,0 +1,98 @@
+.custom-navbar {
+    background-color: #EDF2F4 !important;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 12px 6px rgba(0, 0, 0, 0.137);
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    color: #2B2D42;
+}
+
+/* ...existing code... */
+
+.nav-profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #D90429;
+}
+
+.nav-username {
+    color: #2B2D42;
+    font-weight: 500;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#userDropdown {
+    padding: 0.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#userDropdown:hover {
+    background-color: rgba(217, 4, 41, 0.1);
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(217, 4, 41, 0.1);
+}
+
+.fa-bars:hover {
+    color: #2B2D42 !important;
+    transform: scale(1.2);
+}
+
+.fa-user-circle:hover {
+    color: #2B2D42 !important;
+    transform: scale(1.2);
+}
+
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+    
+}
+
+#userDropdown {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#userDropdown:hover span {
+    color: #2B2D42 !important;
+}
+
+.profile-img {
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#userDropdown:hover .profile-img {
+    transform: scale(1.1);
+}

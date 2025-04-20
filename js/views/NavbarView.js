@@ -24,15 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const isLoggedIn = isLogged();
 
     if (isLoggedIn) {
-        // Get logged user data from session storage
         const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
-        
-        // Update the user dropdown trigger with name and profile image
-        const userDropdown = document.getElementById('userDropdown');
-        userDropdown.innerHTML = `
-            <img src="${loggedUser.profImg}" alt="Profile" class="profile-img" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 8px;">
-            <span style="color: #D90429;">${loggedUser.name}</span>
-        `;
+
+        // Update profile image and username in navbar
+        const navProfileImage = document.getElementById('navProfileImage');
+        const navUserName = document.getElementById('navUserName');
 
         // Add logout event listener to the logout button
         const logoutButton = document.querySelector('[data-logout]');
@@ -43,7 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location.reload(); // Reload page after logout
             });
         }
-        
+
+        if (loggedUser.profImg) {
+            navProfileImage.src = loggedUser.profImg;
+        }
+        if (loggedUser.name) {
+            navUserName.textContent = loggedUser.name;
+        }
+
         document.getElementById('loggedInMenu').style.display = 'block';
         document.getElementById('loggedOutMenu').style.display = 'none';
     } else {
@@ -51,3 +54,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('loggedOutMenu').style.display = 'block';
     }
 });
+
+

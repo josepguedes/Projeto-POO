@@ -22,6 +22,3 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
 function showMessage(message) {
     document.getElementById('message').innerText = message;
 }
-
-
-
