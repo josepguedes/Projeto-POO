@@ -1,16 +1,21 @@
+/* Reset básico para o footer */
 .footer {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color, #2B2D42);
+    color: var(--text-color, #EDF2F4);
     padding: 2rem 0 2rem;
     margin-top: 4rem;
+    width: 100%;
+    bottom: 0;
 }
 
+/* Estilos do texto do footer */
 .footer-text {
-    color: var(--fields-color);
+    color: var(--fields-color, #8D99AE);
     font-size: 0.9rem;
     line-height: 1.6;
 }
 
+/* Links sociais */
 .social-links {
     display: flex;
     gap: 1rem;
@@ -24,22 +29,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--text-color, #EDF2F4);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
-    background-color: var(--buttons-color);
-    color: var(--text-color);
+    background-color: var(--buttons-color, #D90429);
+    color: var(--text-color, #EDF2F4);
     transform: translateY(-3px);
 }
 
+/* Cabeçalhos do footer */
 .footer-heading {
-    color: var(--text-color);
+    color: var(--text-color, #EDF2F4);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
+/* Links do footer */
 .footer-links {
     list-style: none;
     padding: 0;
@@ -51,38 +59,49 @@
 }
 
 .footer-links a {
-    color: var(--fields-color);
+    color: var(--fields-color, #8D99AE);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: var(--buttons-color);
+    color: var(--buttons-color, #D90429);
     padding-left: 5px;
 }
 
+/* Formulário do footer */
 .footer-form .form-control {
     background-color: rgba(237, 242, 244, 0.1);
     border: none;
-    color: var(--text-color);
+    color: var(--text-color, #EDF2F4);
     padding: 0.75rem;
 }
 
 .footer-form .form-control::placeholder {
-    color: var(--fields-color);
+    color: var(--fields-color, #8D99AE);
 }
 
+/* Botão do formulário */
 .footer-form .btn {
     padding: 0.75rem 1.5rem;
+    background-color: var(--buttons-color, #D90429);
+    border: none;
+    color: var(--text-color, #EDF2F4);
 }
 
+.footer-form .btn:hover {
+    background-color: var(--labels-color, #EF233C);
+}
+
+/* Divisor do footer */
 .footer-divider {
     margin: 2rem 0;
     border-color: rgba(237, 242, 244, 0.1);
 }
 
+/* Parte inferior do footer */
 .footer-bottom {
-    color: var(--fields-color);
+    color: var(--fields-color, #8D99AE);
     font-size: 0.9rem;
 }
 
@@ -92,13 +111,13 @@
 }
 
 .footer-bottom-links a {
-    color: var(--fields-color);
+    color: var(--fields-color, #8D99AE);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-    color: var(--buttons-color);
+    color: var(--buttons-color, #D90429);
 }
 
 .copyright {

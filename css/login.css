@@ -111,3 +111,33 @@ body {
     text-align: center;
 }
 
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--text-color, #EDF2F4);
+    color: var(--buttons-color, #D90429);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-btn:hover {
+    background-color: var(--buttons-color, #D90429);
+    color: var(--text-color, #EDF2F4);
+}
+
+.back-btn i {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 0px !important;
+}
+
