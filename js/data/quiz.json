@@ -1,0 +1,154 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "text": "Qual destas atividades prefere durante as férias?",
+            "answers": [
+                {"text": "Relaxar numa praia deserta", "scores": {"Balnear": 4}},
+                {"text": "Explorar museus nacionais", "scores": {"Cultural": 3}},
+                {"text": "Fazer uma peregrinação religiosa", "scores": {"Religioso": 4}},
+                {"text": "Provar pratos regionais", "scores": {"Gastronómico": 3}}
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Como prefere passar as manhãs?",
+            "answers": [
+                {"text": "Tomar banhos de sol na praia", "scores": {"Balnear": 3}},
+                {"text": "Visitar monumentos históricos", "scores": {"Cultural": 3}},
+                {"text": "Participar em cerimónias locais", "scores": {"Religioso": 3}},
+                {"text": "Fazer caminhadas em montanhas", "scores": {"Aventura": 4}}
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Que tipo de alojamento escolheria?",
+            "answers": [
+                {"text": "Hotel à beira-mar", "scores": {"Balnear": 4}},
+                {"text": "Pousada histórica", "scores": {"Cultural": 3}},
+                {"text": "Retiro espiritual", "scores": {"Religioso": 3}},
+                {"text": "Casa rural tradicional", "scores": {"Rural": 4}}
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Qual destes eventos atrai-o mais?",
+            "answers": [
+                {"text": "Festival de jazz à beira-rio", "scores": {"Cultural": 2, "Balnear": 2}},
+                {"text": "Feira medieval gastronómica", "scores": {"Gastronómico": 4}},
+                {"text": "Romaria tradicional", "scores": {"Religioso": 4}},
+                {"text": "Competição de parapente", "scores": {"Aventura": 4}}
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Que programa noturno prefere?",
+            "answers": [
+                {"text": "Jantar com marisco fresco", "scores": {"Gastronómico": 3, "Balnear": 2}},
+                {"text": "Concerto em igreja secular", "scores": {"Cultural": 3, "Religioso": 2}},
+                {"text": "Observação astronómica no campo", "scores": {"Rural": 4}},
+                {"text": "Festival de aventura radical", "scores": {"Aventura": 3}}
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Que tipo de paisagem inspira o seu descanso?",
+            "answers": [
+                {"text": "Arquipélagos naturais", "scores": {"Balnear": 4}},
+                {"text": "Mosteiros em vales isolados", "scores": {"Religioso": 3}},
+                {"text": "Vinhas em socalcos", "scores": {"Rural": 3, "Cultural": 2}},
+                {"text": "Picos montanhosos", "scores": {"Aventura": 4}}
+            ]
+        },
+        {
+            "id": 7,
+            "text": "Que experiência única procura?",
+            "answers": [
+                {"text": "Banhos terapêuticos no mar", "scores": {"Balnear": 4}},
+                {"text": "Oficina de azulejaria", "scores": {"Cultural": 4}},
+                {"text": "Visita a santuários antigos", "scores": {"Religioso": 4}},
+                {"text": "Colheita de produtos biológicos", "scores": {"Rural": 3}}
+            ]
+        },
+        {
+            "id": 8,
+            "text": "Que transporte combina consigo?",
+            "answers": [
+                {"text": "Barco à vela", "scores": {"Balnear": 3}},
+                {"text": "Comboio histórico", "scores": {"Cultural": 4}},
+                {"text": "Charrete rural", "scores": {"Rural": 3}},
+                {"text": "Quadriciclo todo-o-terreno", "scores": {"Aventura": 4}}
+            ]
+        },
+        {
+            "id": 9,
+            "text": "Que recordação levaria para casa?",
+            "answers": [
+                {"text": "Areia de praia engarrafada", "scores": {"Balnear": 3}},
+                {"text": "Réplica de artefacto histórico", "scores": {"Cultural": 4}},
+                {"text": "Ícone religioso artesanal", "scores": {"Religioso": 4}},
+                {"text": "Kit de sobrevivência outdoor", "scores": {"Aventura": 3}}
+            ]
+        },
+        {
+            "id": 10,
+            "text": "Que elemento é essencial no destino?",
+            "answers": [
+                {"text": "Praia com acesso privado", "scores": {"Balnear": 4}},
+                {"text": "Património classificado", "scores": {"Cultural": 4}},
+                {"text": "Capela centenária", "scores": {"Religioso": 3}},
+                {"text": "Restaurante com estrela Michelin", "scores": {"Gastronómico": 4}}
+            ]
+        },
+        {
+            "id": 11,
+            "text": "Que programa familiar prefere?",
+            "answers": [
+                {"text": "Parque aquático natural", "scores": {"Balnear": 3}},
+                {"text": "Museu interativo", "scores": {"Cultural": 4}},
+                {"text": "Festival religioso tradicional", "scores": {"Religioso": 3}},
+                {"text": "Quinta pedagógica", "scores": {"Rural": 4}}
+            ]
+        },
+        {
+            "id": 12,
+            "text": "Que momento do dia valoriza mais?",
+            "answers": [
+                {"text": "Natação ao pôr-do-sol", "scores": {"Balnear": 3}},
+                {"text": "Visita noturna a monumentos", "scores": {"Cultural": 4}},
+                {"text": "Orações comunitárias", "scores": {"Religioso": 3}},
+                {"text": "Safari fotográfico", "scores": {"Aventura": 3}}
+            ]
+        },
+        {
+            "id": 13,
+            "text": "Que tipo de guia prefere?",
+            "answers": [
+                {"text": "Especialista em ecossistemas marinhos", "scores": {"Balnear": 3}},
+                {"text": "Historiador de arte sacra", "scores": {"Cultural": 4, "Religioso": 2}},
+                {"text": "Mestre de gastronomia regional", "scores": {"Gastronómico": 4}},
+                {"text": "Instrutor de desportos radicais", "scores": {"Aventura": 4}}
+            ]
+        },
+        {
+            "id": 14,
+            "text": "Que fator climático é prioritário?",
+            "answers": [
+                {"text": "Brisa marinha constante", "scores": {"Balnear": 4}},
+                {"text": "Clima para preservação patrimonial", "scores": {"Cultural": 2}},
+                {"text": "Condições para romarias", "scores": {"Religioso": 2}},
+                {"text": "Ventos para desportos náuticos", "scores": {"Aventura": 3}}
+            ]
+        },
+        {
+            "id": 15,
+            "text": "Que experiência enogastronómica prefere?",
+            "answers": [
+                {"text": "Marisqueira à beira-mar", "scores": {"Balnear": 3, "Gastronómico": 3}},
+                {"text": "Jantar em palácio histórico", "scores": {"Cultural": 4}},
+                {"text": "Vinhos abençoados em mosteiro", "scores": {"Religioso": 3}},
+                {"text": "Ceia rural com produtos locais", "scores": {"Rural": 4}}
+            ]
+        }
+    ]
+}

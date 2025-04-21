@@ -1,0 +1,38 @@
+
+#quiz-progress {
+    color: var(--buttons-color);
+}
+
+#results-container h2, p {
+    color: var(--bg-color);
+}
+
+#quiz-container h2 {
+    color: var(--bg-color);
+}
+
+.answer-btn {
+    transition: all 0.3s ease;
+    border: 2px solid var(--buttons-color) !important;
+}
+
+.answer-btn:hover {
+    background-color: var(--buttons-color) !important;
+    color: white !important;
+}
+
+.answer-btn.selected {
+    background-color: var(--buttons-color) !important;
+    color: white !important;
+    transform: scale(0.98);
+}
+
+#results-container .card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+}
+
+.progress-bar {
+    transition: width 0.5s ease;
+}
