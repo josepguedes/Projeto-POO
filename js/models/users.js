@@ -7,22 +7,33 @@ export function loadUsers() {
         users = []; // Limpar array antes de carregar
         const getUsers = JSON.parse(localStorage.getItem('users'))
         for (let user of getUsers) {
-            users.push(new User(user.name, user.email, user.password, user.profImg, user.favourits));
+            users.push(new User(user.name, user.email, user.password, user.profImg, user.favourits, user.isAdmin));
         }
     } else {
         users = [];
+
+        const defaultAdmin = new User(
+            "Admin",
+            "admin@admin.com",
+            "admin123",
+            "../../img/default_Avatar.jpg",
+            [],
+            true
+        );
+        users.push(defaultAdmin);
+        localStorage.setItem('users', JSON.stringify(users));
     }
 }
 
 //Add User 
-export function addUser(name, email, password, profImg, favourits) {
+export function addUser(name, email, password, profImg, favourits, isAdmin = false) {
     try {
         const existingUser = users.find(user => user.email === email || user.name === name);
         if (existingUser) {
             console.log("Duplicate found:", existingUser);
             throw new Error('This user already exists!');
         } else {
-            users.push(new User(name, email, password, profImg, favourits));
+            users.push(new User(name, email, password, profImg, favourits, isAdmin));
             localStorage.setItem('users', JSON.stringify(users));
             console.log('User added successfully!');
         }
@@ -63,6 +74,7 @@ export function updateUser(name, email, password, profImg, favourits) {
                     user.password = password;
                     user.profImg = profImg;
                     user.favourits = favourits;
+                    user.isAdmin = loggedUser.isAdmin;
                 }
                 return user;
             });
@@ -118,13 +130,20 @@ export function isLogged() {
     return sessionStorage.getItem("loggedUser") ? true : false;
 }
 
+//Check if user is admin
+export function isAdmin() {
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+    return loggedUser && loggedUser.isAdmin ? true : false;
+}
+
 class User {
-    constructor(name, email, password, profImg = "../../img/default_Avatar.jpg", favourits = []) {
+    constructor(name, email, password, profImg = "../../img/default_Avatar.jpg", favourits = [], isAdmin = false) {
         this.id = getnextId();
         this.name = name;
         this.email = email;
         this.password = password;
         this.profImg = profImg;
         this.favourits = favourits;
+        this.isAdmin = isAdmin;
     }
 }
