@@ -1,4 +1,4 @@
-import { isLogged, loggoutUser } from '../models/users.js';
+import { isLogged, loggoutUser, isAdmin } from '../models/users.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     // Seleciona todas as sections com um ID
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             logoutButton.addEventListener('click', (e) => {
                 e.preventDefault();
                 loggoutUser();
-                window.location.reload(); // Reload page after logout
+                window.location.reload();
             });
         }
 
@@ -46,6 +46,41 @@ document.addEventListener('DOMContentLoaded', function () {
         if (loggedUser.name) {
             navUserName.textContent = loggedUser.name;
         }
+
+        // Get dropdown menu
+        const dropdownMenu = document.querySelector('[aria-labelledby="userDropdown"]');
+
+        // Clear existing menu items
+        dropdownMenu.innerHTML = '';
+
+        // Check if user is admin
+        if (isAdmin()) {
+            // Add admin-specific menu items
+            dropdownMenu.innerHTML = `
+                <li><a class="dropdown-item" href="html/admin.html">Painel Admin</a></li>
+                <li><a class="dropdown-item" href="html/admin.html">Utilizadores</a></li>
+                <li><a class="dropdown-item" href="html/admin.html">Viagens</a></li>
+                <li><a class="dropdown-item" href="html/admin.html">Pedidos</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar Sessão</a></li>
+            `;
+        } else {
+            // Add regular user menu items
+            dropdownMenu.innerHTML = `
+                <li><a class="dropdown-item" href="/html/profile.html"">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                <li><a class="dropdown-item" href="#">Reservas</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar Sessão</a></li>
+            `;
+        }
+
+        // Reattach logout event listener since we recreated the menu
+        dropdownMenu.querySelector('[data-logout]').addEventListener('click', (e) => {
+            e.preventDefault();
+            loggoutUser();
+            window.location.reload();
+        });
 
         document.getElementById('loggedInMenu').style.display = 'block';
         document.getElementById('loggedOutMenu').style.display = 'none';
