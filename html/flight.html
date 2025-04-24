@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilhetes de Voo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Css-->
+    <link rel="icon" href="../img/LogoIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css//tickets.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <nav class="navbar custom-navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Left Menu Icon -->
+            <div class="d-flex align-items-center">
+                <a class="nav-link nav-icon" href="#" id="pageSectionsDropdown" role="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-bars" style="color: #D90429; transition: all 0.3s ease;">
+                    </i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="pageSectionsDropdown">
+                    <!-- Dynamic sections will be added by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Centered Logo -->
+            <a class="navbar-brand" href="#"></a>
+            <img src="/img/LogoNavbar.png" alt="Logo" height="40">
+            </a>
+
+            <!-- Right User Icon -->
+            <div class="d-flex align-items-center">
+                <div id="userMenuContainer">
+                    <div id="loggedInMenu" style="display: none;">
+                        <div class="dropdown">
+                            <a class="nav-link d-flex align-items-center" href="#" role="button" id="userDropdown"
+                                data-bs-toggle="dropdown">
+                                <img id="navProfileImage" src="img/default_Avatar.jpg" alt="Profile"
+                                    class="nav-profile-img me-2">
+                                <span id="navUserName" class="nav-username me-2"></span>
+                                <i class="fas fa-chevron-down" style="color: #D90429; font-size: 0.8rem;"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="/html/profile.html">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                                <li><a class="dropdown-item" href="#">Reservas</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar
+                                        Sessão</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="loggedOutMenu" style="display: none;">
+                        <a class="nav-link nav-icon" href="./login.html">
+                            <i class="fas fa-user-circle" style="color: #D90429; transition: all 0.3s ease;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4 mb-4">
+        <div class="d-flex align-items-center">
+            <h2 class="mb-0">Resultados <span class="text-muted">(3)</span></h2>
+            <div class="ms-auto">
+                <select class="form-select">
+                    <option>Ordenar por: Preço mais baixo</option>
+                    <option>Ordenar por: Preço mais alto</option>
+                    <option>Ordenar por: Duração mais curta</option>
+                    <option>Ordenar por: Partida mais cedo</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="flight-ticket">
+        <div class="ticket-content">
+            <div class="main-content">
+                <div class="ticket-header">
+                    <img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+                        alt="">
+                </div>
+
+                <div class="details">
+                    <!-- Ida -->
+
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">06:30</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">09:00</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                    </div>
+
+                    <!-- Volta -->
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">19:30</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane fa-rotate-180"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">22:00</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-section">
+                <div class="price">299€</div>
+                <button class="book-btn">Ver Oferta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segundo Ticket -->
+    <div class="flight-ticket">
+        <div class="ticket-content">
+            <div class="main-content">
+                <div class="ticket-header">
+                    <img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+                        alt="">
+                </div>
+
+                <div class="details">
+                    <!-- Ida -->
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">10:15</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">12:45</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                    </div>
+
+                    <!-- Volta -->
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">15:30</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane fa-rotate-180"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">18:00</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-section">
+                <div class="price">325€</div>
+                <button class="book-btn">Ver Oferta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceiro Ticket -->
+    <div class="flight-ticket">
+        <div class="ticket-content">
+            <div class="main-content">
+                <div class="ticket-header">
+                    <img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+                        alt="">
+                </div>
+
+                <div class="details">
+                    <!-- Ida -->
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">14:45</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">17:15</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                    </div>
+
+                    <!-- Volta -->
+                    <div class="time-info">
+                        <div class="departure">
+                            <small>Partida</small>
+                            <div class="time">20:00</div>
+                            <div>CDG - Paris</div>
+                        </div>
+                        <div class="flight-path">
+                            <div>2h 30m</div>
+                            <div class="plane-icon"><i class="fas fa-plane fa-rotate-180"></i></div>
+                            <div>Direto</div>
+                        </div>
+                        <div class="arrival">
+                            <small>Chegada</small>
+                            <div class="time">22:30</div>
+                            <div>LIS - Lisboa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-section">
+                <div class="price">279€</div>
+                <button class="book-btn">Ver Oferta</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../img/LogoNavbar.png" alt="Flightionary Logo" height="40" class="mb-4">
+                    <p class="footer-text">Descubra o mundo com a Flightionary. Oferecemos as melhores experiências de
+                        viagem com conforto e preços imbatíveis.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#Pesquisar">Pesquisar</a></li>
+                        <li><a href="#Destaques">Destinos</a></li>
+                        <li><a href="#Sobre">Sobre Nós</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Destinos Populares</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Paris, França</a></li>
+                        <li><a href="#">Roma, Itália</a></li>
+                        <li><a href="#">Dubai, EAU</a></li>
+                        <li><a href="#">Lisboa, Portugal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="footer-text">Subscreva para receber as melhores ofertas</p>
+                    <form class="footer-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p class="copyright">© 2024 Flightionary. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="../js/views/NavbarView.js" type="module"></script>
+</body>
+
+</html>
