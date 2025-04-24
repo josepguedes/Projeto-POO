@@ -131,9 +131,16 @@
 .nav-item:hover, .nav-item.active {
     background-color: var(--buttons-color);
     color: var(--text-color);
-}
+}   
 
 .profile-main {
-    flex: 1;
-    padding: 2rem;
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .profile-main {
+        margin-left: 0;
+    }
 }

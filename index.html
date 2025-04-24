@@ -30,7 +30,7 @@
             </div>
 
             <!-- Centered Logo -->
-            <a class="navbar-brand mx-auto" href="#"></a>
+            <a class="navbar-brand" href="#"></a>
             <img src="/img/LogoNavbar.png" alt="Logo" height="40">
             </a>
 
@@ -76,26 +76,25 @@
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="localPartida" placeholder="De?">
+                                    <input type="text" class="form-control" id="localPartida" placeholder="De?" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="localChegada" placeholder="Para?">
+                                    <input type="text" class="form-control" id="localChegada" placeholder="Para?" required>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="date" class="form-control" id="data">
+                                <input type="date" class="form-control" id="data" required>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <input type="number" class="form-control" id="numeroPessoas"
-                                        placeholder="Número de pessoas">
+                                    <input type="number" class="form-control" id="numeroPessoas" placeholder="Número de pessoas" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="number" class="form-control" id="dias" placeholder="Número de dias">
+                                    <input type="number" class="form-control" id="dias" placeholder="Número de dias" required>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <select class="form-select" id="tipoTurismo">
+                                <select class="form-select" id="tipoTurismo" required>
                                     <option selected>Escolha o tipo de turismo</option>
                                     <option value="religioso">Religioso</option>
                                     <option value="arquitetonico">Arquitetónico</option>
@@ -104,7 +103,7 @@
                                 </select>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Pesquisar</button>
+                                <a type="submit" href="./html/flight.html" class="btn btn-primary">Pesquisar</a>
                             </div>
                         </form>
                     </div>
@@ -116,7 +115,7 @@
 
     <section class="featured-deals" id="Destaques">
         <div class="container py-5">
-            <h2 class="text-center mb-4">Destinos em Destaque</h2>
+            <h2 class="text-center mb-4">Ofertas de Voos</h2>
             <div class="row g-4">
                 <!-- Card 1 -->
                 <div class="col-md-4">
@@ -124,13 +123,33 @@
                         <button class="favorite-btn">
                             <i class="fas fa-star"></i>
                         </button>
-                        <img src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXN8ZW58MHx8MHx8fDA%3D"
-                            class="card-img-top" alt="Paris">
+                        <img src="https://cdn.visitportugal.com/sites/default/files/styles/destinos_galeria/public/mediateca/N26021.jpg?itok=yJUnjR2p"
+                            class="card-img-top" alt="Nome do Destino">
                         <div class="card-body">
-                            <h5 class="card-title">Paris, França</h5>
-                            <p class="card-text">Voos diretos a partir de €199</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">€199</span>
+                            <h5 class="card-title mb-0"><strong>Terceira - Lajes</strong></h5>
+                            <small class="text-muted">Portugal</small>
+                            <div class="flight-info mt-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2" style="color: #D90429"></i>
+                                        <span>ter, 27/05</span>
+                                    </div>
+                                    <small class="ms-2">LIS - TER com aRyanair</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2"
+                                            style="transform: rotate(180deg); color: #D90429"></i>
+                                        <span>ter, 3/06</span>
+                                    </div>
+                                    <small class="ms-2">TER - LIS com aRyanair</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="price-info">
+                                    <small class="text-muted">a partir de</small>
+                                    <div class="price">29 €</div>
+                                </div>
                                 <button class="btn btn-primary">Ver Oferta</button>
                             </div>
                         </div>
@@ -145,15 +164,36 @@
                         <img src="https://media.istockphoto.com/id/539115110/pt/foto/colosseum-em-roma-e-manh%C3%A3-de-sol-it%C3%A1lia.jpg?s=612x612&w=0&k=20&c=UJgNdZwEeoznZvOusoUoEtG6or5nweBNJxZbPxmi7dM="
                             class="card-img-top" alt="Roma">
                         <div class="card-body">
-                            <h5 class="card-title">Roma, Itália</h5>
-                            <p class="card-text">Pacotes com hotel desde €299</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">€299</span>
+                            <h5 class="card-title mb-0"><strong>Roma</strong></h5>
+                            <small class="text-muted">Itália</small>
+                            <div class="flight-info mt-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2" style="color: #D90429"></i>
+                                        <span>sex, 14/06</span>
+                                    </div>
+                                    <small class="ms-2">OPO - FCO com Ryanair</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2"
+                                            style="transform: rotate(180deg); color: #D90429"></i>
+                                        <span>sex, 21/06</span>
+                                    </div>
+                                    <small class="ms-2">FCO - OPO com Ryanair</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="price-info">
+                                    <small class="text-muted">a partir de</small>
+                                    <div class="price">299 €</div>
+                                </div>
                                 <button class="btn btn-primary">Ver Oferta</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="card h-100">
@@ -163,10 +203,30 @@
                         <img src="https://mediaim.expedia.com/destination/9/cd8a3f3db7149b0ce36d052aea1182df.jpg"
                             class="card-img-top" alt="Dubai">
                         <div class="card-body">
-                            <h5 class="card-title">Dubai</h5>
-                            <p class="card-text">Experiência luxuosa desde €599</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">€599</span>
+                            <h5 class="card-title mb-0"><strong>Dubai</strong></h5>
+                            <small class="text-muted">Emirados Árabes Unidos</small>
+                            <div class="flight-info mt-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2" style="color: #D90429"></i>
+                                        <span>sáb, 10/08</span>
+                                    </div>
+                                    <small class="ms-2">LIS - DXB com Emirates</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flight-date">
+                                        <i class="fas fa-plane me-2"
+                                            style="transform: rotate(180deg); color: #D90429"></i>
+                                        <span>sáb, 17/08</span>
+                                    </div>
+                                    <small class="ms-2">DXB - LIS com Emirates</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="price-info">
+                                    <small class="text-muted">a partir de</small>
+                                    <div class="price">599 €</div>
+                                </div>
                                 <button class="btn btn-primary">Ver Oferta</button>
                             </div>
                         </div>

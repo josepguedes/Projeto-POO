@@ -107,6 +107,51 @@
     color: var(--fields-color);
 }
 
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.flight-info {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.flight-date {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.flight-date span {
+    font-size: 0.9rem;
+    color: #2B2D42;
+    font-weight: 500;
+}
+
+.flight-info small {
+    color: #8D99AE;
+    font-size: 0.85rem;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-info .text-muted {
+    font-size: 0.8rem;
+}
+
+.price-info .price {
+    color: #D90429;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .favorite-btn {
     position: absolute;
     top: 10px;
