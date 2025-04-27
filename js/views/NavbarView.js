@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // Add regular user menu items
             dropdownMenu.innerHTML = `
                 <li><a class="dropdown-item" href="/html/profile.html"">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                <li><a class="dropdown-item" href="#">Reservas</a></li>
+                <li><a class="dropdown-item" href="/html/favourites.html">Favoritos</a></li>
+                <li><a class="dropdown-item" href="/html/reservations.html">Reservas</a></li>
                 <div class="dropdown-divider"></div>
                 <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar Sessão</a></li>
             `;

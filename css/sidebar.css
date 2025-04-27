@@ -110,7 +110,7 @@
 .profile-main {
     flex: 1;
     padding: 2rem;
-    margin-left: 280px; /* Adiciona margem igual à largura da sidebar */
+    margin-left: 280px !important; /* Adiciona margem igual à largura da sidebar */
 }
 
 .nav-item {

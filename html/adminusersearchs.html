@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitorização de Buscas - Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../img/LogoIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/usersearchs.css">
+</head>
+
+<body>
+    <aside class="profile-sidebar">
+        <div class="sidebar-header">
+            <h3 id="userNameDisplay"></h3>
+            <nav class="sidebar-nav">
+                <a href="./admin.html" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    Utilizadores
+                </a>
+                <a href="./adminflights.html" class="nav-item">
+                    <i class="fas fa-plane-departure"></i>
+                    Voos
+                </a>
+                <a href="./admindestenys.html" class="nav-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    Destinos Turísticos
+                </a>
+                <a href="./admintourism.html" class="nav-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    Tipologias de Turismo
+                </a>
+                <a href="./adminusersearchs.html" class="nav-item active">
+                    <i class="fas fa-search"></i>
+                    Monitorizar Buscas
+                </a>
+                <div class="nav-separator"></div>
+                <a href="../index.html" class="nav-item logout-btn" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="monitor-main">
+        <div class="container mt-4">
+            <h2 class="mb-4">Monitorização de Buscas dos Utilizadores</h2>
+
+            <!-- Stats Cards
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-search"></i>
+                        <div class="stat-number">1,234</div>
+                        <div class="stat-label">Total de Buscas</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number">456</div>
+                        <div class="stat-label">Utilizadores Ativos</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="stat-number">789</div>
+                        <div class="stat-label">Destinos Buscados</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="stat-number">123</div>
+                        <div class="stat-label">Buscas Hoje</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Filters -->
+            <div class="search-filters mb-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="dateRange" class="form-label">Intervalo de Datas</label>
+                        <input type="date" class="form-control" id="dateRange">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="userFilter" class="form-label">Utilizador</label>
+                        <input type="text" class="form-control" id="userFilter" placeholder="Filtrar por utilizador">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="destinationFilter" class="form-label">Destino</label>
+                        <input type="text" class="form-control" id="destinationFilter"
+                            placeholder="Filtrar por destino">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="sortBy" class="form-label">Ordenar por</label>
+                        <select class="form-select" id="sortBy">
+                            <option value="date">Data</option>
+                            <option value="user">Utilizador</option>
+                            <option value="destination">Destino</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search History Table -->
+            <div class="table-responsive">
+                <table class="table table-hover search-table">
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Utilizador</th>
+                            <th>Origem</th>
+                            <th>Destino</th>
+                            <th>Data Ida</th>
+                            <th>Data Volta</th>
+                            <th>Passageiros</th>
+                            <th>Tipo de Turismo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>27/04/2024 10:30</td>
+                            <td>João Silva</td>
+                            <td>Porto</td>
+                            <td>Paris</td>
+                            <td>01/05/2024</td>
+                            <td>07/05/2024</td>
+                            <td>2</td>
+                            <td>Cultural</td>
+                        </tr>
+                        <!-- Add more rows here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/views/AdminView.js"></script>
+</body>
+
+</html>

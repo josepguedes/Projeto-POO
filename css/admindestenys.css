@@ -1,0 +1,42 @@
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    margin-right: 10px;
+    padding: 2rem;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #D90429;
+    border-color: #D90429;
+}
+
+.btn-primary:hover {
+    background-color: #bf0424;
+    border-color: #bf0424;
+}
+
+.filters {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.5em 0.75em;
+}

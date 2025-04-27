@@ -24,28 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         profileImage.src = loggedUser.profImg;
     }
 
-    // Handle sidebar navigation
-    const navItems = document.querySelectorAll('.nav-item[data-section]'); // Modificado para selecionar apenas itens com data-section
-    const contentSections = document.querySelectorAll('.content-section');
     
-    navItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetSection = item.getAttribute('data-section');
-            
-            if (targetSection && document.getElementById(targetSection)) { // Verifica se o targetSection existe
-                // Update active states
-                navItems.forEach(nav => nav.classList.remove('active'));
-                contentSections.forEach(section => section.classList.remove('active'));
-                
-                item.classList.add('active');
-                document.getElementById(targetSection).classList.add('active');
-            }
-        });
-    });
-
-    
-
     // Handle profile image upload
     document.getElementById('avatarInput').addEventListener('change', function(e) {
         const file = e.target.files[0];
