@@ -1,0 +1,20 @@
+{
+    "flights": [
+        {
+            "company":"TAP Air Portugal",
+            "flightNumber": "AA123",
+            "departure": "2023-10-01T10:00:00Z",
+            "arrival": "2023-10-01T12:00:00Z",
+            "origin": "JFK",
+            "destination": "LAX"
+        },
+        {
+            "company":"TAP Air Portugal",
+            "flightNumber": "DL456",
+            "departure": "2023-10-01T14:00:00Z",
+            "arrival": "2023-10-01T16:00:00Z",
+            "origin": "LAX",
+            "destination": "ORD"
+        }
+    ]
+}

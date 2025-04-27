@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Tipologias de Turismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../img/LogoIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admintourism.css">
+</head>
+
+<body>
+
+    <aside class="profile-sidebar">
+        <div class="sidebar-header">
+            <h3 id="userNameDisplay"></h3>
+            <nav class="sidebar-nav">
+                <a href="./admin.html" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    Utilizadores
+                </a>
+                <a href="./adminflights.html" class="nav-item">
+                    <i class="fas fa-plane-departure"></i>
+                    Voos
+                </a>
+                <a href="./admindestenys.html" class="nav-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    Destinos Turísticos
+                </a>
+                <a href="./admintourism.html" class="nav-item active">
+                    <i class="fas fa-umbrella-beach"></i>
+                    Tipologias de Turismo
+                </a>
+                <a href="./adminusersearchs.html" class="nav-item">
+                    <i class="fas fa-search"></i>
+                    Monitorizar Buscas
+                </a>
+                <div class="nav-separator"></div>
+                <a href="../index.html" class="nav-item logout-btn" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="content-header">
+            <h2 class="title">Gestão de Tipologias de Turismo</h2>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTourismTypeModal">
+                <i class="fas fa-plus"></i> Nova Tipologia
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Nº de Destinos</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cultural</td>
+                            <td>Turismo focado em experiências culturais e históricas</td>
+                            <td>15</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#editTourismTypeModal">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Adicionar Tipologia -->
+    <div class="modal fade" id="addTourismTypeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Nova Tipologia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addTourismTypeForm">
+                        <div class="mb-3">
+                            <label for="typeName" class="form-label">Nome da Tipologia</label>
+                            <input type="text" class="form-control" id="typeName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="typeDescription" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="typeDescription" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="addTourismTypeForm" class="btn btn-primary">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Tipologia -->
+    <div class="modal fade" id="editTourismTypeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Tipologia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editTourismTypeForm">
+                        <div class="mb-3">
+                            <label for="editTypeName" class="form-label">Nome da Tipologia</label>
+                            <input type="text" class="form-control" id="editTypeName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editTypeDescription" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="editTypeDescription" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="editTourismTypeForm" class="btn btn-primary">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/views/AdminView.js" type="module"></script>
+</body>
+
+</html>
