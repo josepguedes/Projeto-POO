@@ -83,13 +83,13 @@
 }
 
 .modal-header {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    color: black;
     border-radius: 12px 12px 0 0;
 }
 
-.modal-header .btn-close {
-    filter: brightness(0) invert(1);
+.modal-title {
+    color: black;
+    margin-top: 0px;
 }
 
 .modal-body {
