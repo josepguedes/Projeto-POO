@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         loadUsers();
         loggedUser(email, password);
         showMessage("Logged in successfully!")
-        window.location.href = '../index.html'; // Redirecionar após login
+        window.location.href = '../index.html'; // Redrect to the main page after login
     } catch (error) {
         showMessage("User not found!")
     }

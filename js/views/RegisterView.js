@@ -12,7 +12,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         showMessage("User registered successfully")
         this.reset();
         setTimeout(() => {
-            window.location.href = 'login.html'; // Redirecionar para login após registro
+            window.location.href = 'login.html'; // Redirect to the login page after registration
         }, 1500);
     } catch (error) {
         showMessage("This user already exists!")

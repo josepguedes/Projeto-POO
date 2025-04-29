@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Handle cancel button
+    
     document.querySelector('.cancel-btn').addEventListener('click', function() {
         window.location.href = '../index.html';
     });
