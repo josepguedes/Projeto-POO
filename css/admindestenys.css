@@ -29,11 +29,16 @@
     border-color: #bf0424;
 }
 
-.filters {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
+.form-select {
+    width: 100% !important;
+}
+
+.modal-content {
+    color: black;
+}
+
+.modal-title {
+    margin: 0px;
 }
 
 .badge {

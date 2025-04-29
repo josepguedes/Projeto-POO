@@ -64,9 +64,13 @@
 }
 
 .modal-header {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    color: black;
     border-bottom: none;
+}
+
+
+.modal-title {
+    margin-top: 0px;
 }
 
 .modal-footer {
