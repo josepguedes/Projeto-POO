@@ -1,20 +1,139 @@
 {
     "flights": [
         {
-            "company":"TAP Air Portugal",
-            "flightNumber": "AA123",
-            "departure": "2023-10-01T10:00:00Z",
-            "arrival": "2023-10-01T12:00:00Z",
-            "origin": "JFK",
-            "destination": "LAX"
+            "id": 1,
+            "image": "https://example.com/images/tap-lis-par.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-01T08:00:00"
+            },
+            "arrival": {
+                "code": "PAR",
+                "city": "Paris",
+                "date": "2024-07-01T10:30:00"
+            },
+            "return": {
+                "code": "PAR",
+                "city": "Paris"
+            },
+            "price": 180.50,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://example.com/logos/tap.png"
+            }
         },
         {
-            "company":"TAP Air Portugal",
-            "flightNumber": "DL456",
-            "departure": "2023-10-01T14:00:00Z",
-            "arrival": "2023-10-01T16:00:00Z",
-            "origin": "LAX",
-            "destination": "ORD"
+            "id": 2,
+            "image": "https://example.com/images/ryanair-opo-mad.jpg",
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-02T09:15:00"
+            },
+            "arrival": {
+                "code": "MAD",
+                "city": "Madrid",
+                "date": "2024-07-02T10:35:00"
+            },
+            "return": {
+                "code": "MAD",
+                "city": "Madrid"
+            },
+            "price": 95.00,
+            "people": 1,
+            "flightTime": "1h 20m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Ryanair",
+                "logo": "https://example.com/logos/ryanair.png"
+            }
+        },
+        {
+            "id": 3,
+            "image": "https://example.com/images/lufthansa-lis-nyc.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-03T12:00:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-07-03T22:15:00"
+            },
+            "return": {
+                "code": "JFK",
+                "city": "Nova Iorque"
+            },
+            "price": 650.00,
+            "people": 3,
+            "flightTime": "10h 15m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Lufthansa",
+                "logo": "https://example.com/logos/lufthansa.png"
+            }
+        },
+        {
+            "id": 4,
+            "image": "https://example.com/images/iberia-opo-bcn.jpg",
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-04T07:30:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-07-04T09:20:00"
+            },
+            "return": {
+                "code": "BCN",
+                "city": "Barcelona"
+            },
+            "price": 120.00,
+            "people": 2,
+            "flightTime": "1h 50m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://example.com/logos/iberia.png"
+            }
+        },
+        {
+            "id": 5,
+            "image": "https://example.com/images/airfrance-lis-rom.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-05T14:00:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-07-05T17:00:00"
+            },
+            "return": {
+                "code": "FCO",
+                "city": "Roma"
+            },
+            "price": 210.00,
+            "people": 1,
+            "flightTime": "3h 00m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://example.com/logos/airfrance.png"
+            }
         }
     ]
 }
