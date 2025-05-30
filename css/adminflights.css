@@ -59,24 +59,23 @@
     border: none;
 }
 
+.modal {
+    z-index: 1050;
+    color: black !important;
+}
+
+.modal-backdrop {
+    z-index: 1040;
+}
+
+.modal-dialog {
+    max-width: 800px; /* Para dar mais espaço ao formulário */
+}
+
 .modal-content {
     border-radius: 8px;
+    border: none;
 }
-
-.modal-header {
-    color: black;
-    border-bottom: none;
-}
-
-
-.modal-title {
-    margin-top: 0px;
-}
-
-.modal-footer {
-    border-top: none;
-}
-
 .form-label {
     color: var(--bg-color);
     font-weight: 500;
