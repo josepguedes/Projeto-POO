@@ -134,6 +134,141 @@
                 "name": "Air France",
                 "logo": "https://example.com/logos/airfrance.png"
             }
+        },
+        {
+            "id": 6,
+            "image": "https://example.com/images/easyjet-opo-lon.jpg",
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-06T06:45:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-07-06T09:10:00"
+            },
+            "return": {
+                "code": "LHR",
+                "city": "Londres"
+            },
+            "price": 160.00,
+            "people": 2,
+            "flightTime": "2h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "easyJet",
+                "logo": "https://example.com/logos/easyjet.png"
+            }
+        },
+        {
+            "id": 7,
+            "image": "https://example.com/images/emirates-lis-dxb.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-07T15:30:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-07-07T23:55:00"
+            },
+            "return": {
+                "code": "DXB",
+                "city": "Dubai"
+            },
+            "price": 780.00,
+            "people": 1,
+            "flightTime": "7h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 8,
+            "image": "https://example.com/images/swiss-opo-zur.jpg",
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-08T11:00:00"
+            },
+            "arrival": {
+                "code": "ZRH",
+                "city": "Zurique",
+                "date": "2024-07-08T14:30:00"
+            },
+            "return": {
+                "code": "ZRH",
+                "city": "Zurique"
+            },
+            "price": 230.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "SWISS",
+                "logo": "https://example.com/logos/swiss.png"
+            }
+        },
+        {
+            "id": 9,
+            "image": "https://example.com/images/klm-lis-ams.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-09T10:20:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amesterdão",
+                "date": "2024-07-09T14:00:00"
+            },
+            "return": {
+                "code": "AMS",
+                "city": "Amesterdão"
+            },
+            "price": 195.00,
+            "people": 2,
+            "flightTime": "3h 40m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 10,
+            "image": "https://example.com/images/qatar-lis-doha.jpg",
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-10T21:00:00"
+            },
+            "arrival": {
+                "code": "DOH",
+                "city": "Doha",
+                "date": "2024-07-11T06:30:00"
+            },
+            "return": {
+                "code": "DOH",
+                "city": "Doha"
+            },
+            "price": 820.00,
+            "people": 1,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Qatar Airways",
+                "logo": "https://example.com/logos/qatar.png"
+            }
         }
     ]
 }

@@ -30,7 +30,7 @@
                         <i class="fas fa-plane-departure"></i>
                         Voos
                     </a>
-                    <a href="/html/admindestenys.html" class="nav-item" data-section="destinos">
+                    <a href="/html/admindestinations.html" class="nav-item" data-section="destinos">
                         <i class="fas fa-map-marked-alt"></i>
                         Destinos Turísticos
                     </a>
@@ -99,6 +99,7 @@
         </main>
     </div>
 
+
     <!-- Add Flight Modal -->
     <div class="modal fade" id="addFlightModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -109,45 +110,100 @@
                 </div>
                 <div class="modal-body">
                     <form id="addFlightForm">
+                        <!-- Informações da Imagem -->
                         <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label class="form-label">Origem</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Destino</label>
-                                <input type="text" class="form-control" required>
+                            <div class="col-md-12">
+                                <label class="form-label">Imagem do Destino</label>
+                                <input type="url" class="form-control" name="image" required
+                                    placeholder="URL da imagem">
                             </div>
                         </div>
+
+                        <!-- For Add Flight Modal -->
                         <div class="row mb-3">
-                            <div class="col-md-6">
+                            <h6 class="mb-2">Informações de Partida</h6>
+                            <div class="col-md-8">
+                                <label class="form-label">Cidade de Origem</label>
+                                <select class="form-control destination-select" name="departure.select" required>
+                                    <option value="">Selecione um destino</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="departure.city">
+                            <input type="hidden" name="departure.code">
+                            <div class="col-md-4">
                                 <label class="form-label">Data/Hora Partida</label>
-                                <input type="datetime-local" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Data/Hora Chegada</label>
-                                <input type="datetime-local" class="form-control" required>
+                                <input type="datetime-local" class="form-control" name="departure.date" required>
                             </div>
                         </div>
+
+                        <!-- For arrival section -->
                         <div class="row mb-3">
+                            <h6 class="mb-2">Informações de Chegada</h6>
+                            <div class="col-md-8">
+                                <label class="form-label">Cidade de Destino</label>
+                                <select class="form-control destination-select" name="arrival.select" required>
+                                    <option value="">Selecione um destino</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="arrival.city">
+                            <input type="hidden" name="arrival.code">
+                            <div class="col-md-4">
+                                <label class="form-label">Data/Hora Chegada</label>
+                                <input type="datetime-local" class="form-control" name="arrival.date" required>
+                            </div>
+                        </div>
+
+                        <!-- Informações da Companhia Aérea -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Companhia Aérea</h6>
                             <div class="col-md-6">
-                                <label class="form-label">Companhia Aérea</label>
-                                <input type="text" class="form-control" required>
+                                <label class="form-label">Nome da Companhia</label>
+                                <input type="text" class="form-control" name="airline.name" required>
                             </div>
                             <div class="col-md-6">
+                                <label class="form-label">Logo da Companhia</label>
+                                <input type="url" class="form-control" name="airline.logo" required
+                                    placeholder="URL do logo">
+                            </div>
+                        </div>
+
+                        <!-- Detalhes do Voo -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Detalhes do Voo</h6>
+                            <div class="col-md-3">
                                 <label class="form-label">Preço</label>
-                                <input type="number" class="form-control" required>
+                                <input type="number" class="form-control" name="price" required step="0.01">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Nº Passageiros</label>
+                                <input type="number" class="form-control" name="people" required min="1">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Tempo de Voo</label>
+                                <input type="text" class="form-control" name="flightTime" required
+                                    placeholder="ex: 2h 30m">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check mt-4">
+                                    <input type="checkbox" class="form-check-input" name="direct" id="directFlight">
+                                    <label class="form-check-label" for="directFlight">Voo Direto</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="layover" id="layoverFlight">
+                                    <label class="form-check-label" for="layoverFlight">Com Escala</label>
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <button type="submit" form="addFlightForm" class="btn btn-primary">Adicionar</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Edit Flight Modal -->
     <div class="modal fade" id="editFlightModal" tabindex="-1">
@@ -159,12 +215,96 @@
                 </div>
                 <div class="modal-body">
                     <form id="editFlightForm">
-                        <!-- Same form fields as Add Flight Modal -->
+                        <!-- Informações da Imagem -->
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Imagem do Destino</label>
+                                <input type="url" class="form-control" name="image" required
+                                    placeholder="URL da imagem">
+                            </div>
+                        </div>
+
+                        <!-- For Add Flight Modal -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Informações de Partida</h6>
+                            <div class="col-md-8">
+                                <label class="form-label">Cidade de Origem</label>
+                                <select class="form-control destination-select" name="departure.select" required>
+                                    <option value="">Selecione um destino</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="departure.city">
+                            <input type="hidden" name="departure.code">
+                            <div class="col-md-4">
+                                <label class="form-label">Data/Hora Partida</label>
+                                <input type="datetime-local" class="form-control" name="departure.date" required>
+                            </div>
+                        </div>
+
+                        <!-- For arrival section -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Informações de Chegada</h6>
+                            <div class="col-md-8">
+                                <label class="form-label">Cidade de Destino</label>
+                                <select class="form-control destination-select" name="arrival.select" required>
+                                    <option value="">Selecione um destino</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="arrival.city">
+                            <input type="hidden" name="arrival.code">
+                            <div class="col-md-4">
+                                <label class="form-label">Data/Hora Chegada</label>
+                                <input type="datetime-local" class="form-control" name="arrival.date" required>
+                            </div>
+                        </div>
+
+                        <!-- Informações da Companhia Aérea -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Companhia Aérea</h6>
+                            <div class="col-md-6">
+                                <label class="form-label">Nome da Companhia</label>
+                                <input type="text" class="form-control" name="airline.name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Logo da Companhia</label>
+                                <input type="url" class="form-control" name="airline.logo" required
+                                    placeholder="URL do logo">
+                            </div>
+                        </div>
+
+                        <!-- Detalhes do Voo -->
+                        <div class="row mb-3">
+                            <h6 class="mb-2">Detalhes do Voo</h6>
+                            <div class="col-md-3">
+                                <label class="form-label">Preço</label>
+                                <input type="number" class="form-control" name="price" required step="0.01">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Nº Passageiros</label>
+                                <input type="number" class="form-control" name="people" required min="1">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Tempo de Voo</label>
+                                <input type="text" class="form-control" name="flightTime" required
+                                    placeholder="ex: 2h 30m">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check mt-4">
+                                    <input type="checkbox" class="form-check-input" name="direct" id="editDirectFlight">
+                                    <label class="form-check-label" for="editDirectFlight">Voo Direto</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="layover"
+                                        id="editLayoverFlight">
+                                    <label class="form-check-label" for="editLayoverFlight">Com Escala</label>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    <button type="submit" form="editFlightForm" class="btn btn-primary">Salvar Alterações</button>
                 </div>
             </div>
         </div>
