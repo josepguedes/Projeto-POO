@@ -30,7 +30,7 @@
                         <i class="fas fa-plane-departure"></i>
                         Voos
                     </a>
-                    <a href="/html/admindestenys.html" class="nav-item active" data-section="destinos">
+                    <a href="/html/admindestinations.html" class="nav-item active" data-section="destinos">
                         <i class="fas fa-map-marked-alt"></i>
                         Destinos Turísticos
                     </a>
@@ -53,8 +53,8 @@
         <main class="main-content">
             <div class="content-header">
                 <h2>Gestão de Destinos Turísticos</h2>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDestinationModal">
-                    <i class="fas fa-plus"></i> Adicionar Destino
+                <button class="fab-button" data-bs-toggle="modal" data-bs-target="#addDestinationModal">
+                    <i class="fas fa-plus"></i>
                 </button>
             </div>
 
@@ -73,35 +73,8 @@
             </div>
 
             <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Destino</th>
-                            <th>País</th>
-                            <th>Tipo de Turismo</th>
-                            <th>Descrição</th>
-                            <th>Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Paris</td>
-                            <td>França</td>
-                            <td><span class="badge bg-info">Arquitetónico</span></td>
-                            <td>Capital francesa conhecida pela Torre Eiffel...</td>
-                            <td>
-                                <button class="btn btn-sm btn-warning" data-bs-toggle="modal"
-                                    data-bs-target="#editDestinationModal">
-                                    <i class="fas fa-edit"></i>
-                                </button>
-                                <button class="btn btn-sm btn-danger">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
+                <table class="table table-hover" id="destinationsTable">
+                    <!-- Table content dynamically generated -->
                 </table>
             </div>
         </main>
@@ -118,16 +91,20 @@
                 <div class="modal-body">
                     <form id="addDestinationForm">
                         <div class="mb-3">
-                            <label class="form-label">Nome do Destino</label>
-                            <input type="text" class="form-control" required>
+                            <label for="CodigoDestino" class="form-label">Código</label>
+                            <input type="text" class="form-control" name="CodigoDestino" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">País</label>
-                            <input type="text" class="form-control" required>
+                            <label for="Destino" class="form-label">Nome do Destino</label>
+                            <input type="text" class="form-control" name="Destino" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Tipo de Turismo</label>
-                            <select class="form-select" required>
+                            <label for="Pais" class="form-label">País</label>
+                            <input type="text" class="form-control" name="Pais" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="TipoTurismo" class="form-label">Tipo de Turismo</label>
+                            <select class="form-select" name="TipoTurismo" required>
                                 <option value="">Selecione o tipo</option>
                                 <option value="religioso">Religioso</option>
                                 <option value="arquitetonico">Arquitetónico</option>
@@ -136,12 +113,13 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Descrição</label>
-                            <textarea class="form-control" rows="3" required></textarea>
+                            <label for="Descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" name="Descricao" rows="3" required></textarea>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Imagem do Destino</label>
-                            <input type="file" class="form-control" accept="image/*" required>
+                            <label class="form-label">Imagem do Destino (URL)</label>
+                            <input type="url" class="form-control" name="ImagemUrl" required
+                                placeholder="https://example.com/image.jpg">
                         </div>
                     </form>
                 </div>
@@ -163,32 +141,37 @@
                 </div>
                 <div class="modal-body">
                     <form id="editDestinationForm">
+                        <input type="hidden" name="editDestinationId">
+                        <div class="mb-3">
+                            <label class="form-label">Código</label>
+                            <input type="text" class="form-control" name="editCodigoDestino" required>
+                        </div>
                         <div class="mb-3">
                             <label class="form-label">Nome do Destino</label>
-                            <input type="text" class="form-control" value="Paris" required>
+                            <input type="text" class="form-control" name="editDestino" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">País</label>
-                            <input type="text" class="form-control" value="França" required>
+                            <input type="text" class="form-control" name="editPais" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Tipo de Turismo</label>
-                            <select class="form-select" required>
+                            <select class="form-select" name="editTipoTurismo" required>
                                 <option value="">Selecione o tipo</option>
                                 <option value="religioso">Religioso</option>
-                                <option value="arquitetonico" selected>Arquitetónico</option>
+                                <option value="arquitetonico">Arquitetónico</option>
                                 <option value="aventura">Aventura</option>
                                 <option value="gastronomico">Gastronómico</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Descrição</label>
-                            <textarea class="form-control" rows="3" required>Capital francesa conhecida pela Torre Eiffel...</textarea>
+                            <textarea class="form-control" name="editDescricao" rows="3" required></textarea>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Imagem do Destino</label>
-                            <input type="file" class="form-control" accept="image/*">
-                            <small class="text-muted">Deixe em branco para manter a imagem atual</small>
+                            <label class="form-label">Imagem do Destino (URL)</label>
+                            <input type="url" class="form-control" name="editImagemUrl" required
+                                placeholder="https://example.com/image.jpg">
                         </div>
                     </form>
                 </div>
@@ -202,6 +185,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../js/views/AdminView.js"></script>
+    <script type="module" src="../js/views/AdmniDestinations.js"></script>
 </body>
 
 </html>

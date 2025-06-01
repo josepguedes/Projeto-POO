@@ -1,0 +1,193 @@
+{
+    "destenys": [
+        {
+            "id": 1,
+            "Destino": "Paris",
+            "Pais": "França",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Conhecida como a Cidade Luz, Paris é famosa pelos seus museus, arquitetura histórica e gastronomia.",
+            "ImagemDestino": "paris.jpg",
+            "CodigoDestino": "CDG"
+        },
+        {
+            "id": 2,
+            "Destino": "Rio de Janeiro",
+            "Pais": "Brasil",
+            "TipoTurismo": "Praia",
+            "Descricao": "Cidade maravilhosa com praias icônicas como Copacabana e Ipanema, além do Cristo Redentor.",
+            "ImagemDestino": "rio_de_janeiro.jpg",
+            "CodigoDestino": "GIG"
+        },
+        {
+            "id": 3,
+            "Destino": "Tóquio",
+            "Pais": "Japão",
+            "TipoTurismo": "Urbano",
+            "Descricao": "Metrópole vibrante que mistura tradição e modernidade, famosa por sua tecnologia e cultura pop.",
+            "ImagemDestino": "toquio.jpg",
+            "CodigoDestino": "HND"
+        },
+        {
+            "id": 4,
+            "Destino": "Roma",
+            "Pais": "Itália",
+            "TipoTurismo": "Histórico",
+            "Descricao": "Cidade eterna, repleta de monumentos antigos como o Coliseu e o Vaticano.",
+            "ImagemDestino": "roma.jpg",
+            "CodigoDestino": "FCO"
+        },
+        {
+            "id": 5,
+            "Destino": "Cabo Verde",
+            "Pais": "Cabo Verde",
+            "TipoTurismo": "Praia",
+            "Descricao": "Arquipélago africano conhecido pelas suas praias paradisíacas e cultura vibrante.",
+            "ImagemDestino": "cabo_verde.jpg",
+            "CodigoDestino": "RAI"
+        },
+        {
+            "id": 6,
+            "Destino": "Sydney",
+            "Pais": "Austrália",
+            "TipoTurismo": "Aventura",
+            "Descricao": "Famosa pela Opera House, praias e atividades ao ar livre como surf e trilhas.",
+            "ImagemDestino": "sydney.jpg",
+            "CodigoDestino": "SYD"
+        },
+        {
+            "id": 7,
+            "Destino": "Nova Iorque",
+            "Pais": "Estados Unidos",
+            "TipoTurismo": "Urbano",
+            "Descricao": "A cidade que nunca dorme, famosa pelos seus arranha-céus, Broadway e Central Park.",
+            "ImagemDestino": "nova_iorque.jpg",
+            "CodigoDestino": "JFK"
+        },
+        {
+            "id": 8,
+            "Destino": "Barcelona",
+            "Pais": "Espanha",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Conhecida pela arquitetura de Gaudí, praias e vida noturna animada.",
+            "ImagemDestino": "barcelona.jpg",
+            "CodigoDestino": "BCN"
+        },
+        {
+            "id": 9,
+            "Destino": "Cidade do Cabo",
+            "Pais": "África do Sul",
+            "TipoTurismo": "Aventura",
+            "Descricao": "Paisagens deslumbrantes, Table Mountain e praias incríveis.",
+            "ImagemDestino": "cidade_do_cabo.jpg",
+            "CodigoDestino": "CPT"
+        },
+        {
+            "id": 10,
+            "Destino": "Bangkok",
+            "Pais": "Tailândia",
+            "TipoTurismo": "Exótico",
+            "Descricao": "Templos dourados, mercados flutuantes e culinária de rua vibrante.",
+            "ImagemDestino": "bangkok.jpg",
+            "CodigoDestino": "BKK"
+        },
+        {
+            "id": 11,
+            "Destino": "Istambul",
+            "Pais": "Turquia",
+            "TipoTurismo": "Histórico",
+            "Descricao": "Cidade que une Europa e Ásia, rica em história e cultura.",
+            "ImagemDestino": "istambul.jpg",
+            "CodigoDestino": "IST"
+        },
+        {
+            "id": 12,
+            "Destino": "Londres",
+            "Pais": "Reino Unido",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Famosa pelo Big Ben, museus e diversidade cultural.",
+            "ImagemDestino": "londres.jpg",
+            "CodigoDestino": "LHR"
+        },
+        {
+            "id": 13,
+            "Destino": "Dubai",
+            "Pais": "Emirados Árabes Unidos",
+            "TipoTurismo": "Luxo",
+            "Descricao": "Arranha-céus futuristas, shoppings e experiências no deserto.",
+            "ImagemDestino": "dubai.jpg",
+            "CodigoDestino": "DXB"
+        },
+        {
+            "id": 14,
+            "Destino": "Machu Picchu",
+            "Pais": "Peru",
+            "TipoTurismo": "Aventura",
+            "Descricao": "Antiga cidade inca nas montanhas, destino de trilhas e história.",
+            "ImagemDestino": "machu_picchu.jpg",
+            "CodigoDestino": "CUZ"
+        },
+        {
+            "id": 15,
+            "Destino": "Amsterdã",
+            "Pais": "Países Baixos",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Canais pitorescos, museus renomados e bicicletas por toda parte.",
+            "ImagemDestino": "amsterda.jpg",
+            "CodigoDestino": "AMS"
+        },
+        {
+            "id": 16,
+            "Destino": "Maldivas",
+            "Pais": "Maldivas",
+            "TipoTurismo": "Praia",
+            "Descricao": "Ilhas paradisíacas com águas cristalinas e resorts de luxo.",
+            "ImagemDestino": "maldivas.jpg",
+            "CodigoDestino": "MLE"
+        },
+        {
+            "id": 17,
+            "Destino": "Viena",
+            "Pais": "Áustria",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Cidade imperial famosa pela música clássica e arquitetura elegante.",
+            "ImagemDestino": "viena.jpg",
+            "CodigoDestino": "VIE"
+        },
+        {
+            "id": 18,
+            "Destino": "Praga",
+            "Pais": "República Tcheca",
+            "TipoTurismo": "Histórico",
+            "Descricao": "Cidade medieval com castelos, pontes e ruas de paralelepípedo.",
+            "ImagemDestino": "praga.jpg",
+            "CodigoDestino": "PRG"
+        },
+        {
+            "id": 19,
+            "Destino": "Santorini",
+            "Pais": "Grécia",
+            "TipoTurismo": "Praia",
+            "Descricao": "Ilha famosa por suas casas brancas e vistas deslumbrantes do mar Egeu.",
+            "ImagemDestino": "santorini.jpg",
+            "CodigoDestino": "JTR"
+        },
+        {
+            "id": 20,
+            "Destino": "Toronto",
+            "Pais": "Canadá",
+            "TipoTurismo": "Urbano",
+            "Descricao": "Cidade multicultural com a famosa CN Tower e vida urbana vibrante.",
+            "ImagemDestino": "toronto.jpg",
+            "CodigoDestino": "YYZ"
+        },
+        {
+            "id": 21,
+            "Destino": "Petra",
+            "Pais": "Jordânia",
+            "TipoTurismo": "Histórico",
+            "Descricao": "Antiga cidade esculpida na rocha, uma das maravilhas do mundo.",
+            "ImagemDestino": "petra.jpg",
+            "CodigoDestino": "AMM"
+        }
+    ]
+}
