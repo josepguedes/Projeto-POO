@@ -1,0 +1,52 @@
+{
+    "types": [
+        {
+            "Nome": "Turismo Cultural",
+            "Descrição": "Exploração de património histórico, museus, monumentos e tradições locais."
+        },
+        {
+            "Nome": "Turismo de Natureza",
+            "Descrição": "Atividades em ambientes naturais como trilhos, parques naturais e observação de fauna e flora."
+        },
+        {
+            "Nome": "Turismo Gastronómico",
+            "Descrição": "Descoberta de sabores regionais, restaurantes típicos e festivais de comida."
+        },
+        {
+            "Nome": "Turismo de Aventura",
+            "Descrição": "Prática de desportos radicais, escalada, rafting e atividades ao ar livre."
+        },
+        {
+            "Nome": "Turismo Religioso",
+            "Descrição": "Visita a locais sagrados, peregrinações e eventos religiosos."
+        },
+        {
+            "Nome": "Turismo de Sol e Praia",
+            "Descrição": "Férias em destinos costeiros, praias e atividades aquáticas."
+        },
+        {
+            "Nome": "Turismo de Saúde e Bem-Estar",
+            "Descrição": "Viagens para spas, termas, clínicas de reabilitação e retiros de bem-estar."
+        },
+        {
+            "Nome": "Turismo Rural",
+            "Descrição": "Experiência em ambientes rurais, quintas, aldeias e contacto com a vida agrícola."
+        },
+        {
+            "Nome": "Turismo de Negócios",
+            "Descrição": "Participação em conferências, feiras, reuniões e eventos corporativos."
+        },
+        {
+            "Nome": "Turismo Desportivo",
+            "Descrição": "Viagens para assistir ou participar em eventos desportivos."
+        },
+        {
+            "Nome": "Turismo de Compras",
+            "Descrição": "Visitas a centros comerciais, mercados e zonas comerciais famosas."
+        },
+        {
+            "Nome": "Turismo Científico",
+            "Descrição": "Participação em congressos, visitas a centros de investigação e museus de ciência."
+        }
+    ]
+}

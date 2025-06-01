@@ -1,8 +1,8 @@
 .main-content {
     flex: 1;
     margin-left: 280px;
-    margin-right: 10px;
     padding: 2rem;
+    background-color: var(--bg-color);
 }
 
 .content-header {
@@ -12,33 +12,101 @@
     margin-bottom: 2rem;
 }
 
+.content-header h2 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th, .table td {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+.table th {
+    background-color: #212529;
+    color: #fff;
+    border-bottom: none;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
 .table img {
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .btn-primary {
-    background-color: #D90429;
-    border-color: #D90429;
+    background-color: var(--buttons-color);
+    border: none;
 }
 
 .btn-primary:hover {
-    background-color: #bf0424;
-    border-color: #bf0424;
+    background-color: var(--labels-color);
 }
+
+.btn-warning, .btn-danger {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.2rem;
+}
+
+.btn-warning i, .btn-danger i {
+    font-size: 14px;
+}
+
 
 .form-select {
     width: 100% !important;
 }
 
+.fab-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--buttons-color);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.fab-button i {
+    font-size: 20px;
+}
+
+.fab-button:hover {
+    transform: scale(1.1);
+    background-color: var(--labels-color);
+}
+
 .modal-content {
     color: black;
+    border-radius: 8px;
+    border: none;
 }
 
 .modal-title {
-    margin: 0px;
+    margin: 0;
 }
 
 .badge {
