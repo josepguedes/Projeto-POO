@@ -52,15 +52,15 @@
     <main class="content">
         <div class="content-header">
             <h2 class="title">Gestão de Tipologias de Turismo</h2>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTourismTypeModal">
-                <i class="fas fa-plus"></i> Nova Tipologia
+            <button class="fab-button" data-bs-toggle="modal" data-bs-target="#addTourismTypeModal">
+                <i class="fas fa-plus"></i>
             </button>
         </div>
 
         <div class="card">
             <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
+                <table class="table table-hover" id="typesTable">
+                    <!-- <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
@@ -85,7 +85,7 @@
                                 </button>
                             </td>
                         </tr>
-                    </tbody>
+                    </tbody> -->
                 </table>
             </div>
         </div>
@@ -103,11 +103,11 @@
                     <form id="addTourismTypeForm">
                         <div class="mb-3">
                             <label for="typeName" class="form-label">Nome da Tipologia</label>
-                            <input type="text" class="form-control" id="typeName" required>
+                            <input type="text" class="form-control" id="newtypeName" required>
                         </div>
                         <div class="mb-3">
                             <label for="typeDescription" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="typeDescription" rows="3" required></textarea>
+                            <textarea class="form-control" id="newtypeDescription" rows="3" required></textarea>
                         </div>
                     </form>
                 </div>
@@ -149,6 +149,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/views/AdminView.js" type="module"></script>
+    <script src="../js/views/AdminTypesView.js" type="module"></script>
 </body>
 
 </html>

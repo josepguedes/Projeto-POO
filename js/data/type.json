@@ -1,50 +1,62 @@
 {
     "types": [
         {
+            "id": 1,
             "Nome": "Turismo Cultural",
             "Descrição": "Exploração de património histórico, museus, monumentos e tradições locais."
         },
         {
+            "id": 2,
             "Nome": "Turismo de Natureza",
             "Descrição": "Atividades em ambientes naturais como trilhos, parques naturais e observação de fauna e flora."
         },
         {
+            "id": 3,
             "Nome": "Turismo Gastronómico",
             "Descrição": "Descoberta de sabores regionais, restaurantes típicos e festivais de comida."
         },
         {
+            "id": 4,
             "Nome": "Turismo de Aventura",
             "Descrição": "Prática de desportos radicais, escalada, rafting e atividades ao ar livre."
         },
         {
+            "id": 5,
             "Nome": "Turismo Religioso",
             "Descrição": "Visita a locais sagrados, peregrinações e eventos religiosos."
         },
         {
+            "id": 6,
             "Nome": "Turismo de Sol e Praia",
             "Descrição": "Férias em destinos costeiros, praias e atividades aquáticas."
         },
         {
+            "id": 7,
             "Nome": "Turismo de Saúde e Bem-Estar",
             "Descrição": "Viagens para spas, termas, clínicas de reabilitação e retiros de bem-estar."
         },
         {
+            "id": 8,
             "Nome": "Turismo Rural",
             "Descrição": "Experiência em ambientes rurais, quintas, aldeias e contacto com a vida agrícola."
         },
         {
+            "id": 9,
             "Nome": "Turismo de Negócios",
             "Descrição": "Participação em conferências, feiras, reuniões e eventos corporativos."
         },
         {
+            "id": 10,
             "Nome": "Turismo Desportivo",
             "Descrição": "Viagens para assistir ou participar em eventos desportivos."
         },
         {
+            "id": 11,
             "Nome": "Turismo de Compras",
             "Descrição": "Visitas a centros comerciais, mercados e zonas comerciais famosas."
         },
         {
+            "id": 12,
             "Nome": "Turismo Científico",
             "Descrição": "Participação em congressos, visitas a centros de investigação e museus de ciência."
         }
