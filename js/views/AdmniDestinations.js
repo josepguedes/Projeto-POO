@@ -1,5 +1,5 @@
 import { loadDestinations, getAllDestinations, addDestination, deleteDestination, updateDestination, getDestinationsByTourismType } from "../models/destinations.js";
-
+import { getAllTypes, loadTypes } from "../models/type.js";
 
 // Variáveis de paginação
 let currentPage = 1;
@@ -222,6 +222,19 @@ async function filterDestinations(tourismType) {
     }
 }
 
+// Popula o filtro de tipos de turismo
+async function populateTourismTypeFilter() {
+    await loadTypes();
+    const types = getAllTypes();
+    const select = document.getElementById('tourismTypeFilter');
+    if (!select) return;
+    select.innerHTML = '<option value="">Todos os tipos de turismo</option>';
+    types.forEach(type => {
+        select.innerHTML += `<option value="${type.Nome}">${type.Nome}</option>`;
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     renderDestinations();
+    populateTourismTypeFilter();
 });

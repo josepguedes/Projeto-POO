@@ -59,6 +59,34 @@
     border-color: var(--buttons-color);
 }
 
+.fab-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--buttons-color);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.fab-button i {
+    font-size: 20px;
+}
+
+.fab-button:hover {
+    transform: scale(1.1);
+    background-color: var(--labels-color);
+}
+
 .btn-outline-primary:hover {
     background-color: var(--buttons-color);
     border-color: var(--buttons-color);
