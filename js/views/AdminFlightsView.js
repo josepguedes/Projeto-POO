@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const formData = new FormData(addFlightForm);
 
             const flightData = {
-                image: formData.get('image'),
                 departure: {
                     city: formData.get('departure.city'),
                     code: formData.get('departure.code'),
@@ -193,7 +192,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const updatedData = {
                 id: parseInt(formData.get('id')),
-                image: formData.get('image'),
                 departure: {
                     city: formData.get('departure.city'),
                     code: formData.get('departure.code'),
@@ -279,7 +277,6 @@ async function editFlight(id) {
     };
 
     // Populate form fields
-    setFormValue('image', flight.image);
     setFormValue('departure.select', flight.departure?.code);
     setFormValue('departure.city', flight.departure?.city);
     setFormValue('departure.code', flight.departure?.code);
