@@ -9,74 +9,6 @@ body {
     gap: 20px;
 }
 
-h1 {
-    font-size: 24px;
-    color: #EDF2F4;
-    margin-bottom: 20px;
-}
-
-.card {
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.card-body {
-    padding: 10px;
-}
-
-.text-muted {
-    color: #8D99AE !important;
-    font-size: 0.875rem;
-}
-
-.fw-bold {
-    color: #2B2D42;
-    margin-top: 0.25rem;
-}
-
-.search-btn {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--buttons-color);
-    transition: all 0.3s ease;
-}
-
-.search-btn:hover {
-    background-color: var(--buttons-color);
-    color: white;
-    transform: scale(1.1);
-}
-
-.search-btn i {
-    font-size: 1rem;
-}
-
-.container h2 {
-    color: var(--bg-color);
-    font-size: 1.75rem;
-    padding-left: 12px;
-}
-
-.container h2 .text-muted {
-    font-size: 1.5rem;
-    color: var(--fields-color) !important;
-}
-
-.form-select {
-    border-radius: 8px;
-    background-color: white !important;
-    border: 1px solid var(--fields-color) !important;
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    width: auto;
-    margin-right: 12px;
-}
-
 .flight-ticket {
     background: #EDF2F4;
     border-radius: 16px;
@@ -98,48 +30,29 @@ h1 {
     padding: 20px;
 }
 
-.price-section {
+.ticket-header {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logo-frame {
+    width: 160px;
+    height: 70px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border-left: 1px solid #dee2e6;
-    gap: 12px;
-    min-width: 150px;
+    overflow: hidden;
+    margin-right: 16px;
 }
 
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #D90429;
-}
-
-.book-btn {
-    background-color: #D90429;
-    color: #EDF2F4;
-    border: none;
-    padding: 8px 24px;
-    font-size: 14px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-}
-
-.book-btn:hover {
-    background-color: #EF233C;
-}
-
-
-.airline {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin-bottom: 16px;
-    color: #2B2D42;
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    display: block;
 }
 
 .details {
@@ -153,9 +66,9 @@ h1 {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     background-color: #f8f9fa;
-    padding: 12px;
+    padding: 16px;
     border-radius: 8px;
-    gap: 8px;
+    gap: 24px;
 }
 
 .departure,
@@ -163,92 +76,83 @@ h1 {
     text-align: center;
 }
 
-.ticket-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.departure .time,
-.arrival .time {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2B2D42;
-}
-
 .departure small,
 .arrival small {
-    font-size: 12px;
     color: #8D99AE;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.time {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2B2D42;
+    margin-bottom: 4px;
 }
 
 .flight-path {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
     color: #8D99AE;
+    gap: 8px;
 }
 
 .plane-icon {
-    font-size: 18px;
-    color: #D90429;
-    margin: 4px 0;
+    color: var(--buttons-color);
+    font-size: 20px;
+    transform: rotate(90deg);
 }
 
 .price-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+    border-left: 1px solid #dee2e6;
+    gap: 12px;
+    min-width: 150px;
 }
 
 .price {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
-    color: #D90429;
+    color: var(--buttons-color);
 }
 
 .book-btn {
-    background-color: #D90429;
-    color: #EDF2F4;
+    background-color: var(--buttons-color);
+    color: var(--text-color);
     border: none;
-    padding: 8px 24px;
-    font-size: 14px;
+    padding: 10px 24px;
+    font-size: 16px;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    width: 40%;
-    height: auto;
-    margin-right: 16px;
-}
-
 .book-btn:hover {
-    background-color: #EF233C;
+    background-color: var(--labels-color);
+    transform: translateY(-2px);
 }
 
-@media (max-width: 600px) {
-    .flight-ticket {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .ticket-content {
+        flex-direction: column;
     }
 
     .price-section {
         border-left: none;
-        border-top: 1px solid #eee;
+        border-top: 1px solid #dee2e6;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 12px 20px;
-    }
-
-    .book-btn {
-        width: auto;
+        padding: 16px;
     }
 
     .time-info {
-        padding: 8px;
+        padding: 12px;
+        gap: 12px;
     }
 }

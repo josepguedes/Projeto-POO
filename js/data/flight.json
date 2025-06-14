@@ -2,7 +2,6 @@
     "flights": [
         {
             "id": 1,
-            "image": "https://example.com/images/tap-lis-par.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -13,10 +12,6 @@
                 "city": "Paris",
                 "date": "2024-07-01T10:30:00"
             },
-            "return": {
-                "code": "PAR",
-                "city": "Paris"
-            },
             "price": 180.50,
             "people": 2,
             "flightTime": "2h 30m",
@@ -24,12 +19,11 @@
             "layover": false,
             "airline": {
                 "name": "TAP Air Portugal",
-                "logo": "https://example.com/logos/tap.png"
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
             }
         },
         {
             "id": 2,
-            "image": "https://example.com/images/ryanair-opo-mad.jpg",
             "departure": {
                 "code": "OPO",
                 "city": "Porto",
@@ -40,10 +34,6 @@
                 "city": "Madrid",
                 "date": "2024-07-02T10:35:00"
             },
-            "return": {
-                "code": "MAD",
-                "city": "Madrid"
-            },
             "price": 95.00,
             "people": 1,
             "flightTime": "1h 20m",
@@ -51,12 +41,11 @@
             "layover": false,
             "airline": {
                 "name": "Ryanair",
-                "logo": "https://example.com/logos/ryanair.png"
+                "logo": "https://logos-world.net/wp-content/uploads/2020/03/Ryanair-Logo-2013-present.jpg"
             }
         },
         {
             "id": 3,
-            "image": "https://example.com/images/lufthansa-lis-nyc.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -66,10 +55,6 @@
                 "code": "JFK",
                 "city": "Nova Iorque",
                 "date": "2024-07-03T22:15:00"
-            },
-            "return": {
-                "code": "JFK",
-                "city": "Nova Iorque"
             },
             "price": 650.00,
             "people": 3,
@@ -83,7 +68,6 @@
         },
         {
             "id": 4,
-            "image": "https://example.com/images/iberia-opo-bcn.jpg",
             "departure": {
                 "code": "OPO",
                 "city": "Porto",
@@ -93,10 +77,6 @@
                 "code": "BCN",
                 "city": "Barcelona",
                 "date": "2024-07-04T09:20:00"
-            },
-            "return": {
-                "code": "BCN",
-                "city": "Barcelona"
             },
             "price": 120.00,
             "people": 2,
@@ -110,7 +90,6 @@
         },
         {
             "id": 5,
-            "image": "https://example.com/images/airfrance-lis-rom.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -120,10 +99,6 @@
                 "code": "FCO",
                 "city": "Roma",
                 "date": "2024-07-05T17:00:00"
-            },
-            "return": {
-                "code": "FCO",
-                "city": "Roma"
             },
             "price": 210.00,
             "people": 1,
@@ -137,7 +112,6 @@
         },
         {
             "id": 6,
-            "image": "https://example.com/images/easyjet-opo-lon.jpg",
             "departure": {
                 "code": "OPO",
                 "city": "Porto",
@@ -147,10 +121,6 @@
                 "code": "LHR",
                 "city": "Londres",
                 "date": "2024-07-06T09:10:00"
-            },
-            "return": {
-                "code": "LHR",
-                "city": "Londres"
             },
             "price": 160.00,
             "people": 2,
@@ -164,7 +134,6 @@
         },
         {
             "id": 7,
-            "image": "https://example.com/images/emirates-lis-dxb.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -174,10 +143,6 @@
                 "code": "DXB",
                 "city": "Dubai",
                 "date": "2024-07-07T23:55:00"
-            },
-            "return": {
-                "code": "DXB",
-                "city": "Dubai"
             },
             "price": 780.00,
             "people": 1,
@@ -191,7 +156,6 @@
         },
         {
             "id": 8,
-            "image": "https://example.com/images/swiss-opo-zur.jpg",
             "departure": {
                 "code": "OPO",
                 "city": "Porto",
@@ -201,10 +165,6 @@
                 "code": "ZRH",
                 "city": "Zurique",
                 "date": "2024-07-08T14:30:00"
-            },
-            "return": {
-                "code": "ZRH",
-                "city": "Zurique"
             },
             "price": 230.00,
             "people": 1,
@@ -218,7 +178,6 @@
         },
         {
             "id": 9,
-            "image": "https://example.com/images/klm-lis-ams.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -228,10 +187,6 @@
                 "code": "AMS",
                 "city": "Amesterdão",
                 "date": "2024-07-09T14:00:00"
-            },
-            "return": {
-                "code": "AMS",
-                "city": "Amesterdão"
             },
             "price": 195.00,
             "people": 2,
@@ -245,7 +200,6 @@
         },
         {
             "id": 10,
-            "image": "https://example.com/images/qatar-lis-doha.jpg",
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
@@ -255,10 +209,6 @@
                 "code": "DOH",
                 "city": "Doha",
                 "date": "2024-07-11T06:30:00"
-            },
-            "return": {
-                "code": "DOH",
-                "city": "Doha"
             },
             "price": 820.00,
             "people": 1,

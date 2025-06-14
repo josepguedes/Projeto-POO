@@ -75,8 +75,8 @@
     <div class="container mt-4 mb-4">
 
         <!--Card Info Search-->
-        <div class="container mt-4 mb-4">
-            <div class="card mb-4">
+        <div class="container mt-4 mb-4" id="search-info">
+            <!-- <div class="card mb-4">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-md-3">
@@ -106,13 +106,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="d-flex align-items-center">
-            <h2 class="mb-0">Resultados <span class="text-muted">(3)</span></h2>
+            <h4 class="mb-0" style="margin-left: 10px;">Voos encontrados <span class="text-muted" id="results-count">(0)</span></h4>
             <div class="ms-auto">
-                <select class="form-select">
+                <select class="form-select" id="filter" style="background-color: white !important";>
                     <option>Ordenar por: Preço mais baixo</option>
                     <option>Ordenar por: Preço mais alto</option>
                     <option>Ordenar por: Duração mais curta</option>
@@ -122,8 +122,9 @@
         </div>
     </div>
 
-    <div class="flight-ticket">
-        <div class="ticket-content">
+    <!--Flight Ticket-->
+    <div class="flight-ticket" id="flight-ticket">
+        <!-- <div class="ticket-content">
             <div class="main-content">
                 <div class="ticket-header">
                     <img class="logo"
@@ -132,8 +133,6 @@
                 </div>
 
                 <div class="details">
-                    <!-- Ida -->
-
                     <div class="time-info">
                         <div class="departure">
                             <small>Partida</small>
@@ -152,7 +151,6 @@
                         </div>
                     </div>
 
-                    <!-- Volta -->
                     <div class="time-info">
                         <div class="departure">
                             <small>Partida</small>
@@ -176,121 +174,7 @@
                 <div class="price">299€</div>
                 <button class="book-btn">Comprar</button>
             </div>
-        </div>
-    </div>
-
-    <!-- Segundo Ticket -->
-    <div class="flight-ticket">
-        <div class="ticket-content">
-            <div class="main-content">
-                <div class="ticket-header">
-                    <img class="logo"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
-                        alt="">
-                </div>
-
-                <div class="details">
-                    <!-- Ida -->
-                    <div class="time-info">
-                        <div class="departure">
-                            <small>Partida</small>
-                            <div class="time">10:15</div>
-                            <div>LIS - Lisboa</div>
-                        </div>
-                        <div class="flight-path">
-                            <div>2h 30m</div>
-                            <div class="plane-icon"><i class="fas fa-plane"></i></div>
-                            <div>Direto</div>
-                        </div>
-                        <div class="arrival">
-                            <small>Chegada</small>
-                            <div class="time">12:45</div>
-                            <div>CDG - Paris</div>
-                        </div>
-                    </div>
-
-                    <!-- Volta -->
-                    <div class="time-info">
-                        <div class="departure">
-                            <small>Partida</small>
-                            <div class="time">15:30</div>
-                            <div>CDG - Paris</div>
-                        </div>
-                        <div class="flight-path">
-                            <div>2h 30m</div>
-                            <div class="plane-icon"><i class="fas fa-plane fa-rotate-180"></i></div>
-                            <div>Direto</div>
-                        </div>
-                        <div class="arrival">
-                            <small>Chegada</small>
-                            <div class="time">18:00</div>
-                            <div>LIS - Lisboa</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="price-section">
-                <div class="price">325€</div>
-                <button class="book-btn">Comprar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Terceiro Ticket -->
-    <div class="flight-ticket">
-        <div class="ticket-content">
-            <div class="main-content">
-                <div class="ticket-header">
-                    <img class="logo"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
-                        alt="">
-                </div>
-
-                <div class="details">
-                    <!-- Ida -->
-                    <div class="time-info">
-                        <div class="departure">
-                            <small>Partida</small>
-                            <div class="time">14:45</div>
-                            <div>LIS - Lisboa</div>
-                        </div>
-                        <div class="flight-path">
-                            <div>2h 30m</div>
-                            <div class="plane-icon"><i class="fas fa-plane"></i></div>
-                            <div>Direto</div>
-                        </div>
-                        <div class="arrival">
-                            <small>Chegada</small>
-                            <div class="time">17:15</div>
-                            <div>CDG - Paris</div>
-                        </div>
-                    </div>
-
-                    <!-- Volta -->
-                    <div class="time-info">
-                        <div class="departure">
-                            <small>Partida</small>
-                            <div class="time">20:00</div>
-                            <div>CDG - Paris</div>
-                        </div>
-                        <div class="flight-path">
-                            <div>2h 30m</div>
-                            <div class="plane-icon"><i class="fas fa-plane fa-rotate-180"></i></div>
-                            <div>Direto</div>
-                        </div>
-                        <div class="arrival">
-                            <small>Chegada</small>
-                            <div class="time">22:30</div>
-                            <div>LIS - Lisboa</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="price-section">
-                <div class="price">279€</div>
-                <button class="book-btn">Comprar</button>
-            </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -359,6 +243,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="../js/views/NavbarView.js" type="module"></script>
+    <script type="module" src="/js/views/FlightsView.js"></script>
 </body>
 
 </html>
