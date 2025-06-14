@@ -1,0 +1,25 @@
+.table {
+    margin-bottom: 0;
+}
+
+.table th,
+.table td {
+    padding: 0.4rem 0.6rem;
+}
+
+.table th {
+    background-color: #212529;
+    color: #fff;
+    border-bottom: none;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 5px;
+}
