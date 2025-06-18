@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (userNameDisplay && loggedUser.name) {
         userNameDisplay.textContent = `Olá, ${loggedUser.name}!`;
     }
-    
+
     if (loggedUser.profImg) {
         profileImage.src = loggedUser.profImg;
     }
 
-    
+
     // Handle profile image upload
     document.getElementById('avatarInput').addEventListener('change', function(e) {
         const file = e.target.files[0];
@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle form submission
     document.getElementById('profileForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        
+
         const currentPassword = document.getElementById('currentPassword').value;
         const newPassword = document.getElementById('newPassword').value;
-        
+
         try {
             loadUsers();
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!currentPassword) {
                     throw new Error('Por favor, insira a password atual');
                 }
-                
+
                 if (currentPassword !== loggedUser.password) {
                     throw new Error('Password atual incorreta');
                 }
@@ -67,24 +67,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 profileImage.src,
                 loggedUser.favourits
             );
-            
+
             // Update session storage and display name
             loggedUser.name = nameInput.value;
             loggedUser.email = emailInput.value;
             userNameDisplay.textContent = `Olá, ${nameInput.value}!`;
-            
+
             if (newPassword) {
                 loggedUser.password = newPassword;
             }
             sessionStorage.setItem('loggedUser', JSON.stringify(loggedUser));
-            
+
             showMessage('Perfil atualizado com sucesso!', 'success');
         } catch (error) {
             showMessage(error.message, 'danger');
         }
     });
 
-    
+
     document.querySelector('.cancel-btn').addEventListener('click', function() {
         window.location.href = '../index.html';
     });
@@ -95,7 +95,7 @@ function showMessage(message, type) {
     messageDiv.textContent = message;
     messageDiv.className = `alert alert-${type}`;
     messageDiv.style.display = 'block';
-    
+
     setTimeout(() => {
         messageDiv.style.display = 'none';
     }, 3000);
