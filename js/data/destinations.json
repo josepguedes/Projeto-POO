@@ -290,11 +290,11 @@
         },
         {
             "id": 33,
-            "Destino": "Vale do Douro",
+            "Destino": "Porto",
             "Pais": "Portugal",
-            "TipoTurismo": "Rural",
-            "Descricao": "Paisagem deslumbrante de vinhas em socalcos ao longo do rio Douro, berço do Vinho do Porto.",
-            "ImagemDestino": "valedodouro.jpg",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Cidade histórica do norte de Portugal, famosa pelo vinho do Porto e arquitetura.",
+            "ImagemDestino": "porto.jpg",
             "CodigoDestino": "OPO"
         },
         {
@@ -407,12 +407,21 @@
         },
         {
             "id": 46,
-            "Destino": "Porto",
+            "Destino": "Vale do Douro",
+            "Pais": "Portugal",
+            "TipoTurismo": "Rural",
+            "Descricao": "Paisagem deslumbrante de vinhas em socalcos ao longo do rio Douro, berço do Vinho do Porto.",
+            "ImagemDestino": "valedodouro.jpg",
+            "CodigoDestino": "OPO"
+        },
+        {
+            "id": 47,
+            "Destino": "Lisboa",
             "Pais": "Portugal",
             "TipoTurismo": "Cultural",
-            "Descricao": "Cidade histórica do norte de Portugal, famosa pelo vinho do Porto e arquitetura.",
-            "ImagemDestino": "porto.jpg",
-            "CodigoDestino": "OPO"
+            "Descricao": "Capital de Portugal, famosa pelas suas colinas, azulejos, fado e rica história marítima.",
+            "ImagemDestino": "lisboa.jpg",
+            "CodigoDestino": "LIS"
         }
     ]
 }
