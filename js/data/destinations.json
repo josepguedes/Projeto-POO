@@ -404,6 +404,15 @@
             "Descricao": "A mais alta cadeia montanhosa de Portugal Continental, ideal para caminhadas, queijos e aldeias de xisto.",
             "ImagemDestino": "serradaestrela.jpg",
             "CodigoDestino": "VSE"
+        },
+        {
+            "id": 46,
+            "Destino": "Porto",
+            "Pais": "Portugal",
+            "TipoTurismo": "Cultural",
+            "Descricao": "Cidade histórica do norte de Portugal, famosa pelo vinho do Porto e arquitetura.",
+            "ImagemDestino": "porto.jpg",
+            "CodigoDestino": "OPO"
         }
     ]
 }

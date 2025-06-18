@@ -41,7 +41,7 @@ export async function renderRecommendedDestinations(scores) {
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${dest.Destino}</h5>
                         <p class="card-text text-muted small flex-grow-1">${dest.Descricao ? dest.Descricao.substring(0, 80) + '...' : 'Sem descrição disponível.'}</p>
-                        <a href="./flight.html?destination=${dest.CodigoDestino}" class="btn btn-primary mt-auto">Ver Ofertas</a>
+                        <button class="btn btn-primary mt-auto" onclick='setFlightSearchFromQuiz(${JSON.stringify(dest).replace(/'/g, "&apos;")})'>Ver Ofertas</button>
                     </div>
                 </div>
             </div>
@@ -58,4 +58,44 @@ export async function renderRecommendedDestinations(scores) {
         console.error('Erro ao renderizar destinos recomendados:', error);
         recommendedContainer.innerHTML = '<p class="text-center">Ocorreu um erro ao carregar as recomendações.</p>';
     }
+}
+
+window.setFlightSearchFromQuiz = function(dest) {
+    const today = new Date();
+    const dataIda = today.toISOString().split('T')[0];
+    const dataChegada = new Date(today.getTime() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+    // Procura o destino "Porto" no array de destinos para obter o ID correto
+    fetch('/js/data/destinations.json')
+        .then(response => response.json())
+        .then(data => {
+            const destinos = data.destenys;
+            const portoDestino = destinos.find(d => d.Destino === "Porto" || d.CodigoDestino === "OPO");
+            const destinoSelecionado = destinos.find(d => d.id === dest.id);
+            
+            sessionStorage.setItem('searchInfo', JSON.stringify({
+                origemNome: portoDestino ? portoDestino.Destino : "Porto",
+                destinoNome: dest.Destino,
+                dataIda,
+                dataChegada,
+                passageiros: 2,
+                tipoTurismo: dest.TipoTurismo
+            }));
+            
+            window.location.href = "../html/flight.html";
+        })
+        .catch(error => {
+            console.error('Erro ao carregar destinos:', error);
+            // Fallback sem verificação
+            sessionStorage.setItem('searchInfo', JSON.stringify({
+                origemNome: "Porto",
+                destinoNome: dest.Destino,
+                dataIda,
+                dataChegada,
+                passageiros: 2,
+                tipoTurismo: dest.TipoTurismo
+            }));
+            
+            window.location.href = "../html/flight.html";
+        });
 }
