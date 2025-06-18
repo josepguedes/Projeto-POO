@@ -128,6 +128,12 @@
     <section class="featured-deals" id="Destaques">
         <div class="container py-5">
             <h2 class="text-center mb-4">Ofertas de Voos</h2>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <label for="price-filter" class="form-label">Preço Máximo: <span id="price-value" class="fw-bold"></span></label>
+                    <input type="range" class="form-range" id="price-filter" min="0" max="2000" step="10">
+                </div>
+            </div>
             <div class="row g-4" id="flightCardsContainer">
                 
                 <!-- <div class="col-md-4">

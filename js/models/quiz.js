@@ -118,12 +118,29 @@ class Quiz {
             this.currentQuestion === this.questions.length - 1 ? 'Ver Resultados' : 'Próximo';
     }
 
-    mostrarResultados() {
+    async mostrarResultados() {
         document.getElementById('quiz-container').classList.add('d-none');
         document.getElementById('results-container').classList.remove('d-none');
         
         const sortedScores = Object.entries(this.finalScores)
             .sort((a, b) => b[1] - a[1]);
+
+        // Guardar os resultados se o utilizador estiver logado
+        const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+        if (loggedUser) {
+            try {
+                const users = JSON.parse(localStorage.getItem('users')) || [];
+                const userIndex = users.findIndex(u => u.id === loggedUser.id);
+                if (userIndex !== -1) {
+                    users[userIndex].quizScores = this.finalScores;
+                    loggedUser.quizScores = this.finalScores;
+                    localStorage.setItem('users', JSON.stringify(users));
+                    sessionStorage.setItem('loggedUser', JSON.stringify(loggedUser));
+                }
+            } catch (error) {
+                console.error("Erro ao guardar os resultados do quiz:", error);
+            }
+        }
 
         document.getElementById('scores-container').innerHTML = sortedScores
             .map(([type, score]) => `

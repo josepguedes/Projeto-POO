@@ -113,118 +113,182 @@ document.getElementById('mainSearchForm').addEventListener('submit', function (e
 
 //Renderizar cards de destinos/voos
 const destinationsCard = document.getElementById('flightCardsContainer');
+const priceFilter = document.getElementById('price-filter');
+const priceValue = document.getElementById('price-value');
 
-async function renderFlightCards() {
-    const allFlights = await loadFlights();
-    if (!allFlights || allFlights.length === 0) {
-        destinationsCard.innerHTML = `<div><h1>Não há voos disponíveis no momento.</h1></div>`;
-        return;
-    }
+let allFlights = [];
+let allDestinos = [];
+let uniqueCheapestFlights = []; // voo mais barato por destino
 
-    // Seleciona 3 voos aleatórios
-    const shuffledFlights = allFlights.sort(() => Math.random() - 0.5);
-    const flightsList = shuffledFlights.slice(0, 3);
+function createFlightCardHTML(flight) {
+    const destinoObj = allDestinos.find(d => d.CodigoDestino === flight.arrival?.code);
+    const origemObj = allDestinos.find(d => d.CodigoDestino === flight.departure?.code);
 
-    destinationsCard.innerHTML = flightsList.map(flight => {
-        const origemObj = destinos.find(d => d.CodigoDestino === flight.departure?.code);
-        const destinoObj = destinos.find(d => d.CodigoDestino === flight.arrival?.code);
+    const imageUrl = destinoObj?.ImagemDestino || 'https://cdn.visitportugal.com/sites/default/files/styles/destinos_galeria/public/mediateca/N26021.jpg?itok=yJUnjR2p';
+    const altText = destinoObj?.Destino || flight.arrival?.city || 'Destino';
 
-        const imageUrl = destinoObj?.ImagemDestino || 'https://cdn.visitportugal.com/sites/default/files/styles/destinos_galeria/public/mediateca/N26021.jpg?itok=yJUnjR2p';
-        const altText = destinoObj?.Destino || flight.arrival?.city || 'Destino';
+    const dataPartidaFormatada = flight.departure?.date ? new Date(flight.departure.date).toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit', weekday: 'short' }) : 'N/A';
 
-        const dataPartidaFormatada = flight.departure?.date ? new Date(flight.departure.date).toLocaleDateString('pt-PT') : 'N/A';
-        const dataChegadaFormatada = flight.arrival?.date ? new Date(flight.arrival.date).toLocaleDateString('pt-PT') : 'N/A';
-
-        const companhiaAerea = flight.airline?.name || 'Companhia Desconhecida';
-
-        return `
-        <div class="col-md-4">
-            <div class="card" data-flight-id="IdVoo">
-                <button class="favorite-btn">
-                    <i class="fas fa-star"></i>
-                </button>
-                <img src="${imageUrl}" class="card-img-top" alt="${altText}">
-                <div class="card-body">
-                    <h5 class="card-title mb-0"><strong>${destinoObj?.Destino || flight.arrival?.city || 'Destino Desconhecido'}</strong></h5>
-                    <div class="flight-info mt-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <div class="flight-date">
-                                <i class="fas fa-plane me-2" style="color: #D90429"></i>
-                                <span>${dataPartidaFormatada}</span>
-                            </div>
-                            <small class="ms-2">${origemObj?.CodigoDestino || flight.departure?.code || 'N/A'} - ${destinoObj?.CodigoDestino || flight.arrival?.code || 'N/A'} com ${companhiaAerea}</small>
+    return `
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100" data-flight-id="${flight.id}">
+            <button class="favorite-btn">
+                <i class="fas fa-star"></i>
+            </button>
+            <img src="${imageUrl}" class="card-img-top" alt="${altText}" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-0"><strong>${destinoObj?.Destino || flight.arrival?.city || 'Destino Desconhecido'}</strong></h5>
+                <small class="text-muted">${destinoObj?.Pais || 'País Desconhecido'}</small>
+                <div class="flight-info mt-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="flight-date">
+                            <i class="fas fa-plane me-2" style="color: #D90429"></i>
+                            <span>${dataPartidaFormatada}</span>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <div class="flight-date">
-                                <i class="fas fa-plane me-2" style="transform: rotate(180deg); color: #D90429"></i>
-                                <span>${dataChegadaFormatada}</span>
-                            </div>
-                            <small class="ms-2">${destinoObj?.CodigoDestino || flight.arrival?.code || 'N/A'} - ${origemObj?.CodigoDestino || flight.departure?.code || 'N/A'} com ${companhiaAerea}</small>
-                        </div>
+                        <small class="ms-2">${origemObj?.CodigoDestino || 'N/A'} - ${destinoObj?.CodigoDestino || 'N/A'}</small>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="price-info">
-                            <small class="text-muted">a partir de</small>
-                            <div class="price">${flight.price ? flight.price.toFixed(2) + ' €' : '--'}</div>
-                        </div>
-                        <button class="btn btn-primary">Comprar</button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <div class="price-info">
+                        <small class="text-muted">a partir de</small>
+                        <div class="price">${flight.price ? flight.price.toFixed(2) + ' €' : '--'}</div>
                     </div>
+                    <button class="btn btn-primary">Comprar</button>
                 </div>
             </div>
         </div>
-        `;
-    }).join('');
+    </div>
+    `;
 }
 
-// Adicionar voo aos favourits
-destinationsCard.addEventListener('click', async function (e) {
-    const favBtn = e.target.closest('.favorite-btn');
-    if (!favBtn) return;
+// filtrar os voos e tal
+function filterAndRenderFlights() {
+    if (!priceFilter || !priceValue || !destinationsCard) return;
 
-    // Encontra o card e o índice do voo
-    const card = favBtn.closest('.card');
-    const cardIndex = Array.from(destinationsCard.querySelectorAll('.card')).indexOf(card);
+    const maxPrice = parseFloat(priceFilter.value);
+    priceValue.textContent = `${maxPrice.toFixed(2)}€`;
 
-    // Carrega os voos exibidos atualmente
-    const allFlights = await loadFlights();
-    const shuffledFlights = allFlights.sort(() => Math.random() - 0.5);
-    const flightsList = shuffledFlights.slice(0, 3);
-    const flight = flightsList[cardIndex];
-    if (!flight) return;
+    const filteredFlights = uniqueCheapestFlights
+        .filter(flight => flight.price <= maxPrice)
+        .sort((a, b) => b.price - a.price) // Ordenacao
+        .slice(0, 6); // Seleciona os 6 primeiros
 
-    // Pega o utilizador logado
-    const user = JSON.parse(sessionStorage.getItem('loggedUser'));
-    if (!user) {
-        alert('Faça login para adicionar aos favourits.');
+    if (filteredFlights.length > 0) {
+        destinationsCard.innerHTML = filteredFlights.map(createFlightCardHTML).join('');
+    } else {
+        destinationsCard.innerHTML = `<div class="col-12 text-center"><p>Nenhuma oferta de voo encontrada para este preço.</p></div>`;
+    }
+}
+
+// Função principal para configurar a secção de ofertas
+async function setupFlightDeals() {
+    allDestinos = await loadDestinations();
+    allFlights = await loadFlights();
+
+    if (!allFlights || allFlights.length === 0) {
+        if (destinationsCard) destinationsCard.innerHTML = `<div class="col-12 text-center"><h1>Não há voos disponíveis no momento.</h1></div>`;
+        if (priceFilter) priceFilter.closest('.row').style.display = 'none';
         return;
     }
 
-    // Carrega todos os utilizadores
-    loadUsers();
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-    const userIndex = users.findIndex(u => u.id === user.id);
-    if (userIndex === -1) return;
+    // Agrupa os voos por destino e encontra o mais barato para cada um
+    const cheapestFlightsMap = new Map();
+    allFlights.forEach(flight => {
+        const destCode = flight.arrival?.code;
+        if (destCode && typeof flight.price === 'number') {
+            const existingFlight = cheapestFlightsMap.get(destCode);
+            if (!existingFlight || flight.price < existingFlight.price) {
+                cheapestFlightsMap.set(destCode, flight);
+            }
+        }
+    });
+    uniqueCheapestFlights = Array.from(cheapestFlightsMap.values());
 
-    // Usa o array favourits já existente na classe User
-    const userObj = users[userIndex];
-    if (!Array.isArray(userObj.favourits)) userObj.favourits = [];
-
-    // Verifica se já está nos favourits
-    const exists = userObj.favourits.some(fav => fav.id === flight.id);
-    if (exists) {
-        alert('Este voo já está nos seus favourits.');
+    const prices = uniqueCheapestFlights.map(f => f.price).filter(p => p != null);
+    if (prices.length === 0) {
+        if (destinationsCard) destinationsCard.innerHTML = `<div class="col-12 text-center"><p>Nenhuma oferta de voo disponível.</p></div>`;
+        if (priceFilter) priceFilter.closest('.row').style.display = 'none';
         return;
     }
 
-    // Adiciona o voo completo aos favourits
-    userObj.favourits.push(flight);
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+    const avgPrice = (minPrice + maxPrice) / 2;
 
-    // Atualiza o utilizador no localStorage e sessionStorage
-    localStorage.setItem('users', JSON.stringify(users));
-    sessionStorage.setItem('loggedUser', JSON.stringify(userObj));
+    if (priceFilter) {
+        priceFilter.min = Math.floor(minPrice);
+        priceFilter.max = Math.ceil(maxPrice);
+        priceFilter.value = avgPrice; // Começa no preço médio
+        priceFilter.addEventListener('input', filterAndRenderFlights);
+    }
 
-    alert('Voo adicionado aos favourits!');
-});
+    filterAndRenderFlights();
+}
 
+// Event listener para adicionar aos favoritos
+if (destinationsCard) {
+    destinationsCard.addEventListener('click', async function (e) {
+        const card = e.target.closest('.card');
+        if (!card) return;
 
-renderFlightCards();
+        const flightId = card.dataset.flightId;
+        if (!flightId) return;
+
+        // botao de compra
+        if (e.target.closest('.btn-primary')) {
+            const flight = uniqueCheapestFlights.find(f => f.id == flightId);
+            if (!flight) return;
+
+            const searchInfo = {
+                origemNome: flight.departure.city,
+                destinoNome: flight.arrival.city,
+                dataIda: null,
+                dataChegada: null,
+                passageiros: 1,
+                tipoTurismo: null
+            };
+
+            sessionStorage.setItem('searchInfo', JSON.stringify(searchInfo));
+            window.location.href = './html/flight.html';
+            return;
+        }
+
+        // botao de favorito
+        if (e.target.closest('.favorite-btn')) {
+            const favBtn = e.target.closest('.favorite-btn');
+            const user = JSON.parse(sessionStorage.getItem('loggedUser'));
+            if (!user) {
+                alert('Faça login para adicionar aos favoritos.');
+                window.location.href = './html/login.html';
+                return;
+            }
+
+            const flight = allFlights.find(f => f.id == flightId);
+            if (!flight) return;
+
+            await loadUsers();
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const userIndex = users.findIndex(u => u.id === user.id);
+            if (userIndex === -1) return;
+
+            const userObj = users[userIndex];
+            if (!Array.isArray(userObj.favourits)) userObj.favourits = [];
+
+            const exists = userObj.favourits.some(fav => fav.id == flight.id);
+            if (exists) {
+                alert('Este voo já está nos seus favoritos.');
+                return;
+            }
+
+            userObj.favourits.push(flight);
+            localStorage.setItem('users', JSON.stringify(users));
+            sessionStorage.setItem('loggedUser', JSON.stringify(userObj));
+
+            alert('Voo adicionado aos favoritos!');
+            favBtn.classList.add('active');
+        }
+    });
+}
+
+// Inicia a secção de ofertas
+setupFlightDeals();

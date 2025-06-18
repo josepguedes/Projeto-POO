@@ -101,3 +101,104 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+.recommended-destinations-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    padding-bottom: 1rem; /* Adiciona espaço para a scrollbar */
+    scrollbar-width: thin;  /* Para Firefox */
+    scrollbar-color: var(--buttons-color) #f1f1f1; /* Para Firefox */
+}
+
+.recommended-destinations-list::-webkit-scrollbar {
+    height: 8px; /* Altura da scrollbar */
+}
+
+.recommended-destinations-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da track */
+    border-radius: 10px;
+}
+
+.recommended-destinations-list::-webkit-scrollbar-thumb {
+    background-color: var(--buttons-color); /* Cor do polegar */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; /* Borda à volta do polegar */
+}
+
+.recommended-destinations-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a7031f; /* Cor do polegar ao passar o rato */
+}
+
+/* Estilo dos cartões de destino, coerente com a secção de destaques */
+.recommended-destinations-list .destination-card {
+    flex: 0 0 280px; /* Define uma largura fixa para os cartões */
+    max-width: 280px;
+}
+
+.recommended-destinations-list .card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Adicione estas regras para garantir o posicionamento e estilo do botão de favorito */
+.recommended-destinations-list .favorite-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #adb5bd; /* Cor da estrela inativa */
+    transition: all 0.2s ease-in-out;
+}
+
+.recommended-destinations-list .favorite-btn:hover,
+.recommended-destinations-list .favorite-btn.active {
+    background-color: var(--buttons-color);
+    color: var(--text-color); /* Cor da estrela ativa/hover */
+}
+
+.recommended-destinations-list .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.recommended-destinations-list .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.recommended-destinations-list .card-title {
+    color: var(--bg-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.recommended-destinations-list .btn-primary {
+    background-color: var(--buttons-color);
+    border-color: var(--buttons-color);
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.recommended-destinations-list .btn-primary:hover {
+    background-color: #a7031f;
+    border-color: #a7031f;
+}
