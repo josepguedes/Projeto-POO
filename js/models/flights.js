@@ -12,14 +12,14 @@ export async function loadFlights() {
             if (!response.ok) throw new Error('Ficheiro de voos não encontrado');
             const data = await response.json();
             console.log('Dados carregados:', data);
-            
+
             // Transform the data to include departure and arrival dates
             flights = data.flights.map(flight => ({
                 ...flight,
                 departureDate: new Date().toISOString(), // You should set actual dates here
-                arrivalDate: new Date(new Date().getTime() + 2*60*60*1000).toISOString() // Example: 2 hours later
+                arrivalDate: new Date(new Date().getTime() + 2 * 60 * 60 * 1000).toISOString() // Example: 2 hours later
             }));
-            
+
             localStorage.setItem('flights', JSON.stringify(flights));
         } catch (error) {
             console.error('Erro ao carregar voos:', error);
@@ -89,19 +89,7 @@ export function getNextFlightId() {
 
 // Flight Model
 export class Flight {
-    constructor({
-        id,
-        image,
-        departure,
-        arrival,
-        return: returnFlight,
-        price,
-        people,
-        flightTime,
-        direct,
-        layover,
-        airline
-    }) {
+    constructor({id, image, departure ,arrival ,return: returnFlight ,price ,people ,flightTime ,direct ,layover ,airline}) {
         this.id = id || getNextFlightId();
         this.image = image || '';
         this.departure = departure || {};
