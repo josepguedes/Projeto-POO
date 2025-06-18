@@ -188,6 +188,222 @@
             "Descricao": "Antiga cidade esculpida na rocha, uma das maravilhas do mundo.",
             "ImagemDestino": "petra.jpg",
             "CodigoDestino": "AMM"
+        },
+        {
+            "id": 22,
+            "Destino": "Algarve",
+            "Pais": "Portugal",
+            "TipoTurismo": "Balnear",
+            "Descricao": "Região sul de Portugal famosa pelas suas praias douradas, falésias e grutas marinhas.",
+            "ImagemDestino": "algarve.jpg",
+            "CodigoDestino": "FAO"
+        },
+        {
+            "id": 23,
+            "Destino": "Lima",
+            "Pais": "Peru",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Considerada a capital gastronómica da América Latina, famosa pelo ceviche e cozinha de fusão.",
+            "ImagemDestino": "lima.jpg",
+            "CodigoDestino": "LIM"
+        },
+        {
+            "id": 24,
+            "Destino": "Fátima",
+            "Pais": "Portugal",
+            "TipoTurismo": "Religioso",
+            "Descricao": "Um dos mais importantes santuários marianos do mundo, atraindo milhões de peregrinos católicos.",
+            "ImagemDestino": "fatima.jpg",
+            "CodigoDestino": "LIS"
+        },
+        {
+            "id": 25,
+            "Destino": "Toscana",
+            "Pais": "Itália",
+            "TipoTurismo": "Rural",
+            "Descricao": "Região de colinas ondulantes, vinhas, olivais e cidades medievais pitorescas.",
+            "ImagemDestino": "toscana.jpg",
+            "CodigoDestino": "FLR"
+        },
+        {
+            "id": 26,
+            "Destino": "Cancún",
+            "Pais": "México",
+            "TipoTurismo": "Balnear",
+            "Descricao": "Destino caribenho com praias de areia branca, águas azul-turquesa e recifes de coral.",
+            "ImagemDestino": "cancun.jpg",
+            "CodigoDestino": "CUN"
+        },
+        {
+            "id": 27,
+            "Destino": "Bolonha",
+            "Pais": "Itália",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Conhecida como 'La Grassa' (A Gorda), é o berço do ragù (molho à bolonhesa) e da mortadela.",
+            "ImagemDestino": "bolonha.jpg",
+            "CodigoDestino": "BLQ"
+        },
+        {
+            "id": 28,
+            "Destino": "Jerusalém",
+            "Pais": "Israel",
+            "TipoTurismo": "Religioso",
+            "Descricao": "Cidade sagrada para o Judaísmo, Cristianismo e Islamismo, com locais como o Muro das Lamentações e o Santo Sepulcro.",
+            "ImagemDestino": "jerusalem.jpg",
+            "CodigoDestino": "TLV"
+        },
+        {
+            "id": 29,
+            "Destino": "Provença",
+            "Pais": "França",
+            "TipoTurismo": "Rural",
+            "Descricao": "Famosa pelos seus campos de lavanda, aldeias encantadoras e mercados ao ar livre.",
+            "ImagemDestino": "provenca.jpg",
+            "CodigoDestino": "MRS"
+        },
+        {
+            "id": 30,
+            "Destino": "Bora Bora",
+            "Pais": "Polinésia Francesa",
+            "TipoTurismo": "Balnear",
+            "Descricao": "Ilha de luxo conhecida pelos seus bungalows sobre a água e lagoas de cor safira.",
+            "ImagemDestino": "borabora.jpg",
+            "CodigoDestino": "BOB"
+        },
+        {
+            "id": 31,
+            "Destino": "Lyon",
+            "Pais": "França",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Capital da gastronomia francesa, famosa pelos seus 'bouchons' (restaurantes tradicionais).",
+            "ImagemDestino": "lyon.jpg",
+            "CodigoDestino": "LYS"
+        },
+        {
+            "id": 32,
+            "Destino": "Meca",
+            "Pais": "Arábia Saudita",
+            "TipoTurismo": "Religioso",
+            "Descricao": "A cidade mais sagrada do Islamismo, destino da peregrinação anual do Hajj.",
+            "ImagemDestino": "meca.jpg",
+            "CodigoDestino": "JED"
+        },
+        {
+            "id": 33,
+            "Destino": "Vale do Douro",
+            "Pais": "Portugal",
+            "TipoTurismo": "Rural",
+            "Descricao": "Paisagem deslumbrante de vinhas em socalcos ao longo do rio Douro, berço do Vinho do Porto.",
+            "ImagemDestino": "valedodouro.jpg",
+            "CodigoDestino": "OPO"
+        },
+        {
+            "id": 34,
+            "Destino": "Phuket",
+            "Pais": "Tailândia",
+            "TipoTurismo": "Balnear",
+            "Descricao": "A maior ilha da Tailândia, com praias vibrantes, vida noturna e retiros tranquilos.",
+            "ImagemDestino": "phuket.jpg",
+            "CodigoDestino": "HKT"
+        },
+        {
+            "id": 35,
+            "Destino": "San Sebastián",
+            "Pais": "Espanha",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Cidade basca célebre pela sua alta concentração de estrelas Michelin e cultura de 'pintxos'.",
+            "ImagemDestino": "sansebastian.jpg",
+            "CodigoDestino": "EAS"
+        },
+        {
+            "id": 36,
+            "Destino": "Varanasi",
+            "Pais": "Índia",
+            "TipoTurismo": "Religioso",
+            "Descricao": "Cidade sagrada para os hindus, onde peregrinos se banham no rio Ganges para purificação espiritual.",
+            "ImagemDestino": "varanasi.jpg",
+            "CodigoDestino": "VNS"
+        },
+        {
+            "id": 37,
+            "Destino": "Cotswolds",
+            "Pais": "Inglaterra",
+            "TipoTurismo": "Rural",
+            "Descricao": "Área de beleza natural excecional com aldeias de pedra cor de mel, colinas e jardins encantadores.",
+            "ImagemDestino": "cotswolds.jpg",
+            "CodigoDestino": "BHX"
+        },
+        {
+            "id": 38,
+            "Destino": "Ibiza",
+            "Pais": "Espanha",
+            "TipoTurismo": "Balnear",
+            "Descricao": "Famosa mundialmente pela sua vida noturna, mas também possui praias tranquilas e vilas boémias.",
+            "ImagemDestino": "ibiza.jpg",
+            "CodigoDestino": "IBZ"
+        },
+        {
+            "id": 39,
+            "Destino": "Oaxaca",
+            "Pais": "México",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Berço do mole e do mezcal, com uma rica tradição culinária indígena.",
+            "ImagemDestino": "oaxaca.jpg",
+            "CodigoDestino": "OAX"
+        },
+        {
+            "id": 40,
+            "Destino": "Santiago de Compostela",
+            "Pais": "Espanha",
+            "TipoTurismo": "Religioso",
+            "Descricao": "Destino final do famoso caminho de peregrinação 'Caminho de Santiago', onde se acredita estar o túmulo do apóstolo Santiago.",
+            "ImagemDestino": "santiagodecompostela.jpg",
+            "CodigoDestino": "SCQ"
+        },
+        {
+            "id": 41,
+            "Destino": "Connemara",
+            "Pais": "Irlanda",
+            "TipoTurismo": "Rural",
+            "Descricao": "Região de paisagens selvagens e acidentadas, com lagos, montanhas e uma forte cultura gaélica.",
+            "ImagemDestino": "connemara.jpg",
+            "CodigoDestino": "SNN"
+        },
+        {
+            "id": 42,
+            "Destino": "Creta",
+            "Pais": "Grécia",
+            "TipoTurismo": "Balnear",
+            "Descricao": "A maior ilha grega, oferecendo uma mistura de praias deslumbrantes, montanhas e história antiga.",
+            "ImagemDestino": "creta.jpg",
+            "CodigoDestino": "HER"
+        },
+        {
+            "id": 43,
+            "Destino": "Quioto",
+            "Pais": "Japão",
+            "TipoTurismo": "Gastronómico",
+            "Descricao": "Centro da cozinha tradicional japonesa 'kaiseki', tofu artesanal e chá matcha de alta qualidade.",
+            "ImagemDestino": "quioto.jpg",
+            "CodigoDestino": "KIX"
+        },
+        {
+            "id": 44,
+            "Destino": "Lourdes",
+            "Pais": "França",
+            "TipoTurismo": "Religioso",
+            "Descricao": "Local de aparições marianas, conhecido pelas suas águas curativas e peregrinações.",
+            "ImagemDestino": "lourdes.jpg",
+            "CodigoDestino": "LDE"
+        },
+        {
+            "id": 45,
+            "Destino": "Serra da Estrela",
+            "Pais": "Portugal",
+            "TipoTurismo": "Rural",
+            "Descricao": "A mais alta cadeia montanhosa de Portugal Continental, ideal para caminhadas, queijos e aldeias de xisto.",
+            "ImagemDestino": "serradaestrela.jpg",
+            "CodigoDestino": "VSE"
         }
     ]
 }

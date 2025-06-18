@@ -88,10 +88,16 @@ export function getDestinationsByTourismType(tourismType) {
         return getAllDestinations();
     }
     
-    return destinations.filter(dest => 
-        dest.TipoTurismo && 
-        dest.TipoTurismo.toLowerCase() === tourismType.toLowerCase()
-    );
+    const normalizedQuizResult = tourismType.trim().toLowerCase();
+
+    return destinations.filter(dest => {
+        if (!dest.TipoTurismo) {
+            return false;
+        }
+        const normalizedDestType = dest.TipoTurismo.trim().toLowerCase();
+        // Verifica se o tipo de turismo do destino inclui o resultado do quiz
+        return normalizedDestType.includes(normalizedQuizResult);
+    });
 }
 
 

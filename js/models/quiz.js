@@ -1,3 +1,5 @@
+import { renderRecommendedDestinations } from '../views/QuizView.js';
+
 class Quiz {
     constructor() {
         this.currentQuestion = 0;
@@ -134,6 +136,8 @@ class Quiz {
                     </div>
                 </div>
             `).join('');
+        
+        renderRecommendedDestinations(this.finalScores);
     }
 
     setupEventListeners() {

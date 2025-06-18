@@ -36,3 +36,77 @@
 .progress-bar {
     transition: width 0.5s ease;
 }
+
+.recommended-destinations-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    padding-bottom: 1rem; /* Adiciona espaço para a scrollbar */
+    scrollbar-width: thin;  /* Para Firefox */
+    scrollbar-color: var(--buttons-color) #f1f1f1; /* Para Firefox */
+}
+
+.recommended-destinations-list::-webkit-scrollbar {
+    height: 8px; /* Altura da scrollbar */
+}
+
+.recommended-destinations-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da track */
+    border-radius: 10px;
+}
+
+.recommended-destinations-list::-webkit-scrollbar-thumb {
+    background-color: var(--buttons-color); /* Cor do polegar */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; /* Borda à volta do polegar */
+}
+
+.recommended-destinations-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a7031f; /* Cor do polegar ao passar o rato */
+}
+
+/* Estilo dos cartões de destino, coerente com a secção de destaques */
+.recommended-destinations-list .destination-card {
+    flex: 0 0 280px; /* Define uma largura fixa para os cartões */
+    max-width: 280px;
+}
+
+.recommended-destinations-list .card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.recommended-destinations-list .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.recommended-destinations-list .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.recommended-destinations-list .card-title {
+    color: var(--bg-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.recommended-destinations-list .btn-primary {
+    background-color: var(--buttons-color);
+    border-color: var(--buttons-color);
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.recommended-destinations-list .btn-primary:hover {
+    background-color: #a7031f;
+    border-color: #a7031f;
+}
