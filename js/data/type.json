@@ -2,63 +2,53 @@
     "types": [
         {
             "id": 1,
-            "Nome": "Turismo Cultural",
-            "Descrição": "Exploração de património histórico, museus, monumentos e tradições locais."
+            "Nome": "Cultural",
+            "Descrição": "Visita a museus, monumentos históricos, sítios arqueológicos e eventos culturais."
         },
         {
             "id": 2,
-            "Nome": "Turismo de Natureza",
-            "Descrição": "Atividades em ambientes naturais como trilhos, parques naturais e observação de fauna e flora."
+            "Nome": "Aventura",
+            "Descrição": "Atividades ao ar livre como montanhismo, rafting, trekking e desportos radicais."
         },
         {
             "id": 3,
-            "Nome": "Turismo Gastronómico",
-            "Descrição": "Descoberta de sabores regionais, restaurantes típicos e festivais de comida."
+            "Nome": "Gastronómico",
+            "Descrição": "Experiências culinárias, visitas a vinícolas, mercados locais e restaurantes típicos."
         },
         {
             "id": 4,
-            "Nome": "Turismo de Aventura",
-            "Descrição": "Prática de desportos radicais, escalada, rafting e atividades ao ar livre."
+            "Nome": "Histórico",
+            "Descrição": "Visita a locais com relevância histórica, castelos, palácios e sítios antigos."
         },
         {
             "id": 5,
-            "Nome": "Turismo Religioso",
+            "Nome": "Religioso",
             "Descrição": "Visita a locais sagrados, peregrinações e eventos religiosos."
         },
         {
             "id": 6,
-            "Nome": "Turismo de Sol e Praia",
+            "Nome": "Balnear",
             "Descrição": "Férias em destinos costeiros, praias e atividades aquáticas."
         },
         {
             "id": 7,
-            "Nome": "Turismo de Saúde e Bem-Estar",
-            "Descrição": "Viagens para spas, termas, clínicas de reabilitação e retiros de bem-estar."
-        },
-        {
-            "id": 8,
-            "Nome": "Turismo Rural",
+            "Nome": "Rural",
             "Descrição": "Experiência em ambientes rurais, quintas, aldeias e contacto com a vida agrícola."
         },
         {
+            "id": 8,
+            "Nome": "Urbano",
+            "Descrição": "Exploração de grandes cidades, vida noturna, shopping e arquitetura moderna."
+        },
+        {
             "id": 9,
-            "Nome": "Turismo de Negócios",
-            "Descrição": "Participação em conferências, feiras, reuniões e eventos corporativos."
+            "Nome": "Luxo",
+            "Descrição": "Experiências premium com acomodações de alto padrão e serviços exclusivos."
         },
         {
             "id": 10,
-            "Nome": "Turismo Desportivo",
-            "Descrição": "Viagens para assistir ou participar em eventos desportivos."
-        },
-        {
-            "id": 11,
-            "Nome": "Turismo de Compras",
-            "Descrição": "Visitas a centros comerciais, mercados e zonas comerciais famosas."
-        },
-        {
-            "id": 12,
-            "Nome": "Turismo Científico",
-            "Descrição": "Participação em congressos, visitas a centros de investigação e museus de ciência."
+            "Nome": "Exótico",
+            "Descrição": "Destinos únicos e diferentes, com culturas e paisagens exóticas."
         }
     ]
 }

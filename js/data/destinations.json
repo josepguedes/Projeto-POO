@@ -13,7 +13,7 @@
             "id": 2,
             "Destino": "Rio de Janeiro",
             "Pais": "Brasil",
-            "TipoTurismo": "Praia",
+            "TipoTurismo": "Balnear",
             "Descricao": "Cidade maravilhosa com praias icônicas como Copacabana e Ipanema, além do Cristo Redentor.",
             "ImagemDestino": "rio_de_janeiro.jpg",
             "CodigoDestino": "GIG"
@@ -40,7 +40,7 @@
             "id": 5,
             "Destino": "Cabo Verde",
             "Pais": "Cabo Verde",
-            "TipoTurismo": "Praia",
+            "TipoTurismo": "Balnear",
             "Descricao": "Arquipélago africano conhecido pelas suas praias paradisíacas e cultura vibrante.",
             "ImagemDestino": "cabo_verde.jpg",
             "CodigoDestino": "RAI"
@@ -139,7 +139,7 @@
             "id": 16,
             "Destino": "Maldivas",
             "Pais": "Maldivas",
-            "TipoTurismo": "Praia",
+            "TipoTurismo": "Balnear",
             "Descricao": "Ilhas paradisíacas com águas cristalinas e resorts de luxo.",
             "ImagemDestino": "maldivas.jpg",
             "CodigoDestino": "MLE"
@@ -166,7 +166,7 @@
             "id": 19,
             "Destino": "Santorini",
             "Pais": "Grécia",
-            "TipoTurismo": "Praia",
+            "TipoTurismo": "Balnear",
             "Descricao": "Ilha famosa por suas casas brancas e vistas deslumbrantes do mar Egeu.",
             "ImagemDestino": "santorini.jpg",
             "CodigoDestino": "JTR"
