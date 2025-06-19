@@ -91,8 +91,37 @@ async function renderDestinations(page = 1, destinationsList = null) {
     }
 }
 
+// Popula o modal de adicionar com tipos dinâmicos
+async function populateAddModal() {
+    await loadTypes();
+    const types = getAllTypes();
+    const select = document.querySelector('#addDestinationModal select[name="TipoTurismo"]');
+    if (select) {
+        select.innerHTML = '<option value="">Selecione o tipo</option>';
+        types.forEach(type => {
+            select.innerHTML += `<option value="${type.Nome}">${type.Nome}</option>`;
+        });
+    }
+}
+
+// Popula o modal de editar com tipos dinâmicos
+async function populateEditModal() {
+    await loadTypes();
+    const types = getAllTypes();
+    const select = document.querySelector('#editDestinationModal select[name="editTipoTurismo"]');
+    if (select) {
+        select.innerHTML = '<option value="">Selecione o tipo</option>';
+        types.forEach(type => {
+            select.innerHTML += `<option value="${type.Nome}">${type.Nome}</option>`;
+        });
+    }
+}
+
 // Adicionar novo destino
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await populateAddModal();
+    await populateEditModal();
+    
     const addForm = document.getElementById('addDestinationForm');
 
     addForm.addEventListener('submit', async (event) => {
@@ -162,6 +191,8 @@ document.getElementById('destinationsTable').addEventListener('click', async (ev
             alert('Destino não encontrado!');
             return;
         }
+
+        await populateEditModal();
 
         document.querySelector('[name="editDestinationId"]').value = destination.id;
         document.querySelector('[name="editCodigoDestino"]').value = destination.CodigoDestino;

@@ -3,12 +3,12 @@
         {
             "id": 1,
             "departure": {
-                "code": "LIS",
-                "city": "Lisboa",
+                "code": "OPO",
+                "city": "Porto",
                 "date": "2024-07-01T08:00:00"
             },
             "arrival": {
-                "code": "PAR",
+                "code": "CDG",
                 "city": "Paris",
                 "date": "2024-07-01T10:30:00"
             },
@@ -25,128 +25,260 @@
         {
             "id": 2,
             "departure": {
-                "code": "OPO",
-                "city": "Porto",
+                "code": "LIS",
+                "city": "Lisboa",
                 "date": "2024-07-02T09:15:00"
             },
             "arrival": {
-                "code": "MAD",
-                "city": "Madrid",
-                "date": "2024-07-02T10:35:00"
+                "code": "GIG",
+                "city": "Rio de Janeiro",
+                "date": "2024-07-02T14:45:00"
             },
-            "price": 95.00,
+            "price": 450.00,
             "people": 1,
-            "flightTime": "1h 20m",
+            "flightTime": "9h 30m",
             "direct": true,
             "layover": false,
             "airline": {
-                "name": "Ryanair",
-                "logo": "https://logos-world.net/wp-content/uploads/2020/03/Ryanair-Logo-2013-present.jpg"
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
             }
         },
         {
             "id": 3,
             "departure": {
-                "code": "LIS",
-                "city": "Lisboa",
-                "date": "2024-07-03T12:00:00"
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-03T11:20:00"
             },
             "arrival": {
-                "code": "JFK",
-                "city": "Nova Iorque",
-                "date": "2024-07-03T22:15:00"
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-07-04T08:45:00"
             },
-            "price": 650.00,
-            "people": 3,
-            "flightTime": "10h 15m",
+            "price": 890.00,
+            "people": 2,
+            "flightTime": "13h 25m",
             "direct": false,
             "layover": true,
             "airline": {
-                "name": "Lufthansa",
-                "logo": "https://example.com/logos/lufthansa.png"
+                "name": "ANA All Nippon Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/2560px-All_Nippon_Airways_Logo.svg.png"
             }
         },
         {
             "id": 4,
             "departure": {
-                "code": "OPO",
-                "city": "Porto",
-                "date": "2024-07-04T07:30:00"
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-04T15:30:00"
             },
             "arrival": {
-                "code": "BCN",
-                "city": "Barcelona",
-                "date": "2024-07-04T09:20:00"
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-07-04T18:15:00"
             },
-            "price": 120.00,
-            "people": 2,
-            "flightTime": "1h 50m",
+            "price": 195.00,
+            "people": 1,
+            "flightTime": "2h 45m",
             "direct": true,
             "layover": false,
             "airline": {
-                "name": "Iberia",
-                "logo": "https://example.com/logos/iberia.png"
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
             }
         },
         {
             "id": 5,
             "departure": {
-                "code": "LIS",
-                "city": "Lisboa",
-                "date": "2024-07-05T14:00:00"
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-05T07:45:00"
             },
             "arrival": {
-                "code": "FCO",
-                "city": "Roma",
-                "date": "2024-07-05T17:00:00"
+                "code": "RAI",
+                "city": "Cabo Verde",
+                "date": "2024-07-05T12:30:00"
             },
-            "price": 210.00,
-            "people": 1,
-            "flightTime": "3h 00m",
-            "direct": false,
-            "layover": true,
+            "price": 280.00,
+            "people": 2,
+            "flightTime": "4h 45m",
+            "direct": true,
+            "layover": false,
             "airline": {
-                "name": "Air France",
-                "logo": "https://example.com/logos/airfrance.png"
+                "name": "Cabo Verde Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cabo_Verde_Airlines_logo.png"
             }
         },
         {
             "id": 6,
             "departure": {
-                "code": "OPO",
-                "city": "Porto",
-                "date": "2024-07-06T06:45:00"
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-06T10:00:00"
             },
             "arrival": {
-                "code": "LHR",
-                "city": "Londres",
-                "date": "2024-07-06T09:10:00"
+                "code": "SYD",
+                "city": "Sydney",
+                "date": "2024-07-07T18:30:00"
             },
-            "price": 160.00,
-            "people": 2,
-            "flightTime": "2h 25m",
-            "direct": true,
-            "layover": false,
+            "price": 1200.00,
+            "people": 1,
+            "flightTime": "22h 30m",
+            "direct": false,
+            "layover": true,
             "airline": {
-                "name": "easyJet",
-                "logo": "https://example.com/logos/easyjet.png"
+                "name": "Qantas",
+                "logo": "https://example.com/logos/qantas.png"
             }
         },
         {
             "id": 7,
             "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-07T14:15:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-07-07T20:45:00"
+            },
+            "price": 520.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "United Airlines",
+                "logo": "https://example.com/logos/united.png"
+            }
+        },
+        {
+            "id": 8,
+            "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
-                "date": "2024-07-07T15:30:00"
+                "date": "2024-07-08T16:20:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-07-08T18:45:00"
+            },
+            "price": 125.00,
+            "people": 1,
+            "flightTime": "2h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 9,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-09T08:30:00"
+            },
+            "arrival": {
+                "code": "CPT",
+                "city": "Cidade do Cabo",
+                "date": "2024-07-09T19:15:00"
+            },
+            "price": 850.00,
+            "people": 2,
+            "flightTime": "10h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "South African Airways",
+                "logo": "https://example.com/logos/saa.png"
+            }
+        },
+        {
+            "id": 10,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-10T12:00:00"
+            },
+            "arrival": {
+                "code": "BKK",
+                "city": "Bangkok",
+                "date": "2024-07-11T06:30:00"
+            },
+            "price": 680.00,
+            "people": 1,
+            "flightTime": "12h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Thai Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Thai_Airways_logo.svg/2560px-Thai_Airways_logo.svg.png"
+            }
+        },
+        {
+            "id": 11,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-11T18:45:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-07-12T02:15:00"
+            },
+            "price": 320.00,
+            "people": 2,
+            "flightTime": "5h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 12,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-12T09:30:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-07-12T12:15:00"
+            },
+            "price": 165.00,
+            "people": 1,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 13,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-13T21:00:00"
             },
             "arrival": {
                 "code": "DXB",
                 "city": "Dubai",
-                "date": "2024-07-07T23:55:00"
+                "date": "2024-07-14T08:30:00"
             },
-            "price": 780.00,
-            "people": 1,
-            "flightTime": "7h 25m",
+            "price": 580.00,
+            "people": 2,
+            "flightTime": "7h 30m",
             "direct": true,
             "layover": false,
             "airline": {
@@ -155,69 +287,4117 @@
             }
         },
         {
-            "id": 8,
-            "departure": {
-                "code": "OPO",
-                "city": "Porto",
-                "date": "2024-07-08T11:00:00"
-            },
-            "arrival": {
-                "code": "ZRH",
-                "city": "Zurique",
-                "date": "2024-07-08T14:30:00"
-            },
-            "price": 230.00,
-            "people": 1,
-            "flightTime": "2h 30m",
-            "direct": false,
-            "layover": true,
-            "airline": {
-                "name": "SWISS",
-                "logo": "https://example.com/logos/swiss.png"
-            }
-        },
-        {
-            "id": 9,
+            "id": 14,
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
-                "date": "2024-07-09T10:20:00"
+                "date": "2024-07-14T06:15:00"
+            },
+            "arrival": {
+                "code": "CUZ",
+                "city": "Machu Picchu",
+                "date": "2024-07-14T18:45:00"
+            },
+            "price": 780.00,
+            "people": 1,
+            "flightTime": "14h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "LATAM Airlines",
+                "logo": "https://example.com/logos/latam.png"
+            }
+        },
+        {
+            "id": 15,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-15T13:20:00"
             },
             "arrival": {
                 "code": "AMS",
-                "city": "Amesterdão",
-                "date": "2024-07-09T14:00:00"
+                "city": "Amsterdãoo",
+                "date": "2024-07-15T16:45:00"
             },
-            "price": 195.00,
+            "price": 185.00,
             "people": 2,
-            "flightTime": "3h 40m",
-            "direct": false,
-            "layover": true,
+            "flightTime": "3h 25m",
+            "direct": true,
+            "layover": false,
             "airline": {
                 "name": "KLM",
                 "logo": "https://example.com/logos/klm.png"
             }
         },
         {
-            "id": 10,
+            "id": 16,
             "departure": {
                 "code": "LIS",
                 "city": "Lisboa",
-                "date": "2024-07-10T21:00:00"
+                "date": "2024-07-16T11:45:00"
             },
             "arrival": {
-                "code": "DOH",
-                "city": "Doha",
-                "date": "2024-07-11T06:30:00"
+                "code": "MLE",
+                "city": "Maldivas",
+                "date": "2024-07-17T05:30:00"
             },
-            "price": 820.00,
+            "price": 950.00,
+            "people": 1,
+            "flightTime": "11h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Qatar Airways",
+                "logo": "https://example.com/logos/qatar.png"
+            }
+        },
+        {
+            "id": 17,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-17T15:00:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-07-17T19:15:00"
+            },
+            "price": 220.00,
+            "people": 2,
+            "flightTime": "4h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 18,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-18T08:45:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-07-18T13:30:00"
+            },
+            "price": 240.00,
+            "people": 1,
+            "flightTime": "4h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 19,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-19T12:30:00"
+            },
+            "arrival": {
+                "code": "JTR",
+                "city": "Santorini",
+                "date": "2024-07-19T18:45:00"
+            },
+            "price": 285.00,
+            "people": 2,
+            "flightTime": "6h 15m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aegean Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Aegean_Airlines_Logo_2020.png"
+            }
+        },
+        {
+            "id": 20,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-20T17:15:00"
+            },
+            "arrival": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-07-20T22:45:00"
+            },
+            "price": 620.00,
+            "people": 1,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air Canada",
+                "logo": "https://example.com/logos/aircanada.png"
+            }
+        },
+        {
+            "id": 21,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-21T10:20:00"
+            },
+            "arrival": {
+                "code": "AMM",
+                "city": "Petra",
+                "date": "2024-07-21T17:45:00"
+            },
+            "price": 420.00,
+            "people": 2,
+            "flightTime": "5h 25m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Royal Jordanian",
+                "logo": "https://example.com/logos/rj.png"
+            }
+        },
+        {
+            "id": 22,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-22T07:00:00"
+            },
+            "arrival": {
+                "code": "FAO",
+                "city": "Algarve",
+                "date": "2024-07-22T08:00:00"
+            },
+            "price": 85.00,
+            "people": 1,
+            "flightTime": "1h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 23,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-23T14:30:00"
+            },
+            "arrival": {
+                "code": "LIM",
+                "city": "Lima",
+                "date": "2024-07-24T02:15:00"
+            },
+            "price": 720.00,
+            "people": 2,
+            "flightTime": "13h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "LATAM Airlines",
+                "logo": "https://example.com/logos/latam.png"
+            }
+        },
+        {
+            "id": 24,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-24T16:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Fátima",
+                "date": "2024-07-24T18:00:00"
+            },
+            "price": 45.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 25,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-25T09:15:00"
+            },
+            "arrival": {
+                "code": "FLR",
+                "city": "Toscana",
+                "date": "2024-07-25T13:30:00"
+            },
+            "price": 275.00,
+            "people": 2,
+            "flightTime": "4h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 26,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-26T11:00:00"
+            },
+            "arrival": {
+                "code": "CUN",
+                "city": "Cancún",
+                "date": "2024-07-26T20:30:00"
+            },
+            "price": 650.00,
+            "people": 1,
+            "flightTime": "11h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 27,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-27T13:45:00"
+            },
+            "arrival": {
+                "code": "BLQ",
+                "city": "Bolonha",
+                "date": "2024-07-27T17:15:00"
+            },
+            "price": 195.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 28,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-28T08:20:00"
+            },
+            "arrival": {
+                "code": "TLV",
+                "city": "Jerusalém",
+                "date": "2024-07-28T15:45:00"
+            },
+            "price": 380.00,
+            "people": 1,
+            "flightTime": "5h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "El Al",
+                "logo": "https://example.com/logos/elal.png"
+            }
+        },
+        {
+            "id": 29,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-29T15:30:00"
+            },
+            "arrival": {
+                "code": "MRS",
+                "city": "Provença",
+                "date": "2024-07-29T18:45:00"
+            },
+            "price": 165.00,
+            "people": 2,
+            "flightTime": "3h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 30,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-30T19:00:00"
+            },
+            "arrival": {
+                "code": "BOB",
+                "city": "Bora Bora",
+                "date": "2024-07-31T14:30:00"
+            },
+            "price": 1350.00,
+            "people": 1,
+            "flightTime": "18h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air Tahiti Nui",
+                "logo": "https://example.com/logos/airtahiti.png"
+            }
+        },
+        {
+            "id": 31,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-01T10:45:00"
+            },
+            "arrival": {
+                "code": "LYS",
+                "city": "Lyon",
+                "date": "2024-08-01T14:15:00"
+            },
+            "price": 175.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 32,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-02T06:30:00"
+            },
+            "arrival": {
+                "code": "JED",
+                "city": "Meca",
+                "date": "2024-08-02T14:45:00"
+            },
+            "price": 580.00,
+            "people": 1,
+            "flightTime": "6h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Saudia",
+                "logo": "https://brandlogos.net/wp-content/uploads/2023/10/saudia_airlines-logo_brandlogos.net_ierhe.png"
+            }
+        },
+        {
+            "id": 33,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-03T12:00:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-03T13:15:00"
+            },
+            "price": 75.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 34,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-04T17:20:00"
+            },
+            "arrival": {
+                "code": "HKT",
+                "city": "Phuket",
+                "date": "2024-08-05T11:45:00"
+            },
+            "price": 780.00,
+            "people": 1,
+            "flightTime": "12h 25m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Thai Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Thai_Airways_logo.svg/2560px-Thai_Airways_logo.svg.png"
+            }
+        },
+        {
+            "id": 35,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-05T14:15:00"
+            },
+            "arrival": {
+                "code": "EAS",
+                "city": "San Sebastián",
+                "date": "2024-08-05T16:30:00"
+            },
+            "price": 145.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 36,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-06T09:30:00"
+            },
+            "arrival": {
+                "code": "VNS",
+                "city": "Varanasi",
+                "date": "2024-08-06T23:15:00"
+            },
+            "price": 650.00,
+            "people": 1,
+            "flightTime": "11h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air India",
+                "logo": "https://example.com/logos/airindia.png"
+            }
+        },
+        {
+            "id": 37,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-07T11:45:00"
+            },
+            "arrival": {
+                "code": "BHX",
+                "city": "Cotswolds",
+                "date": "2024-08-07T14:30:00"
+            },
+            "price": 185.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 38,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-08T16:00:00"
+            },
+            "arrival": {
+                "code": "IBZ",
+                "city": "Ibiza",
+                "date": "2024-08-08T18:45:00"
+            },
+            "price": 155.00,
+            "people": 1,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 39,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-09T08:00:00"
+            },
+            "arrival": {
+                "code": "OAX",
+                "city": "Oaxaca",
+                "date": "2024-08-09T19:30:00"
+            },
+            "price": 680.00,
+            "people": 2,
+            "flightTime": "13h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 40,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-10T13:30:00"
+            },
+            "arrival": {
+                "code": "SCQ",
+                "city": "Santiago de Compostela",
+                "date": "2024-08-10T14:45:00"
+            },
+            "price": 95.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 41,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-11T10:15:00"
+            },
+            "arrival": {
+                "code": "SNN",
+                "city": "Connemara",
+                "date": "2024-08-11T13:00:00"
+            },
+            "price": 165.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Aer Lingus",
+                "logo": "https://wp.logos-download.com/wp-content/uploads/2022/11/Aer_Lingus_Logo.png?dl"
+            }
+        },
+        {
+            "id": 42,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-12T15:45:00"
+            },
+            "arrival": {
+                "code": "HER",
+                "city": "Creta",
+                "date": "2024-08-12T21:30:00"
+            },
+            "price": 295.00,
+            "people": 1,
+            "flightTime": "5h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aegean Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Aegean_Airlines_Logo_2020.png"
+            }
+        },
+        {
+            "id": 43,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-13T07:30:00"
+            },
+            "arrival": {
+                "code": "KIX",
+                "city": "Quioto",
+                "date": "2024-08-14T02:15:00"
+            },
+            "price": 920.00,
+            "people": 2,
+            "flightTime": "14h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "ANA All Nippon Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/2560px-All_Nippon_Airways_Logo.svg.png"
+            }
+        },
+        {
+            "id": 44,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-14T12:20:00"
+            },
+            "arrival": {
+                "code": "LDE",
+                "city": "Lourdes",
+                "date": "2024-08-14T15:45:00"
+            },
+            "price": 135.00,
+            "people": 1,
+            "flightTime": "3h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 45,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-15T18:00:00"
+            },
+            "arrival": {
+                "code": "VSE",
+                "city": "Serra da Estrela",
+                "date": "2024-08-15T19:15:00"
+            },
+            "price": 65.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 46,
+            "departure": {
+                "code": "FAO",
+                "city": "Algarve",
+                "date": "2024-07-22T09:00:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-22T10:00:00"
+            },
+            "price": 85.00,
+            "people": 1,
+            "flightTime": "1h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 47,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-23T14:30:00"
+            },
+            "arrival": {
+                "code": "LIM",
+                "city": "Lima",
+                "date": "2024-07-24T02:15:00"
+            },
+            "price": 720.00,
+            "people": 2,
+            "flightTime": "13h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "LATAM Airlines",
+                "logo": "https://example.com/logos/latam.png"
+            }
+        },
+        {
+            "id": 48,
+            "departure": {
+                "code": "LIM",
+                "city": "Lima",
+                "date": "2024-07-24T04:15:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-24T20:00:00"
+            },
+            "price": 735.00,
+            "people": 2,
+            "flightTime": "13h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "LATAM Airlines",
+                "logo": "https://example.com/logos/latam.png"
+            }
+        },
+        {
+            "id": 49,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-24T16:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Fátima",
+                "date": "2024-07-24T18:00:00"
+            },
+            "price": 45.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 50,
+            "departure": {
+                "code": "LIS",
+                "city": "Fátima",
+                "date": "2024-07-24T19:00:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-24T20:15:00"
+            },
+            "price": 45.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 51,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-25T09:15:00"
+            },
+            "arrival": {
+                "code": "FLR",
+                "city": "Toscana",
+                "date": "2024-07-25T13:30:00"
+            },
+            "price": 275.00,
+            "people": 2,
+            "flightTime": "4h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 52,
+            "departure": {
+                "code": "FLR",
+                "city": "Toscana",
+                "date": "2024-07-25T15:30:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-25T19:45:00"
+            },
+            "price": 280.00,
+            "people": 2,
+            "flightTime": "4h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 53,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-26T11:00:00"
+            },
+            "arrival": {
+                "code": "CUN",
+                "city": "Cancún",
+                "date": "2024-07-26T20:30:00"
+            },
+            "price": 650.00,
+            "people": 1,
+            "flightTime": "11h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 54,
+            "departure": {
+                "code": "CUN",
+                "city": "Cancún",
+                "date": "2024-07-26T22:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-27T18:00:00"
+            },
+            "price": 665.00,
+            "people": 1,
+            "flightTime": "11h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 55,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-27T13:45:00"
+            },
+            "arrival": {
+                "code": "BLQ",
+                "city": "Bolonha",
+                "date": "2024-07-27T17:15:00"
+            },
+            "price": 195.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 56,
+            "departure": {
+                "code": "BLQ",
+                "city": "Bolonha",
+                "date": "2024-07-27T19:15:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-27T22:45:00"
+            },
+            "price": 200.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 57,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-28T08:20:00"
+            },
+            "arrival": {
+                "code": "TLV",
+                "city": "Jerusalém",
+                "date": "2024-07-28T15:45:00"
+            },
+            "price": 380.00,
+            "people": 1,
+            "flightTime": "5h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "El Al",
+                "logo": "https://example.com/logos/elal.png"
+            }
+        },
+        {
+            "id": 58,
+            "departure": {
+                "code": "TLV",
+                "city": "Jerusalém",
+                "date": "2024-07-28T17:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-29T01:10:00"
+            },
+            "price": 385.00,
+            "people": 1,
+            "flightTime": "5h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "El Al",
+                "logo": "https://example.com/logos/elal.png"
+            }
+        },
+        {
+            "id": 59,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-29T15:30:00"
+            },
+            "arrival": {
+                "code": "MRS",
+                "city": "Provença",
+                "date": "2024-07-29T18:45:00"
+            },
+            "price": 165.00,
+            "people": 2,
+            "flightTime": "3h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 60,
+            "departure": {
+                "code": "MRS",
+                "city": "Provença",
+                "date": "2024-07-29T20:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-07-30T00:00:00"
+            },
+            "price": 170.00,
+            "people": 2,
+            "flightTime": "3h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 61,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-07-30T19:00:00"
+            },
+            "arrival": {
+                "code": "BOB",
+                "city": "Bora Bora",
+                "date": "2024-07-31T14:30:00"
+            },
+            "price": 1350.00,
+            "people": 1,
+            "flightTime": "18h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air Tahiti Nui",
+                "logo": "https://example.com/logos/airtahiti.png"
+            }
+        },
+        {
+            "id": 62,
+            "departure": {
+                "code": "BOB",
+                "city": "Bora Bora",
+                "date": "2024-07-31T16:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-01T21:00:00"
+            },
+            "price": 1365.00,
+            "people": 1,
+            "flightTime": "18h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air Tahiti Nui",
+                "logo": "https://example.com/logos/airtahiti.png"
+            }
+        },
+        {
+            "id": 63,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-01T10:45:00"
+            },
+            "arrival": {
+                "code": "LYS",
+                "city": "Lyon",
+                "date": "2024-08-01T14:15:00"
+            },
+            "price": 175.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 64,
+            "departure": {
+                "code": "LYS",
+                "city": "Lyon",
+                "date": "2024-08-01T16:15:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-01T19:45:00"
+            },
+            "price": 180.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 65,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-02T06:30:00"
+            },
+            "arrival": {
+                "code": "JED",
+                "city": "Meca",
+                "date": "2024-08-02T14:45:00"
+            },
+            "price": 580.00,
+            "people": 1,
+            "flightTime": "6h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Saudia",
+                "logo": "https://brandlogos.net/wp-content/uploads/2023/10/saudia_airlines-logo_brandlogos.net_ierhe.png"
+            }
+        },
+        {
+            "id": 66,
+            "departure": {
+                "code": "JED",
+                "city": "Meca",
+                "date": "2024-08-02T16:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-03T01:00:00"
+            },
+            "price": 585.00,
+            "people": 1,
+            "flightTime": "6h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Saudia",
+                "logo": "https://brandlogos.net/wp-content/uploads/2023/10/saudia_airlines-logo_brandlogos.net_ierhe.png"
+            }
+        },
+        {
+            "id": 67,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-03T12:00:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-03T13:15:00"
+            },
+            "price": 75.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 68,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-03T14:15:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-03T15:30:00"
+            },
+            "price": 75.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 69,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-04T17:20:00"
+            },
+            "arrival": {
+                "code": "HKT",
+                "city": "Phuket",
+                "date": "2024-08-05T11:45:00"
+            },
+            "price": 780.00,
+            "people": 1,
+            "flightTime": "12h 25m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Thai Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Thai_Airways_logo.svg/2560px-Thai_Airways_logo.svg.png"
+            }
+        },
+        {
+            "id": 70,
+            "departure": {
+                "code": "HKT",
+                "city": "Phuket",
+                "date": "2024-08-05T13:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-06T02:10:00"
+            },
+            "price": 795.00,
+            "people": 1,
+            "flightTime": "12h 25m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Thai Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Thai_Airways_logo.svg/2560px-Thai_Airways_logo.svg.png"
+            }
+        },
+        {
+            "id": 71,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-05T14:15:00"
+            },
+            "arrival": {
+                "code": "EAS",
+                "city": "San Sebastián",
+                "date": "2024-08-05T16:30:00"
+            },
+            "price": 145.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 72,
+            "departure": {
+                "code": "EAS",
+                "city": "San Sebastián",
+                "date": "2024-08-05T18:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-05T20:45:00"
+            },
+            "price": 150.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 73,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-06T09:30:00"
+            },
+            "arrival": {
+                "code": "VNS",
+                "city": "Varanasi",
+                "date": "2024-08-06T23:15:00"
+            },
+            "price": 650.00,
+            "people": 1,
+            "flightTime": "11h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air India",
+                "logo": "https://example.com/logos/airindia.png"
+            }
+        },
+        {
+            "id": 74,
+            "departure": {
+                "code": "VNS",
+                "city": "Varanasi",
+                "date": "2024-08-07T01:15:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-07T15:00:00"
+            },
+            "price": 665.00,
+            "people": 1,
+            "flightTime": "11h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Air India",
+                "logo": "https://example.com/logos/airindia.png"
+            }
+        },
+        {
+            "id": 75,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-07T11:45:00"
+            },
+            "arrival": {
+                "code": "BHX",
+                "city": "Cotswolds",
+                "date": "2024-08-07T14:30:00"
+            },
+            "price": 185.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 76,
+            "departure": {
+                "code": "BHX",
+                "city": "Cotswolds",
+                "date": "2024-08-07T16:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-07T19:15:00"
+            },
+            "price": 190.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 77,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-08T16:00:00"
+            },
+            "arrival": {
+                "code": "IBZ",
+                "city": "Ibiza",
+                "date": "2024-08-08T18:45:00"
+            },
+            "price": 155.00,
+            "people": 1,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 78,
+            "departure": {
+                "code": "IBZ",
+                "city": "Ibiza",
+                "date": "2024-08-08T20:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-08T23:30:00"
+            },
+            "price": 160.00,
+            "people": 1,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 79,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-09T08:00:00"
+            },
+            "arrival": {
+                "code": "OAX",
+                "city": "Oaxaca",
+                "date": "2024-08-09T19:30:00"
+            },
+            "price": 680.00,
+            "people": 2,
+            "flightTime": "13h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 80,
+            "departure": {
+                "code": "OAX",
+                "city": "Oaxaca",
+                "date": "2024-08-09T21:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-10T17:00:00"
+            },
+            "price": 695.00,
+            "people": 2,
+            "flightTime": "13h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aeromexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aeromexico.png"
+            }
+        },
+        {
+            "id": 81,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-10T13:30:00"
+            },
+            "arrival": {
+                "code": "SCQ",
+                "city": "Santiago de Compostela",
+                "date": "2024-08-10T14:45:00"
+            },
+            "price": 95.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 82,
+            "departure": {
+                "code": "SCQ",
+                "city": "Santiago de Compostela",
+                "date": "2024-08-10T16:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-10T18:00:00"
+            },
+            "price": 100.00,
+            "people": 1,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 83,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-11T10:15:00"
+            },
+            "arrival": {
+                "code": "SNN",
+                "city": "Connemara",
+                "date": "2024-08-11T13:00:00"
+            },
+            "price": 165.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Aer Lingus",
+                "logo": "https://wp.logos-download.com/wp-content/uploads/2022/11/Aer_Lingus_Logo.png?dl"
+            }
+        },
+        {
+            "id": 84,
+            "departure": {
+                "code": "SNN",
+                "city": "Connemara",
+                "date": "2024-08-11T15:00:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-11T17:45:00"
+            },
+            "price": 170.00,
+            "people": 2,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Aer Lingus",
+                "logo": "https://wp.logos-download.com/wp-content/uploads/2022/11/Aer_Lingus_Logo.png?dl"
+            }
+        },
+        {
+            "id": 85,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-12T15:45:00"
+            },
+            "arrival": {
+                "code": "HER",
+                "city": "Creta",
+                "date": "2024-08-12T21:30:00"
+            },
+            "price": 295.00,
+            "people": 1,
+            "flightTime": "5h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aegean Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Aegean_Airlines_Logo_2020.png"
+            }
+        },
+        {
+            "id": 86,
+            "departure": {
+                "code": "HER",
+                "city": "Creta",
+                "date": "2024-08-12T23:30:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-13T05:15:00"
+            },
+            "price": 300.00,
+            "people": 1,
+            "flightTime": "5h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Aegean Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Aegean_Airlines_Logo_2020.png"
+            }
+        },
+        {
+            "id": 87,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-13T07:30:00"
+            },
+            "arrival": {
+                "code": "KIX",
+                "city": "Quioto",
+                "date": "2024-08-14T02:15:00"
+            },
+            "price": 920.00,
+            "people": 2,
+            "flightTime": "14h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "ANA All Nippon Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/2560px-All_Nippon_Airways_Logo.svg.png"
+            }
+        },
+        {
+            "id": 88,
+            "departure": {
+                "code": "KIX",
+                "city": "Quioto",
+                "date": "2024-08-14T04:15:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-14T19:00:00"
+            },
+            "price": 935.00,
+            "people": 2,
+            "flightTime": "14h 45m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "ANA All Nippon Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/2560px-All_Nippon_Airways_Logo.svg.png"
+            }
+        },
+        {
+            "id": 89,
+            "departure": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-14T12:20:00"
+            },
+            "arrival": {
+                "code": "LDE",
+                "city": "Lourdes",
+                "date": "2024-08-14T15:45:00"
+            },
+            "price": 135.00,
+            "people": 1,
+            "flightTime": "3h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 90,
+            "departure": {
+                "code": "LDE",
+                "city": "Lourdes",
+                "date": "2024-08-14T17:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-14T21:10:00"
+            },
+            "price": 140.00,
+            "people": 1,
+            "flightTime": "3h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 91,
+            "departure": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-15T18:00:00"
+            },
+            "arrival": {
+                "code": "VSE",
+                "city": "Serra da Estrela",
+                "date": "2024-08-15T19:15:00"
+            },
+            "price": 65.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 92,
+            "departure": {
+                "code": "VSE",
+                "city": "Serra da Estrela",
+                "date": "2024-08-15T20:15:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-15T21:30:00"
+            },
+            "price": 65.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 93,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-16T12:30:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-16T15:00:00"
+            },
+            "price": 185.50,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 94,
+            "departure": {
+                "code": "GIG",
+                "city": "Rio de Janeiro",
+                "date": "2024-08-17T16:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-18T08:15:00"
+            },
+            "price": 465.00,
+            "people": 1,
+            "flightTime": "9h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "TAP Air Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/TAP_Portugal_Logo.svg/2560px-TAP_Portugal_Logo.svg.png"
+            }
+        },
+        {
+            "id": 95,
+            "departure": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-08-18T10:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-19T02:10:00"
+            },
+            "price": 905.00,
+            "people": 2,
+            "flightTime": "13h 25m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "ANA All Nippon Airways",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/2560px-All_Nippon_Airways_Logo.svg.png"
+            }
+        },
+        {
+            "id": 96,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-19T20:15:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-19T23:00:00"
+            },
+            "price": 200.00,
+            "people": 1,
+            "flightTime": "2h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 97,
+            "departure": {
+                "code": "RAI",
+                "city": "Cabo Verde",
+                "date": "2024-08-20T14:30:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-20T19:15:00"
+            },
+            "price": 285.00,
+            "people": 2,
+            "flightTime": "4h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Cabo Verde Airlines",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cabo_Verde_Airlines_logo.png"
+            }
+        },
+        {
+            "id": 98,
+            "departure": {
+                "code": "SYD",
+                "city": "Sydney",
+                "date": "2024-08-21T20:30:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-22T20:00:00"
+            },
+            "price": 1215.00,
+            "people": 1,
+            "flightTime": "22h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Qantas",
+                "logo": "https://example.com/logos/qantas.png"
+            }
+        },
+        {
+            "id": 99,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-08-22T22:45:00"
+            },
+            "arrival": {
+                "code": "OPO",
+                "city": "Porto",
+                "date": "2024-08-23T11:15:00"
+            },
+            "price": 535.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "United Airlines",
+                "logo": "https://example.com/logos/united.png"
+            }
+        },
+        {
+            "id": 100,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-23T20:45:00"
+            },
+            "arrival": {
+                "code": "LIS",
+                "city": "Lisboa",
+                "date": "2024-08-23T23:10:00"
+            },
+            "price": 130.00,
+            "people": 1,
+            "flightTime": "2h 25m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 101,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-24T08:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-24T09:30:00"
+            },
+            "price": 95.00,
+            "people": 1,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 102,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-24T11:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-24T13:00:00"
+            },
+            "price": 100.00,
+            "people": 1,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 103,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-25T10:00:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-25T12:00:00"
+            },
+            "price": 120.00,
+            "people": 2,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 104,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-25T14:00:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-25T16:00:00"
+            },
+            "price": 125.00,
+            "people": 2,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 105,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-26T12:30:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-26T13:15:00"
+            },
+            "price": 85.00,
+            "people": 1,
+            "flightTime": "1h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 106,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-26T15:15:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-26T18:00:00"
+            },
+            "price": 90.00,
+            "people": 1,
+            "flightTime": "1h 45m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 107,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-27T14:00:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-08-27T15:30:00"
+            },
+            "price": 75.00,
+            "people": 2,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 108,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-08-27T17:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-08-27T19:00:00"
+            },
+            "price": 80.00,
+            "people": 2,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 109,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-28T09:00:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-28T11:00:00"
+            },
+            "price": 110.00,
+            "people": 1,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Vueling",
+                "logo": "https://example.com/logos/vueling.png"
+            }
+        },
+        {
+            "id": 110,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-28T13:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-28T15:00:00"
+            },
+            "price": 115.00,
+            "people": 1,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 111,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-29T11:30:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-29T13:00:00"
+            },
+            "price": 105.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 112,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-29T15:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-08-29T18:30:00"
+            },
+            "price": 110.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 113,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-30T08:45:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-30T12:15:00"
+            },
+            "price": 145.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 114,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-08-30T14:15:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-30T16:45:00"
+            },
+            "price": 150.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 115,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-31T10:30:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-08-31T13:00:00"
+            },
+            "price": 95.00,
+            "people": 2,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 116,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-08-31T15:00:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-08-31T15:30:00"
+            },
+            "price": 100.00,
+            "people": 2,
+            "flightTime": "1h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 117,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-01T12:00:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-01T14:30:00"
+            },
+            "price": 125.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 118,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-01T16:30:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-01T19:00:00"
+            },
+            "price": 130.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 119,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-02T07:15:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-02T09:30:00"
+            },
+            "price": 135.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 120,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-02T11:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-02T13:45:00"
+            },
+            "price": 140.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 121,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-03T13:20:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-03T15:30:00"
+            },
+            "price": 155.00,
+            "people": 1,
+            "flightTime": "2h 10m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 122,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-03T17:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-03T19:40:00"
+            },
+            "price": 160.00,
+            "people": 1,
+            "flightTime": "2h 10m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 123,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-04T16:00:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-04T18:30:00"
+            },
+            "price": 165.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 124,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-04T20:30:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-04T23:00:00"
+            },
+            "price": 170.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 125,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-05T08:15:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-05T10:45:00"
+            },
+            "price": 175.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 126,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-05T12:45:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-05T15:15:00"
+            },
+            "price": 180.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 127,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-06T11:00:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-06T14:30:00"
+            },
+            "price": 185.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 128,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-06T16:30:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-06T18:00:00"
+            },
+            "price": 190.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 129,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-07T09:30:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-07T12:45:00"
+            },
+            "price": 195.00,
+            "people": 1,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 130,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-07T14:45:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-07T16:00:00"
+            },
+            "price": 200.00,
+            "people": 1,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 131,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-08T14:20:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-08T16:00:00"
+            },
+            "price": 155.00,
+            "people": 2,
+            "flightTime": "1h 40m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 132,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-08T18:00:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-08T19:40:00"
+            },
+            "price": 160.00,
+            "people": 2,
+            "flightTime": "1h 40m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 133,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-09T10:15:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-09T12:30:00"
+            },
+            "price": 165.00,
+            "people": 1,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 134,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-09T14:30:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-09T16:45:00"
+            },
+            "price": 170.00,
+            "people": 1,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 135,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-10T12:45:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-10T15:00:00"
+            },
+            "price": 145.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 136,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-10T17:00:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-10T19:15:00"
+            },
+            "price": 150.00,
+            "people": 2,
+            "flightTime": "2h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 137,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-11T08:30:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-11T10:30:00"
+            },
+            "price": 135.00,
+            "people": 1,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 138,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-11T12:30:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-11T14:30:00"
+            },
+            "price": 140.00,
+            "people": 1,
+            "flightTime": "2h 00m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 139,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-12T15:45:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-12T17:00:00"
+            },
+            "price": 85.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 140,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-12T19:00:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-12T20:15:00"
+            },
+            "price": 90.00,
+            "people": 2,
+            "flightTime": "1h 15m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 141,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-13T09:00:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-13T13:30:00"
+            },
+            "price": 225.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 142,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-13T15:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-13T18:00:00"
+            },
+            "price": 230.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 143,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-14T11:15:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-14T20:45:00"
+            },
+            "price": 395.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 144,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-14T22:45:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-15T03:15:00"
+            },
+            "price": 405.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 145,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-15T13:30:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-15T18:00:00"
+            },
+            "price": 195.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 146,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-15T20:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-15T22:30:00"
+            },
+            "price": 200.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 147,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-16T07:45:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-16T13:15:00"
+            },
+            "price": 215.00,
+            "people": 2,
+            "flightTime": "4h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 148,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-16T15:15:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-16T17:45:00"
+            },
+            "price": 220.00,
+            "people": 2,
+            "flightTime": "4h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 149,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-17T10:30:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-17T14:00:00"
+            },
+            "price": 185.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 150,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-17T16:00:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-17T17:30:00"
+            },
+            "price": 190.00,
+            "people": 1,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 151,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-18T12:15:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-18T16:45:00"
+            },
+            "price": 205.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 152,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-18T18:45:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-18T21:15:00"
+            },
+            "price": 210.00,
+            "people": 2,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 153,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-19T09:20:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-19T12:30:00"
+            },
+            "price": 175.00,
+            "people": 1,
+            "flightTime": "2h 10m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 154,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-19T14:30:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-19T16:40:00"
+            },
+            "price": 180.00,
+            "people": 1,
+            "flightTime": "2h 10m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 155,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-20T11:45:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-20T15:15:00"
+            },
+            "price": 195.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 156,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-20T17:15:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-20T19:45:00"
+            },
+            "price": 200.00,
+            "people": 2,
+            "flightTime": "2h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 157,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-21T14:30:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-22T01:00:00"
+            },
+            "price": 485.00,
             "people": 1,
             "flightTime": "7h 30m",
             "direct": true,
             "layover": false,
             "airline": {
-                "name": "Qatar Airways",
-                "logo": "https://example.com/logos/qatar.png"
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 158,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-22T03:00:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-22T07:30:00"
+            },
+            "price": 495.00,
+            "people": 1,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 159,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-22T16:45:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-23T02:15:00"
+            },
+            "price": 425.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 160,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-23T04:15:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-23T08:45:00"
+            },
+            "price": 435.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 161,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-23T18:20:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-24T03:50:00"
+            },
+            "price": 445.00,
+            "people": 1,
+            "flightTime": "6h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 162,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-24T05:50:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-09-24T10:20:00"
+            },
+            "price": 455.00,
+            "people": 1,
+            "flightTime": "6h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 163,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-24T19:30:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-25T06:00:00"
+            },
+            "price": 465.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 164,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-25T08:00:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-09-25T12:30:00"
+            },
+            "price": 475.00,
+            "people": 2,
+            "flightTime": "7h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 165,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-25T21:15:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-26T06:45:00"
+            },
+            "price": 455.00,
+            "people": 1,
+            "flightTime": "6h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 166,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-26T08:45:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-09-26T13:15:00"
+            },
+            "price": 465.00,
+            "people": 1,
+            "flightTime": "6h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 167,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-26T17:45:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-27T03:15:00"
+            },
+            "price": 485.00,
+            "people": 2,
+            "flightTime": "6h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 168,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-27T05:15:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-09-27T11:45:00"
+            },
+            "price": 495.00,
+            "people": 2,
+            "flightTime": "6h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 169,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-27T20:30:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-28T01:00:00"
+            },
+            "price": 285.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 170,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-09-28T03:00:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-09-28T06:30:00"
+            },
+            "price": 295.00,
+            "people": 1,
+            "flightTime": "3h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 171,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-28T10:45:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-28T13:15:00"
+            },
+            "price": 385.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 172,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-28T15:15:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-09-29T04:45:00"
+            },
+            "price": 395.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 173,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-29T12:30:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-29T16:00:00"
+            },
+            "price": 415.00,
+            "people": 1,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 174,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-29T18:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-09-30T07:30:00"
+            },
+            "price": 425.00,
+            "people": 1,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
+            }
+        },
+        {
+            "id": 175,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-09-30T11:20:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-30T14:50:00"
+            },
+            "price": 365.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 176,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-09-30T16:50:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-10-01T04:20:00"
+            },
+            "price": 375.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 177,
+            "departure": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-10-01T13:15:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-01T17:45:00"
+            },
+            "price": 435.00,
+            "people": 1,
+            "flightTime": "9h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 178,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-01T19:45:00"
+            },
+            "arrival": {
+                "code": "FCO",
+                "city": "Roma",
+                "date": "2024-10-02T09:15:00"
+            },
+            "price": 445.00,
+            "people": 1,
+            "flightTime": "9h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Alitalia",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alitalia_logo_2017.png/1200px-Alitalia_logo_2017.png"
+            }
+        },
+        {
+            "id": 179,
+            "departure": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-10-02T14:30:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-02T18:00:00"
+            },
+            "price": 385.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 180,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-02T20:00:00"
+            },
+            "arrival": {
+                "code": "AMS",
+                "city": "Amsterdão",
+                "date": "2024-10-03T09:30:00"
+            },
+            "price": 395.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "KLM",
+                "logo": "https://example.com/logos/klm.png"
+            }
+        },
+        {
+            "id": 181,
+            "departure": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-10-03T16:45:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-03T21:15:00"
+            },
+            "price": 455.00,
+            "people": 1,
+            "flightTime": "9h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 182,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-03T23:15:00"
+            },
+            "arrival": {
+                "code": "VIE",
+                "city": "Viena",
+                "date": "2024-10-04T13:45:00"
+            },
+            "price": 465.00,
+            "people": 1,
+            "flightTime": "9h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Austrian Airlines",
+                "logo": "https://example.com/logos/austrian.png"
+            }
+        },
+        {
+            "id": 183,
+            "departure": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-10-04T18:20:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-04T23:50:00"
+            },
+            "price": 485.00,
+            "people": 2,
+            "flightTime": "9h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 184,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-05T01:50:00"
+            },
+            "arrival": {
+                "code": "PRG",
+                "city": "Praga",
+                "date": "2024-10-05T16:20:00"
+            },
+            "price": 495.00,
+            "people": 2,
+            "flightTime": "9h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Czech Airlines",
+                "logo": "https://example.com/logos/czech.png"
+            }
+        },
+        {
+            "id": 185,
+            "departure": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-10-05T19:15:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-06T02:45:00"
+            },
+            "price": 515.00,
+            "people": 1,
+            "flightTime": "11h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 186,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-06T04:45:00"
+            },
+            "arrival": {
+                "code": "IST",
+                "city": "Istambul",
+                "date": "2024-10-06T20:15:00"
+            },
+            "price": 525.00,
+            "people": 1,
+            "flightTime": "11h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Turkish Airlines",
+                "logo": "https://example.com/logos/turkish.png"
+            }
+        },
+        {
+            "id": 187,
+            "departure": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-10-06T22:30:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-07T06:00:00"
+            },
+            "price": 685.00,
+            "people": 2,
+            "flightTime": "14h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 188,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-07T08:00:00"
+            },
+            "arrival": {
+                "code": "DXB",
+                "city": "Dubai",
+                "date": "2024-10-08T03:30:00"
+            },
+            "price": 695.00,
+            "people": 2,
+            "flightTime": "14h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Emirates",
+                "logo": "https://example.com/logos/emirates.png"
+            }
+        },
+        {
+            "id": 189,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-10-08T11:30:00"
+            },
+            "arrival": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-08T14:00:00"
+            },
+            "price": 425.00,
+            "people": 1,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air Canada",
+                "logo": "https://example.com/logos/aircanada.png"
+            }
+        },
+        {
+            "id": 190,
+            "departure": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-08T16:00:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-10-09T05:30:00"
+            },
+            "price": 435.00,
+            "people": 1,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 191,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-10-09T13:45:00"
+            },
+            "arrival": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-09T16:15:00"
+            },
+            "price": 395.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air Canada",
+                "logo": "https://example.com/logos/aircanada.png"
+            }
+        },
+        {
+            "id": 192,
+            "departure": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-09T18:15:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-10-10T05:45:00"
+            },
+            "price": 405.00,
+            "people": 2,
+            "flightTime": "8h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 193,
+            "departure": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-10T10:20:00"
+            },
+            "arrival": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-10T12:00:00"
+            },
+            "price": 185.00,
+            "people": 1,
+            "flightTime": "1h 40m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air Canada",
+                "logo": "https://example.com/logos/aircanada.png"
+            }
+        },
+        {
+            "id": 194,
+            "departure": {
+                "code": "YYZ",
+                "city": "Toronto",
+                "date": "2024-10-10T14:00:00"
+            },
+            "arrival": {
+                "code": "JFK",
+                "city": "Nova Iorque",
+                "date": "2024-10-10T15:40:00"
+            },
+            "price": 195.00,
+            "people": 1,
+            "flightTime": "1h 40m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air Canada",
+                "logo": "https://example.com/logos/aircanada.png"
+            }
+        },
+        {
+            "id": 195,
+            "departure": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-10-11T09:00:00"
+            },
+            "arrival": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-12T05:30:00"
+            },
+            "price": 685.00,
+            "people": 2,
+            "flightTime": "12h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Japan Airlines",
+                "logo": "https://example.com/logos/jal.png"
+            }
+        },
+        {
+            "id": 196,
+            "departure": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-12T07:30:00"
+            },
+            "arrival": {
+                "code": "CDG",
+                "city": "Paris",
+                "date": "2024-10-12T13:00:00"
+            },
+            "price": 695.00,
+            "people": 2,
+            "flightTime": "12h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Air France",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png"
+            }
+        },
+        {
+            "id": 197,
+            "departure": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-10-12T22:15:00"
+            },
+            "arrival": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-13T18:45:00"
+            },
+            "price": 715.00,
+            "people": 1,
+            "flightTime": "12h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "British Airways",
+                "logo": "https://example.com/logos/ba.png"
+            }
+        },
+        {
+            "id": 198,
+            "departure": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-13T20:45:00"
+            },
+            "arrival": {
+                "code": "LHR",
+                "city": "Londres",
+                "date": "2024-10-14T02:15:00"
+            },
+            "price": 725.00,
+            "people": 1,
+            "flightTime": "12h 30m",
+            "direct": true,
+            "layover": false,
+            "airline": {
+                "name": "Japan Airlines",
+                "logo": "https://example.com/logos/jal.png"
+            }
+        },
+        {
+            "id": 199,
+            "departure": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-10-14T11:30:00"
+            },
+            "arrival": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-15T08:00:00"
+            },
+            "price": 735.00,
+            "people": 2,
+            "flightTime": "14h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Japan Airlines",
+                "logo": "https://example.com/logos/jal.png"
+            }
+        },
+        {
+            "id": 200,
+            "departure": {
+                "code": "HND",
+                "city": "Tóquio",
+                "date": "2024-10-15T10:00:00"
+            },
+            "arrival": {
+                "code": "BCN",
+                "city": "Barcelona",
+                "date": "2024-10-15T18:30:00"
+            },
+            "price": 745.00,
+            "people": 2,
+            "flightTime": "14h 30m",
+            "direct": false,
+            "layover": true,
+            "airline": {
+                "name": "Iberia",
+                "logo": "https://grupo.iberia.com/contents/archives/475/109/images/thumb255x185_auto/af-iberia-vp-rgb-pos-5b503_thumb.jpg"
             }
         }
     ]
