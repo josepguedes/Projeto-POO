@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jvectormap@2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
 </head>
 
 <body>
@@ -77,16 +78,26 @@
                 </form>
                 <div id="quiz-results-section" class="mt-5" style="display: none;">
                     <hr>
-                    <h2 class="mt-4">O seu Perfil de Viajante</h2>
+                    <h2 class="mt-4">O teu Perfil de Viajante</h2>
                     <div class="row" id="scores-container">
-                        <!-- Scores do quiz serão carregados aqui -->
+
                     </div>
                     <div class="text-center mt-4">
                         <p>Com base no seu perfil, estas são as nossas recomendações para si!</p>
                     </div>
                     <div id="recommended-destinations-container" class="container mt-3 px-0">
-                        <!-- Carrossel de recomendações será injetado aqui -->
+
                     </div>
+                </div>
+                
+                <div id="travel-map-section" class="mt-5">
+                    <hr>
+                    <h2 class="mt-4">O Meu Passaporte Digital</h2>
+                    <p>Clique nos países que já visitou para colorir o mapa. O teu objetivo é explorar o mundo!</p>
+                    <div id="travel-stats" class="mb-3">
+                        
+                    </div>
+                    <div id="world-map" style="width: 100%; height: 500px; border-radius: 8px;"></div>
                 </div>
             </div>
 
@@ -107,6 +118,11 @@
     </div>
 
     <div id="message" class="alert" style="display: none;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jvectormap@2.0.4/jquery-jvectormap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jvectormap@2.0.4/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/views/NavbarView.js" type="module"></script>

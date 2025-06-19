@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (loggedUser.quizScores) {
             displayQuizResults(loggedUser.quizScores);
         }
+        // Iniciar o mapa de viagens
+        setupTravelMap(loggedUser);
     }
 
 
@@ -227,4 +229,91 @@ function showMessage(message, type) {
     setTimeout(() => {
         messageDiv.style.display = 'none';
     }, 3000);
+}
+
+function setupTravelMap(user) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const userIndex = users.findIndex(u => u.id === user.id);
+    if (userIndex === -1) return;
+
+    if (!users[userIndex].visitedCountries) {
+        users[userIndex].visitedCountries = [];
+        localStorage.setItem('users', JSON.stringify(users));
+    }
+    let visitedCountries = users[userIndex].visitedCountries || [];
+
+    // Cria o objeto de dados para o mapa (ex: {'PT': 1, 'ES': 1})
+    const mapData = visitedCountries.reduce((acc, countryCode) => {
+        acc[countryCode] = 1; // 1 == visitado
+        return acc;
+    }, {});
+
+    const mapElement = $('#world-map');
+    mapElement.empty();
+    mapElement.vectorMap({
+        map: 'world_mill_en',
+        backgroundColor: '#a0d3f0',
+        series: {
+            regions: [{
+                values: mapData,
+                scale: ['#8D99AE', '#D90429'],
+                normalizeFunction: 'polynomial'
+            }]
+        },
+        onRegionTipShow: function(e, el, code){
+            const mapObject = mapElement.vectorMap('get', 'mapObject');
+            const countryName = mapObject.getRegionName(code);
+            const status = visitedCountries.includes(code) ? 'Visitado' : 'Não Visitado';
+            el.html(`${countryName} - ${status}`);
+        },
+        onRegionClick: function(event, code) {
+            const mapObject = mapElement.vectorMap('get', 'mapObject');
+            
+            const index = visitedCountries.indexOf(code);
+            if (index > -1) {
+                // Já visitado, remove
+                visitedCountries.splice(index, 1);
+                delete mapData[code];
+            } else {
+                // Não visitado, adiciona
+                visitedCountries.push(code);
+                mapData[code] = 1;
+            }
+
+            // Atualiza as cores do mapa
+            mapObject.series.regions[0].setValues(mapData);
+
+            // Guarda as alterações no localStorage
+            users[userIndex].visitedCountries = visitedCountries;
+            localStorage.setItem('users', JSON.stringify(users));
+            
+            // Atualiza também o sessionStorage para consistência na sessão atual
+            const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+            loggedUser.visitedCountries = visitedCountries;
+            sessionStorage.setItem('loggedUser', JSON.stringify(loggedUser));
+
+            // Atualiza as estatísticas
+            updateTravelStats(visitedCountries);
+        }
+    });
+
+    updateTravelStats(visitedCountries);
+}
+
+function updateTravelStats(visitedCountries) {
+    const statsContainer = document.getElementById('travel-stats');
+    if (statsContainer) {
+        const totalCountries = Object.keys(jvm.Map.maps['world_mill_en'].paths).length;
+        const visitedCount = visitedCountries.length;
+        const percentage = totalCountries > 0 ? (visitedCount / totalCountries) * 100 : 0;
+
+        statsContainer.innerHTML = `
+            <div class="progress" style="height: 10px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: ${percentage}%" aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="text-center mt-2">
+                <strong>${visitedCount}</strong> de <strong>${totalCountries}</strong> países visitados (${percentage.toFixed(1)}%)
+            </div>
+        `;
+    }
 }
