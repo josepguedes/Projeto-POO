@@ -1,19 +1,7 @@
 import { loadFlights } from '../models/flights.js';
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
-    if (loggedUser) {
-        const profileImage = document.getElementById('profileImage');
-        const userNameDisplay = document.getElementById('userNameDisplay');
-        if (profileImage) {
-            profileImage.src = loggedUser.profImg || '../img/default_Avatar.jpg';
-        }
-        if (userNameDisplay) {
-            userNameDisplay.textContent = `Olá, ${loggedUser.name}!`;
-        }
-    }
-});
+
 
 // Função para renderizar os tickets do utilizador autenticado
 async function renderUserReservations() {
