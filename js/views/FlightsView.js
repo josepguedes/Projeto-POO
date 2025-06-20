@@ -1,8 +1,35 @@
 import { loadFlights } from '../models/flights.js';
+import { loadUsers, updateUser } from '../models/users.js';
 
-function isSameDay(date1, date2) {
-    if (!date1 || !date2) return false;
-    return new Date(date1).toISOString().slice(0, 10) === new Date(date2).toISOString().slice(0, 10);
+
+
+
+// Função para adicionar ticket ao utilizador logado
+function addTicketToUser(flight) {
+    loadUsers();
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+    if (!loggedUser) {
+        alert('É necessário iniciar sessão para comprar um voo.');
+        return;
+    }
+
+    // Adiciona o voo aos tickets do utilizador
+    loggedUser.tickets = loggedUser.tickets || [];
+    loggedUser.tickets.push({ flightId: flight.id }); // <-- flightId é obrigatório
+
+    // Atualiza o utilizador nos dados globais/localStorage
+    updateUser(
+        loggedUser.name,
+        loggedUser.email,
+        loggedUser.password,
+        loggedUser.profImg,
+        loggedUser.favourits,
+        loggedUser.tickets
+    );
+
+    // Atualiza sessão
+    sessionStorage.setItem('loggedUser', JSON.stringify(loggedUser));
+    alert('Voo comprado com sucesso!');
 }
 
 async function renderFlights() {
@@ -27,8 +54,8 @@ async function renderFlights() {
     if (filteredFlights.length === 0) {
         flightTicket.innerHTML = `<div class="col-12 text-center"><p>Nenhum voo encontrado para os critérios selecionados.</p></div>`;
     } else {
-        flightTicket.innerHTML = filteredFlights.map(flight => `
-            <div class="flight-ticket">
+        flightTicket.innerHTML = filteredFlights.map((flight, idx) => `
+            <div class="flight-ticket" data-idx="${idx}">
                 <div class="ticket-content">
                     <div class="main-content">
                         <div class="ticket-header">
@@ -60,12 +87,21 @@ async function renderFlights() {
                     </div>
                     <div class="price-section">
                         <div class="price">${flight.price}€</div>
-                        <button class="book-btn">Comprar</button>
+                        <button class="book-btn" data-idx="${idx}">Comprar</button>
                     </div>
                 </div>
             </div>
         `).join('');
+
+        // Adiciona evento aos botões "Comprar"
+        document.querySelectorAll('.book-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const idx = this.getAttribute('data-idx');
+                addTicketToUser(filteredFlights[idx]);
+            });
+        });
     }
+    updateResultsCount();
 }
 
 window.addEventListener('DOMContentLoaded', renderFlights);
@@ -78,12 +114,9 @@ function updateResultsCount() {
         resultsCountElem.textContent = `(${count})`;
     }
 }
-// Chame updateResultsCount() após renderizar os bilhetes
 document.addEventListener('DOMContentLoaded', updateResultsCount);
 
-
 const searchForm = document.getElementById('search-info');
-
 const searchData = JSON.parse(sessionStorage.getItem('searchInfo')) || {};
 
 searchForm.innerHTML = `
@@ -120,10 +153,10 @@ searchForm.innerHTML = `
     </div>
 `;
 
-
 //Filtrar voos
-function filtersFlights() {
+async function filtersFlights() {
     const filter = document.getElementById('filter').value;
+    const flights = await loadFlights();
     let sortedFlights = [...flights];
     if (filter === 'Ordenar por: Preço mais baixo') {
         sortedFlights.sort((a, b) => a.price - b.price);
@@ -146,40 +179,51 @@ function filtersFlights() {
         sortedFlights.sort((a, b) => new Date(a.departure.date) - new Date(b.departure.date));
     }
     // Render sorted flights
-    flightTicket.innerHTML = sortedFlights.map(flight => `
-         <div class="ticket-content">
-             <div class="main-content">
-                 <div class="ticket-header">
-                     <img class="logo"
-                         src="${flight.airline.logo}"
-                         alt="${flight.airline.name}">
-                 </div>
-                 <div class="details">
-                     <div class="time-info">
-                         <div class="departure">
-                             <small>Partida</small>
-                             <div class="time">${new Date(flight.departure.date).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })}</div>
-                             <div>${flight.departure.code} - ${flight.departure.city}</div>
-                         </div>
-                         <div class="flight-path">
-                             <div>${flight.flightTime}</div>
-                             <div class="plane-icon"><i class="fas fa-plane fa-rotate-270"></i></div>
-                             <div>${flight.direct ? 'Direto' : 'Com escalas'}</div>
-                         </div>
-                         <div class="arrival">
-                             <small>Chegada</small>
-                             <div class="time">${new Date(flight.arrival.date).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })}</div>
-                             <div>${flight.arrival.code} - ${flight.arrival.city}</div>
+    const flightTicket = document.getElementById('flight-ticket');
+    flightTicket.innerHTML = sortedFlights.map((flight, idx) => `
+         <div class="flight-ticket" data-idx="${idx}">
+             <div class="ticket-content">
+                 <div class="main-content">
+                     <div class="ticket-header">
+                         <img class="logo"
+                             src="${flight.airline.logo}"
+                             alt="${flight.airline.name}">
+                     </div>
+                     <div class="details">
+                         <div class="time-info">
+                             <div class="departure">
+                                 <small>Partida</small>
+                                 <div class="time">${new Date(flight.departure.date).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })}</div>
+                                 <div>${flight.departure.code} - ${flight.departure.city}</div>
+                             </div>
+                             <div class="flight-path">
+                                 <div>${flight.flightTime}</div>
+                                 <div class="plane-icon"><i class="fas fa-plane fa-rotate-270"></i></div>
+                                 <div>${flight.direct ? 'Direto' : 'Com escalas'}</div>
+                             </div>
+                             <div class="arrival">
+                                 <small>Chegada</small>
+                                 <div class="time">${new Date(flight.arrival.date).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })}</div>
+                                 <div>${flight.arrival.code} - ${flight.arrival.city}</div>
+                             </div>
                          </div>
                      </div>
                  </div>
-             </div>
-             <div class="price-section">
-                 <div class="price">${flight.price}€</div>
-                 <button class="book-btn">Comprar</button>
+                 <div class="price-section">
+                     <div class="price">${flight.price}€</div>
+                     <button class="book-btn" data-idx="${idx}">Comprar</button>
+                 </div>
              </div>
          </div>
      `).join('');
+
+    // Adiciona evento aos botões "Comprar"
+    document.querySelectorAll('.book-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const idx = this.getAttribute('data-idx');
+            addTicketToUser(sortedFlights[idx]);
+        });
+    });
 
     updateResultsCount();
 }

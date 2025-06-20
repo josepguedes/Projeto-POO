@@ -53,9 +53,8 @@
         <main class="profile-main">
             <div class="content-section active">
                 <h2>Minhas Reservas</h2>
-                <div class="bookings-list">
-                    <!-- Reservation 1 -->
-                    <div class="reservation-card">
+                <div class="bookings-list" id="bookingsList">
+                    <!-- <div class="reservation-card">
                         <div class="reservation-header">
                             <h3>Reserva #FL123456</h3>
                             <span class="reservation-status status-confirmed">Confirmado</span>
@@ -93,48 +92,9 @@
                                 <span class="booking-reference">FL123456</span>
                             </div>
                         </div>
-                    </div>
-                
-                    <!-- Reservation 2 -->
-                    <div class="reservation-card">
-                        <div class="reservation-header">
-                            <h3>Reserva #FL789012</h3>
-                            <span class="reservation-status status-confirmed">Confirmado</span>
-                        </div>
-                        <div class="reservation-content">
-                            <div class="flight-details">
-                                <div class="flight-route">
-                                    <div class="flight-point">
-                                        <span class="airport-code">OPO</span>
-                                        <span class="airport-name">Porto, Portugal</span>
-                                    </div>
-                                    <div class="flight-line"></div>
-                                    <div class="flight-point">
-                                        <span class="airport-code">FCO</span>
-                                        <span class="airport-name">Roma, Itália</span>
-                                    </div>
-                                </div>
-                                <div class="flight-meta">
-                                    <div class="meta-item">
-                                        <span class="meta-label">Data</span>
-                                        <span class="meta-value">14 Jun, 2024</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <span class="meta-label">Hora</span>
-                                        <span class="meta-value">15:45</span>
-                                    </div>
-                                    <div class="meta-item">
-                                        <span class="meta-label">Passageiros</span>
-                                        <span class="meta-value">1 Adulto</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="qr-section">
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=FL789012" alt="QR Code" class="qr-code">
-                                <span class="booking-reference">FL789012</span>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
+
+
                 </div>
             </div>
         </main>
@@ -144,6 +104,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../js/views/ReservationsView.js"></script>
+    <script src="../js/views/ProfileView.js" type="module"></script>
 </body>
 
 </html>
