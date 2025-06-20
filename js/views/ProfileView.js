@@ -2,6 +2,21 @@ import { loadUsers, updateUser } from '../models/users.js';
 import { getDestinationsByTourismType, loadDestinations } from '../models/destinations.js';
 import { loadFlights } from '../models/flights.js';
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+    if (loggedUser) {
+        const profileImage = document.getElementById('profileImage');
+        const userNameDisplay = document.getElementById('userNameDisplay');
+        if (profileImage) {
+            profileImage.src = loggedUser.profImg || '../img/default_Avatar.jpg';
+        }
+        if (userNameDisplay) {
+            userNameDisplay.textContent = `Olá, ${loggedUser.name}!`;
+        }
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
     if (!loggedUser) {
