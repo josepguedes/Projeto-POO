@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isAdmin()) {
             // Add admin-specific menu items
             dropdownMenu.innerHTML = `
-                <li><a class="dropdown-item" href="html/admin.html">Painel Admin</a></li>
-                <li><a class="dropdown-item" href="html/admin.html">Utilizadores</a></li>
-                <li><a class="dropdown-item" href="html/admin.html">Viagens</a></li>
-                <li><a class="dropdown-item" href="html/admin.html">Pedidos</a></li>
+                <li><a class="dropdown-item" href="/html/admin.html">Painel Admin</a></li>
+                <li><a class="dropdown-item" href="/html/admin.html">Utilizadores</a></li>
+                <li><a class="dropdown-item" href="/html/admin.html">Viagens</a></li>
+                <li><a class="dropdown-item" href="/html/admin.html">Pedidos</a></li>
                 <div class="dropdown-divider"></div>
                 <li><a class="dropdown-item" href="#" data-logout style="color: #D90429">Terminar Sessão</a></li>
             `;
